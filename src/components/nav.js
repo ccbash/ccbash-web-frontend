@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 
-const Nav = () => (
+const Nav = () => {
   const data = useStaticQuery(query);
 
   return (
@@ -30,7 +30,7 @@ const Nav = () => (
 
     </header>
   )
-);
+};
 
 const query = graphql`
   query {

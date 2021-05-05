@@ -24,9 +24,11 @@ jobs:
             .cache
             **/node_modules
             yarn.lock
-          key: gatsby-ccbash-build
+          key: ${{ runner.os }}-build-ccb-${{ hashFiles('package.json') }}
           restore-keys: |
-            gatsby-ccbash-build
+            ${{ runner.os }}-build-ccb-${{ hashFiles('package.json') }}
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
 
       - name: sependencies
         if: steps.cache-primes.outputs.cache-hit != 'true'

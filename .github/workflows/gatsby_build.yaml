@@ -22,6 +22,7 @@ jobs:
           path: |
             public
             .cache
+            node_modules
           key: gatsby-ccbash-build-${{ github.run_id }}
           restore-keys: |
             gatsby-ccbash-build-

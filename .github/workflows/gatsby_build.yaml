@@ -23,6 +23,7 @@ jobs:
             public
             .cache
             node_modules
+            yarn.lock
           key: gatsby-ccbash-build-${{ github.run_id }}
           restore-keys: |
             gatsby-ccbash-build-

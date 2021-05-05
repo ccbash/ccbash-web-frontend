@@ -15,9 +15,9 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: process.env.API_URL || "http://localhost:1337",
-        contentTypes: ["article", "category", "writer"],
-        singleTypes: [`homepage`, `global`],
+        apiURL: process.env.API_URL || "http://cms.ccbash.de:1337",
+        contentTypes: ["article", "category", "writer", "services"],
+        singleTypes: ["homepage", "global", "dsgvo", "logal"],
         queryLimit: 1000,
       },
     },

@@ -10,29 +10,29 @@ jobs:
 
       - uses: actions/checkout@v2
 
-      - name: Use Node.js
+      - name: setup node
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
 
-      - name: Caching Gatsby
+      - name: caching gatsby & node modules
         id: gatsby-cache-build
         uses: actions/cache@v2
         with:
           path: |
             public
             .cache
-            node_modules
+            **/node_modules
             yarn.lock
           key: gatsby-ccbash-build
           restore-keys: |
             gatsby-ccbash-build
 
-      - name: Generate Prime Numbers
-        # if: steps.cache-primes.outputs.cache-hit != 'true'
+      - name: sependencies
+        if: steps.cache-primes.outputs.cache-hit != 'true'
         run: yarn install
 
-      - name: Building Gatsby site
+      - name: building site
         run: yarn build --log-pages
         env:
           GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true

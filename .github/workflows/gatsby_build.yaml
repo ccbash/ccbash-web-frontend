@@ -24,11 +24,12 @@ jobs:
             .cache
             node_modules
             yarn.lock
-          key: gatsby-ccbash-build-${{ github.run_id }}
+          key: gatsby-ccbash-build
           restore-keys: |
-            gatsby-ccbash-build-
+            gatsby-ccbash-build
 
-      - name: Installing dependencies
+      - name: Generate Prime Numbers
+        # if: steps.cache-primes.outputs.cache-hit != 'true'
         run: yarn install
 
       - name: Building Gatsby site

@@ -3,34 +3,34 @@ name: Update blog
 on: push
 
 jobs:
-  update:
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
 
-      - name: Set Node.js
-        uses: actions/setup-node@master
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: '12.x'
 
-      - name: Install dependencies
-        run: yarn install --prod --pure-lockfile
-
-      # - name: Lint
-      #   run: yarn run lint
-
-      - name: Build
-        run: yarn run build
-
-      - name: Commit files
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git status
-          git commit -m "Add changes" -a
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      - name: Caching Gatsby
+        id: gatsby-cache-build
+        uses: actions/cache@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          path: |
+            public
+            .cache
+          key: gatsby-ccbash-build-${{ github.run_id }}
+          restore-keys: |
+            gatsby-ccbash-build-
+
+      - name: Installing dependencies
+        run: yarn install
+
+      - name: Building Gatsby site
+        run: yarn build --log-pages
+        env:
+          GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
+          CI: true

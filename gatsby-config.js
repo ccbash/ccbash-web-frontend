@@ -17,7 +17,7 @@ module.exports = {
       options: {
         apiURL: process.env.API_URL || "http://cms.ccbash.de:1337",
         contentTypes: ["article", "category", "writer", "services"],
-        singleTypes: ["homepage", "global", "dsgvo", "logal"],
+        singleTypes: ["homepage", "global", "dsgvo", "legal"],
         queryLimit: 1000,
       },
     },

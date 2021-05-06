@@ -30,13 +30,12 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - name: sependencies
-        if: steps.cache-primes.outputs.cache-hit != 'true'
+      - name: dependencies
         run: yarn install
 
-      # - name: building site
-      #   run: yarn build --log-pages
-      #   env:
-      #     GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
-      #    CI: true
+      - name: building site
+        run: yarn build --log-pages
+        env:
+          GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
+          CI: true
  

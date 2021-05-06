@@ -46,9 +46,9 @@ const IndexPage = () => {
         {/* TEAM BLOCK */}
 
 
-        {/* LATEST ARTICLES BLOCK */}
+        {/* LATEST ARTICLES BLOCK    <Latest latest_artivles={} /> */}
 
-        # <Latest latest_artivles={} />
+  
 
       </div>
 

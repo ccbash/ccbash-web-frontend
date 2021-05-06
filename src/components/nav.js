@@ -21,11 +21,11 @@ const Nav = () => {
         </ul>
       </nav>
 
-      <Link class="nav-toggle nav-open" to="#nav-open">
-        <i class="fas fa-bars"/>
+      <Link className="nav-toggle nav-open" to="#nav-open">
+        <i className="fas fa-bars"/>
       </Link>
-	  <Link class="nav-toggle nav-closed" to="#nav-closed">
-	    <i class="fas fa-times"/>
+	  <Link className="nav-toggle nav-closed" to="#nav-closed">
+	    <i className="fas fa-times"/>
 	  </Link>
 
     </header>

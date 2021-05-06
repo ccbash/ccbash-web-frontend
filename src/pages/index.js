@@ -73,6 +73,7 @@ const query = graphql`
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
           }
+        }
       }
       seo {
         metaTitle
@@ -125,7 +126,6 @@ const query = graphql`
         }
       }
     }
-
   }
 `;
 

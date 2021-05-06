@@ -2,9 +2,6 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
 import ArticlesComponent from "../components/articles";
-import Sections from "../components/sections";
-import Team from "../components/team";
-import Latest from "../components/latest";
 import "../assets/css/main.css";
 import "../assets/css/ccbash.css";
 

@@ -21,7 +21,7 @@ function Hero(props) {
 function Section(props) {
   return (
     
-    <h2>{{ props.Title }}</h2>
+    <h2>{{ props.title }}</h2>
     
   );
 };

@@ -65,7 +65,7 @@ const IndexPage = () => {
 const query = graphql`
   query {
 
-    {
+    strapiHomepage {
       hero {
         headline
         image {

@@ -23,7 +23,7 @@ function Section(props) {
   );
 };
 
-const IndexPage = () => {
+export default function IndexPage() {
   const data = useStaticQuery(query);
 
   return (
@@ -125,5 +125,3 @@ const query = graphql`
     }
   }
 `;
-
-export default IndexPage;

@@ -14,21 +14,18 @@ export const query = graphql`
       content
       publishedAt
       image {
-        publicURL
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
-        }
-      }
+        localFile {
+          publicURL
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
+      } } }
       author {
         name
         picture {
-          childImageSharp {
-            gatsbyImageData(width: 30)
-          }
-        }
-      }
-    }
-  }
+          localFile {
+            childImageSharp {
+              gatsbyImageData(width: 30)
+  } } } } } }
 `;
 
 const Article = ({ data }) => {

@@ -4,39 +4,26 @@ import ArticlesComponent from "../../components/articles";
 import Layout from "../../components/layout";
 
 export const query = graphql`
-  query Category($slug: String!) {
-    articles: allStrapiArticle(
-      filter: { status: { eq: "published" }, category: { slug: { eq: $slug } } }
-    ) {
-      edges {
-        node {
-          slug
-          title
-          category {
-            name
-          }
-          image {
+  query ArticleQuery($slug: String!) {
+    strapiArticle(slug: { eq: $slug }, status: { eq: "published" }) {
+      strapiId
+      title
+      description
+      content
+      publishedAt
+      image {
+        localFile {
+          publicURL
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
+      } } }
+      author {
+        name
+        picture {
+          localFile {
             childImageSharp {
-              fixed(width: 660) {
-                src
-              }
-            }
-          }
-          author {
-            name
-            picture {
-              childImageSharp {
-                gatsbyImageData(width: 30)
-              }
-            }
-          }
-        }
-      }
-    }
-    category: strapiCategory(slug: { eq: $slug }) {
-      name
-    }
-  }
+              gatsbyImageData(width: 30)
+  } } } } } }
 `;
 
 const Category = ({ data }) => {

@@ -45,7 +45,7 @@ const IndexPage = () => {
 
         {/* TEAM BLOCK */}
 
-        # <Team member={} />
+        <h1 team=1 member=2 />
 
         {/* LATEST ARTICLES BLOCK */}
 

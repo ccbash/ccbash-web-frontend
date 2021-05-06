@@ -22,8 +22,8 @@ const query = graphql`
   query {
     strapiHomepage {
       seo {
-        metaTitle
         metaDescription
+        metaTitle
         shareImage {
           publicURL
         }

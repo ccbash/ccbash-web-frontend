@@ -66,9 +66,11 @@ const query = graphql`
       hero {
         headline
         image {
-          publicURL
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
+          localFile {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
+            }
           }
         }
       }
@@ -76,7 +78,9 @@ const query = graphql`
         metaTitle
         metaDescription
         shareImage {
-          publicURL
+          localFile {
+            publicURL
+          }
         }
       }
     }
@@ -92,7 +96,9 @@ const query = graphql`
           content
           author
           image {
-            absolutePath
+            localFile {
+              absolutePath
+            }
           }
         }
       }
@@ -108,15 +114,19 @@ const query = graphql`
             name
           }
           image {
-            childImageSharp {
-              gatsbyImageData(width: 800, height: 500)
+            localFile {
+              childImageSharp {
+                gatsbyImageData(width: 800, height: 500)
+              }
             }
           }
           author {
             name
             picture {
-              childImageSharp {
-                gatsbyImageData(width: 30, height: 30)
+              localFile {
+                childImageSharp {
+                  gatsbyImageData(width: 30, height: 30)
+                }
               }
             }
           }

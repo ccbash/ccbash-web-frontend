@@ -23,7 +23,7 @@ export default function IndexPage() {
 
   return (
     <Layout seo={data.strapiHomepage.seo}>
-      <Hero 
+      <Hero
         title={data.strapiHomepage.seo.metaTitle}
         headline={data.strapiHomepage.hero.headline}
       />

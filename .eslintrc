@@ -2,7 +2,7 @@
   "rules": {
     "prettier/prettier": ["error", {}]
   },
-  "extends": ["react-app", "plugin:prettier/recommended"]
+  "extends": ["react-app", "plugin:prettier/recommended"],
 
   "overrides": [
     { "files": ["src/assets/css/*"] }

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const Card = ({ article }) => {
+export default Card(article) {
   return (
     <Link to={`/article/${article.node.slug}`} className="uk-link-reset">
       <div className="uk-card uk-card-muted">
@@ -43,5 +43,3 @@ const Card = ({ article }) => {
     </Link>
   );
 };
-
-export default Card;

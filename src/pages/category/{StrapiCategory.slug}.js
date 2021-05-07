@@ -26,24 +26,22 @@ export const query = graphql`
   } } } } } }
 `;
 
-const Category = ({ data }) => {
+export default Category(data) {
   const articles = data.articles.edges;
-  const category = data.category.name;
+  const name = data.category.name;
   const seo = {
-    metaTitle: category,
-    metaDescription: `All ${category} articles`,
+    metaTitle: name,
+    metaDescription: `All ${name} articles`,
   };
 
   return (
     <Layout seo={seo}>
       <div className="uk-section">
         <div className="uk-container uk-container-large">
-          <h1>{category}</h1>
+          <h1>{name}</h1>
           <ArticlesComponent articles={articles} />
         </div>
       </div>
     </Layout>
   );
 };
-
-export default Category;

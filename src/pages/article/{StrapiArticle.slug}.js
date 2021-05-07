@@ -28,7 +28,7 @@ export const query = graphql`
   } } } } } }
 `;
 
-const Article = ({ data }) => {
+export default Article(data) {
   const article = data.strapiArticle;
   const seo = {
     metaTitle: article.title,
@@ -95,5 +95,3 @@ const Article = ({ data }) => {
     </Layout>
   );
 };
-
-export default Article;

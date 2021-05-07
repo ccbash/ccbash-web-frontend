@@ -6,8 +6,8 @@ import Layout from "../../components/layout";
 import Markdown from "react-markdown";
 
 export const query = graphql`
-  query ArticleQuery($slug: String!) {
-    strapiArticle(slug: { eq: $slug }, status: { eq: "published" }) {
+  query ArticleQuery($uid: String!) {
+    strapiArticle(uid: { eq: $uid }, status: { eq: "published" }) {
       strapiId
       title
       description
@@ -28,7 +28,7 @@ export const query = graphql`
   } } } } } }
 `;
 
-const Article = ({ data }) => {
+export default Writer(data) {
   const article = data.strapiArticle;
   const seo = {
     metaTitle: article.title,
@@ -95,5 +95,3 @@ const Article = ({ data }) => {
     </Layout>
   );
 };
-
-export default Article;

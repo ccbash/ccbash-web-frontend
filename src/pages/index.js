@@ -10,42 +10,37 @@ function Hero(props) {
     <div className="cc-hero">
       <h1>{props.title}</h1>
       <p>{props.headline}</p>
-    </div>  
+    </div>
   );
-};
-
+}
 
 function Section(props) {
   return (
-    
     <h2>{props.title}</h2>    
   );
-};
+}
 
 export default function IndexPage() {
   const data = useStaticQuery(query);
 
   return (
     <Layout seo={data.strapiHomepage.seo}>
-    
-      <Hero title={data.strapiHomepage.seo.metaTitle} 
-            headline={data.strapiHomepage.hero.headline} />
-      
-      <div class="cc-conent">
 
+      <Hero 
+        title={data.strapiHomepage.seo.metaTitle} 
+        headline={data.strapiHomepage.hero.headline} 
+      />
+
+      <div class="cc-conent">
         {/* SERVICE BLOCK */}
 
-        { data.allStrapiCategory.node((section, index) => {
-          return <Section section={section} />
+        {data.allStrapiCategory.node((section, index) => {
+          return <Section section={section} />;
         })}
 
         {/* TEAM BLOCK */}
 
-
-        {/* LATEST ARTICLES BLOCK    <Latest latest_artivles={} /> */}
-
-  
-
+        {/* LATEST ARTICLES BLOCK <Latest latest_artivles={} /> */}
       </div>
 
       <div className="cc-content">
@@ -60,7 +55,6 @@ export default function IndexPage() {
 
 const query = graphql`
   query {
-
     strapiHomepage {
       hero {
         headline
@@ -83,7 +77,7 @@ const query = graphql`
         }
       }
     }
-    
+
     allStrapiCategory {
       nodes {
         strapiId
@@ -102,7 +96,7 @@ const query = graphql`
         }
       }
     }
-    
+
     allStrapiArticle(filter: { status: { eq: "published" } }) {
       edges {
         node {

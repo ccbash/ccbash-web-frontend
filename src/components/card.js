@@ -44,5 +44,5 @@ export default function Card(article) {
         </div>
       </div>
     </Link>
-  )
-};
+  );
+}

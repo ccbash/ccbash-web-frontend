@@ -133,7 +133,8 @@ const query = graphql`
       favicon {
         localFile {
           publicURL
-      } }
+        }
+      }
       defaultSeo {
         metaTitle
         metaDescription

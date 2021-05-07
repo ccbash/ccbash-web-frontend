@@ -27,12 +27,10 @@ export default function Layout(children, seo) {
     <>
       <Seo seo={seo} />
       <Nav />
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
     </>
-  )
-};
+  );
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

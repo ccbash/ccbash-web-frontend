@@ -18,14 +18,21 @@ export const query = graphql`
           publicURL
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
-      } } }
+          } 
+        } 
+      }
       author {
         name
         picture {
           localFile {
             childImageSharp {
               gatsbyImageData(width: 30)
-  } } } } } }
+            } 
+          } 
+        } 
+      } 
+    } 
+  }
 `;
 
 export default function Service(data) {

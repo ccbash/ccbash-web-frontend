@@ -26,7 +26,7 @@ export const query = graphql`
   } } } } } }
 `;
 
-export default Category(data) {
+export default function Category(data) {
   const articles = data.articles.edges;
   const name = data.category.name;
   const seo = {

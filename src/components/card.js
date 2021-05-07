@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-export default Card(article) {
+export default function Card(article) {
   return (
     <Link to={`/article/${article.node.slug}`} className="uk-link-reset">
       <div className="uk-card uk-card-muted">

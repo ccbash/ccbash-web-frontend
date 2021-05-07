@@ -28,7 +28,7 @@ export const query = graphql`
   } } } } } }
 `;
 
-export default Service(data) {
+export default function Service(data) {
   const article = data.strapiArticle;
   const seo = {
     metaTitle: article.title,

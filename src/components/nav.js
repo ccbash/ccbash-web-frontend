@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 
-export default Nav() {
+export default function Nav() {
   const data = useStaticQuery(query);
 
   return (

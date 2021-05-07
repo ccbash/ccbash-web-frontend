@@ -20,7 +20,7 @@ const query = graphql`
   }
 `;
 
-export default Layout(children, seo) {
+export default function Layout(children, seo) {
   const data = useStaticQuery(query);
 
   return (

@@ -4,21 +4,19 @@ import { useStaticQuery, graphql } from "gatsby";
 import Nav from "./nav";
 import Seo from "./seo";
 
-const query = graphql`
-  query {
-    strapiHomepage {
-      seo {
-        metaDescription
-        metaTitle
-        shareImage {
-          localFile {
-            publicURL
-          }
+const query = graphql`query {
+  strapiHomepage {
+    seo {
+      metaDescription
+      metaTitle
+      shareImage {
+        localFile {
+          publicURL
         }
       }
     }
   }
-`;
+}`;
 
 export default function Layout(children, seo) {
   const data = useStaticQuery(query);

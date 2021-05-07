@@ -16,17 +16,16 @@ export default function Nav() {
                 {category.node.name}
               </Link>
             </li>
-          ))}          
+          ))}
         </ul>
       </nav>
 
       <Link className="nav-toggle nav-open" to="#nav-open">
         <i className="fas fa-bars" />
       </Link>
-	  <Link className="nav-toggle nav-closed" to="#nav-closed">
+      <Link className="nav-toggle nav-closed" to="#nav-closed">
         <i className="fas fa-times" />
       </Link>
-
     </header>
   );
 }

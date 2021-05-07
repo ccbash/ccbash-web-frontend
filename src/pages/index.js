@@ -15,9 +15,7 @@ function Hero(props) {
 }
 
 function Section(props) {
-  return (
-    <h2>{props.title}</h2>    
-  );
+  return <h2>{props.title}</h2>;
 }
 
 export default function IndexPage() {
@@ -25,10 +23,9 @@ export default function IndexPage() {
 
   return (
     <Layout seo={data.strapiHomepage.seo}>
-
       <Hero 
-        title={data.strapiHomepage.seo.metaTitle} 
-        headline={data.strapiHomepage.hero.headline} 
+        title={data.strapiHomepage.seo.metaTitle}
+        headline={data.strapiHomepage.hero.headline}
       />
 
       <div class="cc-conent">
@@ -51,7 +48,7 @@ export default function IndexPage() {
       </div>
     </Layout>
   );
-};
+}
 
 const query = graphql`
   query {

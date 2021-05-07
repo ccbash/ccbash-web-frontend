@@ -33,6 +33,9 @@ jobs:
       - name: dependencies
         run: yarn install
 
+      - name: linting
+        run: yarn lint
+
       - name: building site
         run: yarn build --log-pages
         env:

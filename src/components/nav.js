@@ -47,5 +47,3 @@ const query = graphql`
     }
   }
 `;
-
-export default Nav;

@@ -35,5 +35,3 @@ export default function Articles( articles ) {
     </div>
   );
 };
-
-export default Articles;

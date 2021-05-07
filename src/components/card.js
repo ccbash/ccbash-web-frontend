@@ -25,7 +25,10 @@ export default function Card(article) {
               <div>
                 {article.node.author.picture && (
                   <GatsbyImage
-                    image={article.node.author.picture.childImageSharp.gatsbyImageData}
+                    image={
+                      article.node.author.picture.childImageSharp
+                        .gatsbyImageData
+                    }
                     alt={`Picture of ${article.node.author.name}`}
                     style={{ borderRadius: "50%" }}
                   />
@@ -41,5 +44,5 @@ export default function Card(article) {
         </div>
       </div>
     </Link>
-  );
+  )
 };

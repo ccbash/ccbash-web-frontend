@@ -63,17 +63,17 @@ function getMetaTags(fullSeo) {
   return tags;
 }
 
-export default function SEO(seo) {
+export default function SEO(global, seo) {
   const metaTags = getMetaTags();
 
   return (
     <Helmet
-      title={fullSeo.metaTitle}
-      titleTemplate={`%s | ${siteName}`}
+      title={seo.metaTitle}
+      titleTemplate={`%s | ${global.siteName}`}
       link={[
         {
           rel: "icon",
-          href: favicon.publicURL,
+          href: global.favicon.publicURL,
         },
         {
           rel: "stylesheet",

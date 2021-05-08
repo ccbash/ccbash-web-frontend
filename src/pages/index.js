@@ -24,7 +24,7 @@ export default function IndexPage() {
   return (
     <Layout seo={data.strapiHomepage.seo}>
       <Hero
-            title={data.strapiHomepage.seo.metaTitle}
+        title={data.strapiHomepage.seo.metaTitle}
         headline={data.strapiHomepage.hero.headline}
       />
 
@@ -53,26 +53,19 @@ export default function IndexPage() {
 const query = graphql`
   query {
     strapiHomepage {
-      hero {
-        headline
-        image {
-          localFile {
-            publicURL
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
-            }
+      headline
+      description
+      image {
+        localFile {
+          publicURL
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
           }
         }
       }
-      seo {
-        metaTitle
-        metaDescription
-        shareImage {
-          localFile {
-            publicURL
-          }
-        }
-      }
+      display_service
+      display_team
+      display_latest
     }
 
     allStrapiCategory {
@@ -83,7 +76,7 @@ const query = graphql`
         articles {
           slug
           title
-          content
+          description
           author
           image {
             localFile {

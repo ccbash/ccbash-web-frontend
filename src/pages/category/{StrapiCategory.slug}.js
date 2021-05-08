@@ -33,7 +33,7 @@ export default function Category() {
   const category = data.StrapiCategory;
   const seo = {
     metaTitle: category.name,
-    metaDescription: `All ${name} articles`,
+    metaDescription: `All ${category.name} articles`,
   };
 
   return (
@@ -41,7 +41,7 @@ export default function Category() {
       <div className="uk-section">
         <div className="uk-container uk-container-large">
           <h1>{category.name}</h1>
-          <ArticlesComponent articles={categories.articles} />
+          <ArticlesComponent articles={category.articles} />
         </div>
       </div>
     </Layout>

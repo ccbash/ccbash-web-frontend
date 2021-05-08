@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import Moment from "react-moment";
 import Layout from "../../components/layout";
 import Markdown from "react-markdown";
 
@@ -31,7 +30,7 @@ export default function Writer() {
   const seo = {
     metaTitle: employee.name,
     metaDescription: employee.about,
-    shareImage: employee.picture
+    shareImage: employee.picture,
   };
 
   return (
@@ -42,7 +41,7 @@ export default function Writer() {
             style={{
               gridArea: "1/1",
             }}
-            alt={`Picture for ${article.title} article`}
+            alt={`Picture for ${employee.name} article`}
             image={employee.picture.childImageSharp.gatsbyImageData}
             layout="fullWidth"
           />
@@ -69,9 +68,7 @@ export default function Writer() {
               <div>
                 {employee.picture && (
                   <GatsbyImage
-                    image={
-                      employee.picture.childImageSharp.gatsbyImageData
-                    }
+                    image={employee.picture.childImageSharp.gatsbyImageData}
                     alt={`Picture of ${employee.name}`}
                     style={{ borderRadius: "50%" }}
                   />

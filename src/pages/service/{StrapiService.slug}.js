@@ -1,13 +1,11 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import Moment from "react-moment";
 import Layout from "../../components/layout";
-import Markdown from "react-markdown";
 
 export const query = graphql`
   query ServiceQuery($slug: String!) {
-    strapiService(slug: { eq: $slug } ) {
+    strapiService(slug: { eq: $slug }) {
       strapiId
       name
       description
@@ -30,7 +28,7 @@ export default function Service() {
   const seo = {
     metaTitle: service.name,
     metaDescription: service.description,
-    shareImage: service.image
+    shareImage: service.image,
   };
 
   return (
@@ -41,7 +39,7 @@ export default function Service() {
             style={{
               gridArea: "1/1",
             }}
-            alt={`Picture for ${article.title} article`}
+            alt={`Picture for ${service.name} article`}
             image={service.image.childImageSharp.gatsbyImageData}
             layout="fullWidth"
           />

@@ -63,7 +63,7 @@ const query = graphql`
           }
         }
       }
-      display_service
+      display_services
       display_team
       display_latest
     }

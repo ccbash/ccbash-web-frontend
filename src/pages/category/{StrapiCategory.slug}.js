@@ -1,11 +1,11 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import ArticlesComponent from "../../components/articles";
 import Layout from "../../components/layout";
 
 export const query = graphql`
   query CategoryQuery($slug: String!) {
-    strapiCategory(slug: { eq: $slug } ) {
+    strapiCategory(slug:{ eq: $slug }) {
       strapiId
       name
       description
@@ -31,9 +31,8 @@ export const query = graphql`
 export default function Category() {
   const data = useStaticQuery(query);
   const category = data.StrapiCategory;
-  const name = data.category.name;
   const seo = {
-    metaTitle: name,
+    metaTitle: category.name,
     metaDescription: `All ${name} articles`,
   };
 
@@ -41,7 +40,7 @@ export default function Category() {
     <Layout seo={seo}>
       <div className="uk-section">
         <div className="uk-container uk-container-large">
-          <h1>{name}</h1>
+          <h1>{category.name}</h1>
           <ArticlesComponent articles={categories.articles} />
         </div>
       </div>

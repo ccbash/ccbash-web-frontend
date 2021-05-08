@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Moment from "react-moment";
 import Layout from "../../components/layout";
@@ -29,9 +29,8 @@ export default function Service() {
   const service = data.strapiService;
   const seo = {
     metaTitle: service.name,
-    metaDescription: article.description,
-    shareImage: article.image,
-    article: true,
+    metaDescription: service.description,
+    shareImage: service.image
   };
 
   return (
@@ -57,35 +56,6 @@ export default function Service() {
             }}
           >
             <h1 style={{ color: `white` }}>{service.name}</h1>
-          </div>
-        </div>
-        <div className="uk-section">
-          <div className="uk-container uk-container-small">
-            <Markdown source={article.content} escapeHtml={false} />
-
-            <hr className="uk-divider-small" />
-
-            <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
-              <div>
-                {article.author.picture && (
-                  <GatsbyImage
-                    image={
-                      article.author.picture.childImageSharp.gatsbyImageData
-                    }
-                    alt={`Picture of ${article.author.name}`}
-                    style={{ borderRadius: "50%" }}
-                  />
-                )}
-              </div>
-              <div className="uk-width-expand">
-                <p className="uk-margin-remove-bottom">
-                  By {article.author.name}
-                </p>
-                <p className="uk-text-meta uk-margin-remove-top">
-                  <Moment format="MMM Do YYYY">{article.published_at}</Moment>
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

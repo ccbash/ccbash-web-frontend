@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Moment from "react-moment";
 import Layout from "../../components/layout";
@@ -25,7 +25,7 @@ export const query = graphql`
   }
 `;
 
-export default function Writer(data) {
+export default function Writer() {
   const data = useStaticQuery(query);
   const employee = data.strapiWriter;
   const seo = {

@@ -7,12 +7,11 @@ import Markdown from "react-markdown";
 
 export const query = graphql`
   query ServiceQuery($slug: String!) {
-    strapiService(slug: { eq: $slug }, status: { eq: "published" }) {
+    strapiService(slug: { eq: $slug } ) {
       strapiId
-      title
+      name
       description
       content
-      publishedAt
       image {
         localFile {
           publicURL
@@ -21,24 +20,15 @@ export const query = graphql`
           }
         }
       }
-      author {
-        name
-        picture {
-          localFile {
-            childImageSharp {
-              gatsbyImageData(width: 30)
-            }
-          }
-        }
-      }
     }
   }
 `;
 
-export default function Service(data) {
-  const article = data.strapiArticle;
+export default function Service() {
+  const data = useStaticQuery(query);
+  const service = data.strapiService;
   const seo = {
-    metaTitle: article.title,
+    metaTitle: service.name,
     metaDescription: article.description,
     shareImage: article.image,
     article: true,
@@ -53,7 +43,7 @@ export default function Service(data) {
               gridArea: "1/1",
             }}
             alt={`Picture for ${article.title} article`}
-            image={article.image.childImageSharp.gatsbyImageData}
+            image={service.image.childImageSharp.gatsbyImageData}
             layout="fullWidth"
           />
           <div
@@ -66,7 +56,7 @@ export default function Service(data) {
               display: "grid",
             }}
           >
-            <h1 style={{ color: `white` }}>{article.title}</h1>
+            <h1 style={{ color: `white` }}>{service.name}</h1>
           </div>
         </div>
         <div className="uk-section">

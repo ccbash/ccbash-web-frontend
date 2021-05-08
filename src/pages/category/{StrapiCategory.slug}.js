@@ -5,12 +5,10 @@ import Layout from "../../components/layout";
 
 export const query = graphql`
   query CategoryQuery($slug: String!) {
-    strapiCategory(slug: { eq: $slug }, status: { eq: "published" }) {
+    strapiCategory(slug: { eq: $slug } ) {
       strapiId
-      title
+      name
       description
-      content
-      publishedAt
       image {
         localFile {
           publicURL
@@ -19,22 +17,20 @@ export const query = graphql`
           }
         }
       }
-      author {
-        name
-        picture {
-          localFile {
-            childImageSharp {
-              gatsbyImageData(width: 30)
-            }
-          }
-        }
+      articles {
+        slug
+        title
+        author
+        created_at
+        description
       }
     }
   }
 `;
 
-export default function Category(data) {
-  const articles = data.articles.edges;
+export default function Category() {
+  const data = useStaticQuery(query);
+  const category = data.StrapiCategory;
   const name = data.category.name;
   const seo = {
     metaTitle: name,
@@ -46,7 +42,7 @@ export default function Category(data) {
       <div className="uk-section">
         <div className="uk-container uk-container-large">
           <h1>{name}</h1>
-          <ArticlesComponent articles={articles} />
+          <ArticlesComponent articles={categories.articles} />
         </div>
       </div>
     </Layout>

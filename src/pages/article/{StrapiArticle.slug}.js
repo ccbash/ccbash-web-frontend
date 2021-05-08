@@ -35,7 +35,8 @@ export const query = graphql`
   }
 `;
 
-export default function Article(data) {
+export default function Article() {
+  const data = useStaticQuery(query);
   const article = data.strapiArticle;
   const seo = {
     metaTitle: article.title,

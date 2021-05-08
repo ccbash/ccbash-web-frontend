@@ -9,25 +9,15 @@ export const query = graphql`
   query WriterQuery($uid: String!) {
     strapiWriter(uid: { eq: $uid }, status: { eq: "published" }) {
       strapiId
-      title
-      description
-      content
-      publishedAt
-      image {
+      name
+      about
+      mail
+      phone
+      picture {
         localFile {
           publicURL
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
-          }
-        }
-      }
-      author {
-        name
-        picture {
-          localFile {
-            childImageSharp {
-              gatsbyImageData(width: 30)
-            }
           }
         }
       }
@@ -36,12 +26,12 @@ export const query = graphql`
 `;
 
 export default function Writer(data) {
-  const article = data.strapiArticle;
+  const data = useStaticQuery(query);
+  const employee = data.strapiWriter;
   const seo = {
-    metaTitle: article.title,
-    metaDescription: article.description,
-    shareImage: article.image,
-    article: true,
+    metaTitle: employee.name,
+    metaDescription: employee.about,
+    shareImage: employee.picture
   };
 
   return (
@@ -53,7 +43,7 @@ export default function Writer(data) {
               gridArea: "1/1",
             }}
             alt={`Picture for ${article.title} article`}
-            image={article.image.childImageSharp.gatsbyImageData}
+            image={employee.picture.childImageSharp.gatsbyImageData}
             layout="fullWidth"
           />
           <div
@@ -66,33 +56,32 @@ export default function Writer(data) {
               display: "grid",
             }}
           >
-            <h1 style={{ color: `white` }}>{article.title}</h1>
+            <h1 style={{ color: `white` }}>{employee.name}</h1>
           </div>
         </div>
         <div className="uk-section">
           <div className="uk-container uk-container-small">
-            <Markdown source={article.content} escapeHtml={false} />
+            <Markdown source={employee.about} escapeHtml={false} />
 
             <hr className="uk-divider-small" />
 
             <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
               <div>
-                {article.author.picture && (
+                {employee.picture && (
                   <GatsbyImage
                     image={
-                      article.author.picture.childImageSharp.gatsbyImageData
+                      employee.picture.childImageSharp.gatsbyImageData
                     }
-                    alt={`Picture of ${article.author.name}`}
+                    alt={`Picture of ${employee.name}`}
                     style={{ borderRadius: "50%" }}
                   />
                 )}
               </div>
               <div className="uk-width-expand">
                 <p className="uk-margin-remove-bottom">
-                  By {article.author.name}
+                  By {employee.name}
                 </p>
                 <p className="uk-text-meta uk-margin-remove-top">
-                  <Moment format="MMM Do YYYY">{article.published_at}</Moment>
                 </p>
               </div>
             </div>

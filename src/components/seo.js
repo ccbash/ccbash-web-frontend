@@ -4,11 +4,10 @@ import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
 const SEO = ({ seo = {} }) => {
-  const { strapiGlobal } = useStaticQuery(query);
-  const { defaultSeo, siteName, favicon } = strapiGlobal;
+
 
   // Merge default and page-specific SEO values
-  const fullSeo = { ...defaultSeo, ...seo };
+  const fullSeo = { ...seo };
 
   const getMetaTags = () => {
     const tags = [];
@@ -125,25 +124,3 @@ SEO.defaultProps = {
   image: null,
   article: false,
 };
-
-const query = graphql`
-  query {
-    strapiGlobal {
-      siteName
-      favicon {
-        localFile {
-          publicURL
-        }
-      }
-      defaultSeo {
-        metaTitle
-        metaDescription
-        shareImage {
-          localFile {
-            publicURL
-          }
-        }
-      }
-    }
-  }
-`;

@@ -4,8 +4,8 @@ import ArticlesComponent from "../../components/articles";
 import Layout from "../../components/layout";
 
 export const query = graphql`
-  query ArticleQuery($slug: String!) {
-    strapiArticle(slug: { eq: $slug }, status: { eq: "published" }) {
+  query CategoryQuery($slug: String!) {
+    strapiCategory(slug: { eq: $slug }, status: { eq: "published" }) {
       strapiId
       title
       description

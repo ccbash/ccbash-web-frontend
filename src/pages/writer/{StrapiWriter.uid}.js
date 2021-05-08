@@ -6,8 +6,8 @@ import Layout from "../../components/layout";
 import Markdown from "react-markdown";
 
 export const query = graphql`
-  query ArticleQuery($uid: String!) {
-    strapiArticle(uid: { eq: $uid }, status: { eq: "published" }) {
+  query WriterQuery($uid: String!) {
+    strapiWriter(uid: { eq: $uid }, status: { eq: "published" }) {
       strapiId
       title
       description

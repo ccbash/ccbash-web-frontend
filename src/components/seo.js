@@ -63,7 +63,7 @@ function getMetaTags(fullSeo) {
   return tags;
 }
 
-export default funtion SEO (seo) {
+export default function SEO(seo) {
   const metaTags = getMetaTags();
 
   return (

@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 
 export default function Nav(globals, entries) {
-
   return (
     <header id="nav-open">
       <Link to="/">{globals.siteName}</Link>

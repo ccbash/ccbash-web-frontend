@@ -7,10 +7,7 @@ export default function Layout(children, seo) {
   return (
     <>
       <Seo seo={seo} />
-      <Nav 
-        globals=""
-        entries=""
-      />
+      <Nav globals="" entries="" />
       <main>{children}</main>
     </>
   );

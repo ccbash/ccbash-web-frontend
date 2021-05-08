@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 
 export default function Nav(globals, entries) {
-  const data = useStaticQuery(query);
 
   return (
     <header id="nav-open">

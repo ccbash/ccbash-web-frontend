@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "gatsby";
 
-export default function Nav() {
+export default function Nav(globals, entries) {
   const data = useStaticQuery(query);
 
   return (
     <header id="nav-open">
-      <Link to="/">{data.strapiGlobal.siteName}</Link>
+      <Link to="/">{globals.siteName}</Link>
 
       <nav>
         <ul>
-          {data.allStrapiCategory.edges.map((category, i) => (
+          {entries.map((category, i) => (
             <li key={`category__${category.node.slug}`}>
               <Link to={`/category/${category.node.slug}`}>
                 {category.node.name}
@@ -29,19 +29,3 @@ export default function Nav() {
     </header>
   );
 }
-
-const query = graphql`
-  query {
-    strapiGlobal {
-      siteName
-    }
-    allStrapiCategory {
-      edges {
-        node {
-          slug
-          name
-        }
-      }
-    }
-  }
-`;

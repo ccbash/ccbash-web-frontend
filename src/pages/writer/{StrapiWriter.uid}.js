@@ -75,11 +75,8 @@ export default function Writer() {
                 )}
               </div>
               <div className="uk-width-expand">
-                <p className="uk-margin-remove-bottom">
-                  By {employee.name}
-                </p>
-                <p className="uk-text-meta uk-margin-remove-top">
-                </p>
+                <p className="uk-margin-remove-bottom">By {employee.name}</p>
+                <p className="uk-text-meta uk-margin-remove-top"></p>
               </div>
             </div>
           </div>

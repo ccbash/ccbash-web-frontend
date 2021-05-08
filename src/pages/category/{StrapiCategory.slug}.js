@@ -5,7 +5,7 @@ import Layout from "../../components/layout";
 
 export const query = graphql`
   query CategoryQuery($slug: String!) {
-    strapiCategory(slug:{ eq: $slug }) {
+    strapiCategory(slug: { eq: $slug }) {
       strapiId
       name
       description

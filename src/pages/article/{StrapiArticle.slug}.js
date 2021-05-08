@@ -7,7 +7,7 @@ import Markdown from "react-markdown";
 
 export const query = graphql`
   query ArticleQuery($slug: String!) {
-    strapiArticle(slug: { eq: $slug }, status: { eq: "published" }) {
+    strapiArticle(slug: { eq: $slug }) {
       strapiId
       title
       description

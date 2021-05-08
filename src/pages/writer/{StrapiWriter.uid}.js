@@ -6,7 +6,7 @@ import Markdown from "react-markdown";
 
 export const query = graphql`
   query WriterQuery($uid: String!) {
-    strapiWriter(uid: { eq: $uid }, status: { eq: "published" }) {
+    strapiWriter(uid: { eq: $uid }) {
       strapiId
       name
       about

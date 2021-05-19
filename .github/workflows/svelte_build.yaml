@@ -20,6 +20,7 @@ jobs:
         with:
           path: |
             .cache
+            package-lock.json
             **/node_modules
           key: ${{ runner.os }}-build-ccb-${{ hashFiles('package.json') }}
           restore-keys: |
@@ -31,7 +32,7 @@ jobs:
         run: npm install
 
       - name: linting
-        run: npm lint
+        run: npm run lint
 
       - name: building site
-        run: npm build
+        run: npm run build

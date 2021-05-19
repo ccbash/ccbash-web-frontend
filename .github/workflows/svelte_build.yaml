@@ -1,0 +1,37 @@
+name: Svelte Build
+
+on: push
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: caching gatsby & node modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            .cache
+            **/node_modules
+          key: ${{ runner.os }}-build-ccb-${{ hashFiles('package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-ccb-${{ hashFiles('package.json') }}
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: dependencies
+        run: npm install
+
+      - name: linting
+        run: npm lint
+
+      - name: building site
+        run: npm build

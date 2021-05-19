@@ -1,59 +1,105 @@
 <script context="module">
-	export const prerender = true;
+  export const prerender = true;
+
+  import { GraphQLClient } from 'graphql-request';
+  export async function load() {
+    const strapi = new GraphQLClient('http://cms.ccbash.de:1337/graphql', { headers: {} });
+
+	const { data } = await strapi.request(`{ 
+	  homepage {
+	    headline
+	    description
+	    display_services
+	    display_team
+	    display_latest
+	    image {
+	      url
+	      alternativeText
+	    }
+	  }
+	  categories {
+	    slug
+	    name
+	    description
+	    image {
+	      url
+	      alternativeText
+	    }
+	    services {
+	      slug
+	      name
+	      description
+	    }
+	  }
+	  writers {
+	    uid
+	    name
+	    about
+	  }
+    }`);
+  
+    return {
+	  props: {
+	    data
+	  }
+    };
+  }
 </script>
 
 <script>
-	import Counter from '$lib/Counter/index.svelte';
+	import Header from '$lib/header.svelte';
+	import Services from '$lib/services.svelte';
+	import Team from '$lib/team.svelte';
+
+	export let data;
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<Header />
 </svelte:head>
 
-<section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
+<!-- HERO -->
+<div class="cc-hero">
+  <h1>{data.homepage.title}</h1>
+  <p>{data.homepage.headline}</p>
+</div>
+    
+<div class="cc-content">
 
-		to your new<br />SvelteKit app
-	</h1>
+  <Services service={data.categorries} />
+  
+  <Team team={data.writers} />
 
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
+</div>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
+  	.cc-hero {
+	  position: relative;
+	  align-items: center;  
+	  display: flex;
+	  flex-direction: column;
+	  height: calc(70vh - 57px);  
+	  justify-content: center;  
+	  max-height: 500px;  
+	  min-height: 400px;
+	  max-width: 65rem;
+	  width: 90%;
+	  padding-top: 3.5rem;
+	  margin-left: auto;
+	  margin-right: auto;
+	  text-align: center;
 	}
 
-	h1 {
-		width: 100%;
+	.cc-hero img {
+	  position: relative;
 	}
 
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
+	.cc-hero h1 {
+	  font: 0px/0 a;
+	  line-height: 0;
+	  color: transparent;
+	  text-shadow: none;
+	  background-color: transparent;
+	  border-style: none;
+	}  
 </style>

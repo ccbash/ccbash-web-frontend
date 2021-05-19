@@ -1,0 +1,42 @@
+name: Update blog
+
+on: push
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: caching gatsby & node modules
+        id: gatsby-cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            public
+            .cache
+            **/node_modules
+            yarn.lock
+          key: ${{ runner.os }}-build-ccb-${{ hashFiles('package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-ccb-${{ hashFiles('package.json') }}
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+      - name: dependencies
+        run: yarn install
+
+      - name: linting
+        run: yarn lint
+
+      - name: building site
+        run: yarn build --log-pages
+        env:
+          GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
+          CI: true

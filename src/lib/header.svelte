@@ -3,9 +3,8 @@
 	import logo from './svelte-logo.svg';
 </script>
 
-
 <header id="nav-open">
-  <Link to="/">{globals.siteName}</Link>
+  <a to="/">{globals.siteName}</a>
 
   <nav>
     <ul>
@@ -19,12 +18,12 @@
     </ul>
   </nav>
 
-  <Link class="nav-toggle nav-open" to="#nav-open">
+  <a class="nav-toggle nav-open" to="#nav-open">
     <i class="fas fa-bars" />
-  </Link>
-  <Link class="nav-toggle nav-closed" to="#nav-closed">
+  </a>
+  <a class="nav-toggle nav-closed" to="#nav-closed">
     <i class="fas fa-times" />
-  </Link>
+  </a>
 </header>
 
 

@@ -1,49 +1,14 @@
 <script context="module">
   export const prerender = true;
-
-  import { GraphQLClient } from 'graphql-request';
-  export async function load() {
-    const strapi = new GraphQLClient('http://cms.ccbash.de:1337/graphql', { headers: {} });
-
-	const { data } = await strapi.request(`{ 
-	  homepage {
-	    headline
-	    description
-	    display_services
-	    display_team
-	    display_latest
-	    image {
-	      url
-	      alternativeText
-	    }
-	  }
-	  categories {
-	    slug
-	    name
-	    description
-	    image {
-	      url
-	      alternativeText
-	    }
-	    services {
-	      slug
-	      name
-	      description
-	    }
-	  }
-	  writers {
-	    uid
-	    name
-	    about
-	  }
-    }`);
-  
-    return {
-	  props: {
-	    data
-	  }
-    };
+      
+  try {
+    const res = await fetch('/qry/test' );
+    const data = await res.json();
+    console.log(data);
+  } catch (err) {
+    console.error(err);
   }
+    
 </script>
 
 <script>

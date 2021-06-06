@@ -4,7 +4,17 @@ import { gql } from '@apollo/client/core/core.cjs.js';
 export async function get({ params }) {
 
   const query = gql`
-    query Categories {
+    query home {
+      homepage {	
+        headline
+        description
+        image {
+          url
+        }
+        display_services
+        display_team
+        display_latest
+      }
       categories {
         name
         slug
@@ -17,10 +27,22 @@ export async function get({ params }) {
         weight
         color_schema
         image {
-	      url
-	      alternativeText
+	        url
+	        alternativeText
         }
-    	  }
+      }
+      writers {
+        uid
+        name
+        picture {
+          url
+          alternativeText
+        }
+        presented
+        mail
+        phone
+        about
+      }
     }
   `;
 

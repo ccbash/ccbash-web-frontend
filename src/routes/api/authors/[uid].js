@@ -5,7 +5,7 @@ export async function get({ params }) {
   const { uid } = params;
  
   const query = gql`
-    authors(where: {uid: $uid) {
+    writers(where: {uid: $uid) {
       uid
       name
       picture {

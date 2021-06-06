@@ -1,24 +1,28 @@
 import { client } from '$lib/client.js';
 import { gql } from '@apollo/client/core/core.cjs.js';
 
-export const post = async request => {
-    // mitigate the body parsing bug
-  if (typeof request.body === 'string') request.body = JSON.parse(request.body);
+export async function get({ params }) {
 
-  // in case we got a para here we go
-  // const { num } = request.body;
   const query = gql`
-    query Hompage {
-      homepage {
-	    headline
-	    description
-	    display_services
-	    display_team
-	    display_latest
-	    image {
+    query Articles {
+      article {
+        title
+        description
+        content
+        slug
+        category {
+          slug
+          name
+        }
+        image {
 	      url
 	      alternativeText
-	    }
+        }
+        author {
+
+        }
+        featured
+        service
 	  }
     }
   `;

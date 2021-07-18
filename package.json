@@ -20,6 +20,6 @@
   },
   "type": "module",
   "dependencies": {
-    "@fontsource/fira-mono": "^4.2.2",
+    "@fontsource/fira-mono": "^4.2.2"
   }
 }

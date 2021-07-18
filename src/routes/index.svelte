@@ -2,7 +2,7 @@
   export const prerender = true;
       
   try {
-    const res = await fetch('/qry/test' );
+    const res = await fetch('/api/home' );
     const data = await res.json();
     console.log(data);
   } catch (err) {

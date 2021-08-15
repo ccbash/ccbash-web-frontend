@@ -24,7 +24,7 @@ dependencies:
 
 devDependencies:
   '@apollo/client': 3.3.21_graphql@15.5.1
-  '@sveltejs/kit': 1.0.0-next.142_eb9c483077a99b6cdcb6e9ed7c5a4b0b
+  '@sveltejs/kit': 1.0.0-next.150_eb9c483077a99b6cdcb6e9ed7c5a4b0b
   eslint: 7.31.0
   eslint-config-prettier: 8.3.0_eslint@7.31.0
   eslint-plugin-svelte3: 3.2.0_eslint@7.31.0+svelte@3.40.2
@@ -142,14 +142,14 @@ packages:
       picomatch: 2.3.0
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.142_eb9c483077a99b6cdcb6e9ed7c5a4b0b:
-    resolution: {integrity: sha1-ANoMn86EM+Y+hBic2y8aUGaDJOk=, tarball: https://r.cnpmjs.org/@sveltejs/kit/download/@sveltejs/kit-1.0.0-next.142.tgz}
+  /@sveltejs/kit/1.0.0-next.150_eb9c483077a99b6cdcb6e9ed7c5a4b0b:
+    resolution: {integrity: sha1-8MUt1xzck28xUEvpogCamNFvrZ4=, tarball: https://r.cnpmjs.org/@sveltejs/kit/download/@sveltejs/kit-1.0.0-next.150.tgz}
     engines: {node: ^12.20 || >=14.13}
     hasBin: true
     peerDependencies:
-      svelte: ^3.34.0
+      svelte: ^3.39.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.14_022dafeec485923f43ef508a8feb21b1
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.17_022dafeec485923f43ef508a8feb21b1
       cheap-watch: 1.0.3
       sade: 1.7.4
       svelte: 3.40.2
@@ -158,8 +158,8 @@ packages:
       - diff-match-patch
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.14_022dafeec485923f43ef508a8feb21b1:
-    resolution: {integrity: sha1-Rzc28r/y2oCoRc0+uiLYs3IJO9U=, tarball: https://r.cnpmjs.org/@sveltejs/vite-plugin-svelte/download/@sveltejs/vite-plugin-svelte-1.0.0-next.14.tgz}
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.17_022dafeec485923f43ef508a8feb21b1:
+    resolution: {integrity: sha1-JaCI5x4abgpnAeX6cMzeNTt3g8I=, tarball: https://r.cnpmjs.org/@sveltejs/vite-plugin-svelte/download/@sveltejs/vite-plugin-svelte-1.0.0-next.17.tgz}
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
     peerDependencies:
       diff-match-patch: ^1.0.5

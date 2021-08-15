@@ -10,6 +10,7 @@ export async function get({ params }) {
           url
         }
         siteName
+        siteUrl
         Menu {
           name
           slug
@@ -33,9 +34,7 @@ export async function get({ params }) {
     const result = await client.query({ query });
     return {
       status: 200,
-      body: {
-        data: result.data
-      }
+      body: result.data
     }
   } catch (err) {
     return {

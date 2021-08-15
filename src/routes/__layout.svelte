@@ -1,28 +1,47 @@
 <script context="module">
-  export const prerender = true;
-      
-  try {
-    const res = await fetch('/api/global' );
-    const globals = await res.json();
-    console.log(globals);
-  } catch (err) {
-    console.error(err);
-  }
-    
+	export const prerender = true;
+	
+	export async function load( {fetch} ) {
+	  	const res = await fetch('/api/global' );
+		if (res.ok) {
+			const data = await res.json();
+			return { 
+				props: data 
+			};
+		};
+
+		return {
+    		status: res.status,
+    		error: new Error()
+   		};
+	}
 </script>
 
 <script>
-	import Header from '$lib/header.svelte';
+	import Header from '$lib/elements/header.svelte';
+	import Footer from '$lib/elements/footer.svelte';
 	import '../app.css';
+	export let global;
+	// console.log(global);
 </script>
 
-<Header {...globals.body.data} />
+<Header sitename={global.siteName} siteurl={global.siteUrl} menu={global.Menu} />
 
 <main>
 	<slot />
 </main>
 
-<footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>
-  
+<Footer />
+
+<style>
+	main {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		width: 100%;
+		max-width: 1024px;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+</style>

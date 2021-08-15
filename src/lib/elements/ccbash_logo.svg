@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg 
+  height="10%" 
+  style="fill-rule:evenodd;clip-rule:evenodd;" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  xmlns="http://www.w3.org/2000/svg" 
+  xml:space="preserve" width="100%" 
+  xmlns:vectornator="http://vectornator.io" 
+  version="1.1" 
+  viewBox="0 0 660 210">
+
+  <!-- gray #c8c8c8 baseyellow #f3ba38 orange #ffa634 red #fc6932 green #00944c blue #387eb6 -->
+
+  <g stroke="#f3ba38" stroke-width="15" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round">
+  <path stroke="#387eb6" d="M10+90 L10+10 L90+10" />
+  <path stroke="#fc6932" d="M10+120 L10+200 L90+200" /> <!-- lu -->
+  <path stroke="#00944c" d="M200 120 L200 200 L120 200" /> <!-- ru -->
+  <path stroke="#ffa634" d="M120 10 L200 10 L200 90" /> <!-- ro -->
+
+    <path d="M151 151 A 65 65 0 1 1 151 59"/>
+    <path d="M129.7 129.7 A 35 35 0 1 1 129.7 80.3"/>
+    <!-- b -->
+    <circle cx="275" cy="125" r="45" />
+    <path d="M230 125 L230 40"/>
+    <!-- a -->
+    <circle cx="385" cy="125" r="45" />
+    <path d="M430 170 L430 80" />
+    <!-- s -->
+    <path d="M450 170 L517.5 170 A22.5 22.5 0 1 0 517.5 125 L472.5 125 A22.5 22.5 0 1 1 472.5 80 L540 80" />
+    <!-- h -->
+    <path d="M560+170 L560 125 A45 45 0 1 1 650 125 L650 170" />
+    <path d="M560 125 L560 40" />
+
+  </g>
+</svg>

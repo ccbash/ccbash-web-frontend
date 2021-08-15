@@ -1,70 +1,107 @@
 <script context="module">
-  export const prerender = true;
-      
-  try {
-    const res = await fetch('/api/home' );
-    const data = await res.json();
-    console.log(data);
-  } catch (err) {
-    console.error(err);
-  }
-    
+	export const prerender = true;
+
+	export async function load( {fetch} ) {
+	  	const res = await fetch('/api/home' );
+		if (res.ok) {
+			const data = await res.json();
+			return { 
+				props: data 
+			};
+		};
+
+		return {
+    		status: res.status,
+    		error: new Error()
+   		};
+	}	
 </script>
 
 <script>
-	import Header from '$lib/header.svelte';
-	import Services from '$lib/services.svelte';
-	import Team from '$lib/team.svelte';
-
-	export let data;
+	import Category from '$lib/elements/home_categories.svelte';
+	import Team from '$lib/elements/home_team.svelte';
+	import { variables } from '$lib/variables.js';
+    export let homepage;
+	export let categories;
+	export let writers;
+	console.log(writers);
 </script>
 
 <svelte:head>
-	<Header />
+	<title>{homepage.headline}</title>
 </svelte:head>
 
-<!-- HERO -->
 <div class="cc-hero">
-  <h1>{data.homepage.title}</h1>
-  <p>{data.homepage.headline}</p>
+	<h1>{homepage.headline}</h1>
+	<p>
+		<img src="{variables.cmsurl + homepage.image.url}" alt="{homepage.image.alternativeText}" style="margin-bottom: 1rem;"/>
+		<br/>
+		{homepage.description}
+	</p>
 </div>
-    
+
 <div class="cc-content">
+	<h2> Services by ccbash </h2>
+	{#each categories as cat}
+		<Category {...cat} />
+	{/each}
 
-  <Services service={data.categorries} />
-  
-  <Team team={data.writers} />
+	<h2>Das Team</h2>
+	{#each writers as member}
+		<Team {...member} />
+	{/each}
 
+	
 </div>
+
 
 <style>
-  	.cc-hero {
-	  position: relative;
-	  align-items: center;  
-	  display: flex;
-	  flex-direction: column;
-	  height: calc(70vh - 57px);  
-	  justify-content: center;  
-	  max-height: 500px;  
-	  min-height: 400px;
-	  max-width: 65rem;
-	  width: 90%;
-	  padding-top: 3.5rem;
-	  margin-left: auto;
-	  margin-right: auto;
-	  text-align: center;
+	.cc-hero {
+		position: relative;
+		align-items: center;  
+		display: flex;
+		flex-direction: column;
+		height: calc(70vh - 57px);  
+		justify-content: center;  
+		max-height: 500px;  
+		min-height: 400px;
+		max-width: 65rem;
+		width: 90%;
+		padding-top: 3.5rem;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
 	}
 
 	.cc-hero img {
-	  position: relative;
+		position: relative;
 	}
 
 	.cc-hero h1 {
-	  font: 0px/0 a;
-	  line-height: 0;
-	  color: transparent;
-	  text-shadow: none;
-	  background-color: transparent;
-	  border-style: none;
-	}  
+		font: 0px/0 a;
+		line-height: 0;
+		color: transparent;
+		text-shadow: none;
+		background-color: transparent;
+		border-style: none;
+	}
+
+	.cc-hero p {
+		-webkit-font-smoothing: antialiased;
+		font-family: "Google Sans Display", Arial, Helvetica, sans-serif;
+		font-size: 2rem;
+		font-weight: 400;
+		line-height: 1.5;
+		color: rgb(0, 0, 0); 
+		margin: 0px;
+		text-align: center;
+		padding: 0 10px;
+		background-color: transparent;
+		border-radius: 4px;
+		-moz-hyphens: none;
+		-o-hyphens: none;
+		-webkit-hyphens: none;
+		-ms-hyphens: none;
+		hyphens: none; 
+	}
 </style>

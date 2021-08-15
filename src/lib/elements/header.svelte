@@ -1,35 +1,34 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from './svelte-logo.svg';
+	import logo from './ccbash_logo.svg';
 	
-	export let siteName;
-	export let Menu;
- 
+    export let sitename;
+    export let menu;
+	export let siteurl;
+
+	// console.log(menu)
 </script>
 
-<header id="nav-open">
-  <a sveltekit:prefetch href="/">{siteName}</a>
+<header>
+	<a href="{siteurl}">
+		<img class="logo" src={logo} alt="{sitename} Logo">
+	</a>
 
-  <nav>
-    <ul>
-      {#each Menu as entry}
-  	    <li>
-  	      <a sveltekit:prefetch href={entry.slug}>{entry.name}</a>
-  	    </li>
-      {/each}
-    </ul>
-  </nav>
+	<nav>
+		<ul>
+			{#each menu as entry}
+			<li>
+			  <a class:active={$page.path === entry.slug} sveltekit:prefetch href={entry.slug}>{entry.name}</a>
+			</li>
+			{/each}
+		</ul>
+	</nav>
 
-  <a class="nav-toggle nav-open" to="#nav-open">
-    <i class="fas fa-bars" />
-  </a>
-  <a class="nav-toggle nav-closed" to="#nav-closed">
-    <i class="fas fa-times" />
-  </a>
+    <a class="nav-toggle nav-open" href="#nav-open"><i class="fas fa-bars"></i></a>
+	<a class="nav-toggle nav-closed" href="#nav-closed"><i class="fas fa-times"></i></a>
 </header>
 
 <style>
-
 header {
 	width:100%;
 	float:left;

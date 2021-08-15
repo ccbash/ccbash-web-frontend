@@ -1,0 +1,3614 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "~TODO~",
+      "version": "0.0.1",
+      "scripts": {
+        "dev": "svelte-kit dev",
+        "build": "svelte-kit build",
+        "preview": "svelte-kit preview",
+        "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+        "format": "prettier --write --plugin-search-dir=. ."
+      },
+      "devDependencies": {
+        "@sveltejs/kit": "next",
+        "eslint": "^7.22.0",
+        "eslint-config-prettier": "^8.1.0",
+        "eslint-plugin-svelte3": "^3.2.0",
+        "prettier": "~2.2.1",
+        "prettier-plugin-svelte": "^2.2.0",
+        "svelte": "^3.34.0"
+      },
+      "type": "module",
+      "dependencies": {
+        "@fontsource/fira-mono": "^4.2.2",
+        "@lukeed/uuid": "^2.0.0",
+        "cookie": "^0.4.1"
+      }
+    },
+    "prefix": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/kaigroteluschen/.pnpm-store/v3",
+    "virtualStoreDir": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-svelte3/3.2.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-plugin-svelte3",
+      "rawSpec": "^3.2.0"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-svelte3/3.2.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "6 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-svelte3/3.2.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "7 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte/3.40.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte",
+      "rawSpec": "^3.34.0"
+    }
+  },
+  "8 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte/3.40.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "9 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@sveltejs/kit/1.0.0-next.137",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@sveltejs/kit",
+      "rawSpec": "next"
+    }
+  },
+  "10 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@sveltejs/kit/1.0.0-next.137",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte/3.40.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "12 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@sveltejs/kit/1.0.0-next.137",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "13 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@fontsource/fira-mono/4.5.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@fontsource/fira-mono",
+      "rawSpec": "^4.2.2"
+    }
+  },
+  "14 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@fontsource/fira-mono/4.5.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "15 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@fontsource/fira-mono/4.5.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cookie/0.4.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "cookie",
+      "rawSpec": "^0.4.1"
+    }
+  },
+  "17 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cookie/0.4.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "18 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cookie/0.4.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "19 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/eslint",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/eslint"
+  },
+  "20 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/eslint-config-prettier",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/eslint-config-prettier"
+  },
+  "21 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/prettier",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/prettier"
+  },
+  "22 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/prettier-plugin-svelte",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/prettier-plugin-svelte"
+  },
+  "23 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/@lukeed%2Fuuid",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@lukeed%2Fuuid"
+  },
+  "24 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier/2.2.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "prettier",
+      "rawSpec": "~2.2.1"
+    }
+  },
+  "25 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.2.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "26 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.2.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "27 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-prettier/8.3.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-config-prettier",
+      "rawSpec": "^8.1.0"
+    }
+  },
+  "28 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "29 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "30 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@lukeed/uuid/2.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@lukeed/uuid",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "31 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@lukeed/uuid/2.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "32 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@lukeed/uuid/2.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "33 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/eslint",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/eslint"
+  },
+  "34 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/prettier-plugin-svelte",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/prettier-plugin-svelte"
+  },
+  "35 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint/7.31.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint",
+      "rawSpec": "^7.22.0"
+    }
+  },
+  "36 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint/7.31.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "37 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint/7.31.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "38 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 1,
+    "err": {
+      "name": "Error",
+      "message": "GET https://registry.npmjs.org/prettier-plugin-svelte: network timeout at: https://registry.npmjs.org/prettier-plugin-svelte",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "Error: GET https://registry.npmjs.org/prettier-plugin-svelte: network timeout at: https://registry.npmjs.org/prettier-plugin-svelte\n    at RetryOperation._fn (/Users/kaigroteluschen/.nvm/versions/node/v14.17.3/lib/node_modules/pnpm/dist/pnpm.cjs:79554:18)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  },
+  "39 debug pnpm": "Using cached meta from /Users/kaigroteluschen/Library/Caches/pnpm/metadata/registry.npmjs.org/prettier-plugin-svelte.json",
+  "40 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier-plugin-svelte/2.3.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "prettier-plugin-svelte",
+      "rawSpec": "^2.2.0"
+    }
+  },
+  "41 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier-plugin-svelte/2.3.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "42 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/code-frame/7.12.11",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "@babel/code-frame",
+      "rawSpec": "7.12.11"
+    }
+  },
+  "43 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/code-frame/7.12.11",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier-plugin-svelte/2.3.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "45 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/code-frame/7.12.11",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "46 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/doctrine/3.0.0",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "doctrine",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "47 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/doctrine/3.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "48 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-utils/2.1.0",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "eslint-utils",
+      "rawSpec": "^2.1.0"
+    }
+  },
+  "49 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-utils/2.1.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "50 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.1",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "chalk",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "51 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/4.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "52 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cheap-watch/1.0.3",
+    "wanted": {
+      "dependentId": "/@sveltejs/kit/1.0.0-next.137",
+      "name": "cheap-watch",
+      "rawSpec": "^1.0.3"
+    }
+  },
+  "53 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cheap-watch/1.0.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "54 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-scope/5.1.1",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "eslint-scope",
+      "rawSpec": "^5.1.1"
+    }
+  },
+  "55 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-scope/5.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "56 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/doctrine/3.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "57 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/4.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "58 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cheap-watch/1.0.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "59 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-scope/5.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "60 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-utils/2.1.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "61 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-visitor-keys/2.1.0",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "eslint-visitor-keys",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "62 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-visitor-keys/2.1.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "63 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-visitor-keys/2.1.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "64 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/esquery/1.4.0",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "esquery",
+      "rawSpec": "^1.4.0"
+    }
+  },
+  "65 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esquery/1.4.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "66 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esquery/1.4.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "67 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/esutils/2.0.3",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "esutils",
+      "rawSpec": "^2.0.2"
+    }
+  },
+  "68 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esutils/2.0.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "69 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esutils/2.0.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "70 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/espree/7.3.1",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "espree",
+      "rawSpec": "^7.3.1"
+    }
+  },
+  "71 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/espree/7.3.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "72 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fast-deep-equal/3.1.3",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "fast-deep-equal",
+      "rawSpec": "^3.1.3"
+    }
+  },
+  "73 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fast-deep-equal/3.1.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "74 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/espree/7.3.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "75 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fast-deep-equal/3.1.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "76 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/file-entry-cache/6.0.1",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "file-entry-cache",
+      "rawSpec": "^6.0.1"
+    }
+  },
+  "77 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/file-entry-cache/6.0.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "78 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/file-entry-cache/6.0.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "79 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/functional-red-black-tree/1.0.1",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "functional-red-black-tree",
+      "rawSpec": "^1.0.1"
+    }
+  },
+  "80 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/functional-red-black-tree/1.0.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "81 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/functional-red-black-tree/1.0.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "82 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/glob-parent/5.1.2",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "glob-parent",
+      "rawSpec": "^5.1.2"
+    }
+  },
+  "83 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob-parent/5.1.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "84 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob-parent/5.1.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "85 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/vite/2.4.3",
+    "wanted": {
+      "dependentId": "/@sveltejs/kit/1.0.0-next.137",
+      "name": "vite",
+      "rawSpec": "^2.4.3"
+    }
+  },
+  "86 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vite/2.4.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "87 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/globals/13.10.0",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "globals",
+      "rawSpec": "^13.6.0"
+    }
+  },
+  "88 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/globals/13.10.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "89 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ignore/4.0.6",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "ignore",
+      "rawSpec": "^4.0.6"
+    }
+  },
+  "90 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ignore/4.0.6",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "91 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/imurmurhash/0.1.4",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "imurmurhash",
+      "rawSpec": "^0.1.4"
+    }
+  },
+  "92 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/imurmurhash/0.1.4",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "93 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/globals/13.10.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "94 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/import-fresh/3.3.0",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "import-fresh",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "95 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/import-fresh/3.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "96 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vite/2.4.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "97 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/imurmurhash/0.1.4",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "98 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ignore/4.0.6",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "99 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/import-fresh/3.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "100 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@sveltejs/vite-plugin-svelte/1.0.0-next.14",
+    "wanted": {
+      "dependentId": "/@sveltejs/kit/1.0.0-next.137",
+      "name": "@sveltejs/vite-plugin-svelte",
+      "rawSpec": "^1.0.0-next.14"
+    }
+  },
+  "101 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@sveltejs/vite-plugin-svelte/1.0.0-next.14",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "102 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@sveltejs/vite-plugin-svelte/1.0.0-next.14",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "103 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-glob/4.0.1",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "is-glob",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "104 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-glob/4.0.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "105 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-glob/4.0.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "106 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/json-stable-stringify-without-jsonify/1.0.1",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "json-stable-stringify-without-jsonify",
+      "rawSpec": "^1.0.1"
+    }
+  },
+  "107 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/json-stable-stringify-without-jsonify/1.0.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "108 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/levn/0.4.1",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "levn",
+      "rawSpec": "^0.4.1"
+    }
+  },
+  "109 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/levn/0.4.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "110 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lodash.merge/4.6.2",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "lodash.merge",
+      "rawSpec": "^4.6.2"
+    }
+  },
+  "111 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash.merge/4.6.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "112 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/json-stable-stringify-without-jsonify/1.0.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "113 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/levn/0.4.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "114 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash.merge/4.6.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "115 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/js-yaml/3.14.1",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "js-yaml",
+      "rawSpec": "^3.13.1"
+    }
+  },
+  "116 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/js-yaml/3.14.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "117 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/minimatch/3.0.4",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "minimatch",
+      "rawSpec": "^3.0.4"
+    }
+  },
+  "118 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/minimatch/3.0.4",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "119 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/js-yaml/3.14.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "120 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/minimatch/3.0.4",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "121 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/natural-compare/1.4.0",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "natural-compare",
+      "rawSpec": "^1.4.0"
+    }
+  },
+  "122 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/natural-compare/1.4.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "123 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/natural-compare/1.4.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "124 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/optionator/0.9.1",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "optionator",
+      "rawSpec": "^0.9.1"
+    }
+  },
+  "125 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/optionator/0.9.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "126 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/optionator/0.9.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "127 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/progress/2.0.3",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "progress",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "128 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/progress/2.0.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "129 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/progress/2.0.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "130 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/regexpp/3.2.0",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "regexpp",
+      "rawSpec": "^3.1.0"
+    }
+  },
+  "131 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/regexpp/3.2.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "132 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/strip-ansi/6.0.0",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "strip-ansi",
+      "rawSpec": "^6.0.0"
+    }
+  },
+  "133 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-ansi/6.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "134 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-ansi/6.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "135 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/regexpp/3.2.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "136 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/strip-json-comments/3.1.1",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "strip-json-comments",
+      "rawSpec": "^3.1.0"
+    }
+  },
+  "137 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-json-comments/3.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "138 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/semver/7.3.5",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "semver",
+      "rawSpec": "^7.2.1"
+    }
+  },
+  "139 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver/7.3.5",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "140 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-json-comments/3.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "141 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver/7.3.5",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "142 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/text-table/0.2.0",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "text-table",
+      "rawSpec": "^0.2.0"
+    }
+  },
+  "143 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/text-table/0.2.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "144 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/text-table/0.2.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "145 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/v8-compile-cache/2.3.0",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "v8-compile-cache",
+      "rawSpec": "^2.0.3"
+    }
+  },
+  "146 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/v8-compile-cache/2.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "147 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/v8-compile-cache/2.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "148 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/table/6.7.1",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "table",
+      "rawSpec": "^6.0.9"
+    }
+  },
+  "149 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/table/6.7.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "150 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/table/6.7.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "151 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@eslint/eslintrc/0.4.3",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "@eslint/eslintrc",
+      "rawSpec": "^0.4.3"
+    }
+  },
+  "152 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@eslint/eslintrc/0.4.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "153 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@eslint/eslintrc/0.4.3",
+    "size": 35059,
+    "status": "started"
+  },
+  "154 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@eslint/eslintrc/0.4.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "155 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/sade",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/sade"
+  },
+  "156 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/@lukeed%2Fcsprng",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@lukeed%2Fcsprng"
+  },
+  "157 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/@humanwhocodes%2Fconfig-array",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@humanwhocodes%2Fconfig-array"
+  },
+  "158 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/ajv",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/ajv"
+  },
+  "159 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/cross-spawn",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/cross-spawn"
+  },
+  "160 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/debug",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/debug"
+  },
+  "161 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/enquirer",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/enquirer"
+  },
+  "162 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/escape-string-regexp",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/escape-string-regexp"
+  },
+  "163 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/sade/1.7.4",
+    "wanted": {
+      "dependentId": "/@sveltejs/kit/1.0.0-next.137",
+      "name": "sade",
+      "rawSpec": "^1.7.4"
+    }
+  },
+  "164 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sade/1.7.4",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "165 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/enquirer/2.3.6",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "enquirer",
+      "rawSpec": "^2.3.5"
+    }
+  },
+  "166 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/enquirer/2.3.6",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "167 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sade/1.7.4",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "168 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/enquirer/2.3.6",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "169 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/escape-string-regexp/4.0.0",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "escape-string-regexp",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "170 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/escape-string-regexp/4.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "171 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/require-relative/0.8.7",
+    "wanted": {
+      "dependentId": "/@sveltejs/vite-plugin-svelte/1.0.0-next.14",
+      "name": "require-relative",
+      "rawSpec": "^0.8.7"
+    }
+  },
+  "172 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/require-relative/0.8.7",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "173 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/require-relative/0.8.7",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "174 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/escape-string-regexp/4.0.0",
+    "size": 2017,
+    "status": "started"
+  },
+  "175 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/escape-string-regexp/4.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "176 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fsevents/2.3.2",
+    "wanted": {
+      "dependentId": "/vite/2.4.3",
+      "name": "fsevents",
+      "rawSpec": "~2.3.2"
+    }
+  },
+  "177 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fsevents/2.3.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "178 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fsevents/2.3.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "179 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-hmr/0.14.7",
+    "wanted": {
+      "dependentId": "/@sveltejs/vite-plugin-svelte/1.0.0-next.14",
+      "name": "svelte-hmr",
+      "rawSpec": "^0.14.7"
+    }
+  },
+  "180 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-hmr/0.14.7",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "181 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/magic-string/0.25.7",
+    "wanted": {
+      "dependentId": "/@sveltejs/vite-plugin-svelte/1.0.0-next.14",
+      "name": "magic-string",
+      "rawSpec": "^0.25.7"
+    }
+  },
+  "182 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/magic-string/0.25.7",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "183 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/mri/1.1.6",
+    "wanted": {
+      "dependentId": "/sade/1.7.4",
+      "name": "mri",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "184 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mri/1.1.6",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "185 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-hmr/0.14.7",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "186 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mri/1.1.6",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "187 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/magic-string/0.25.7",
+    "size": 75570,
+    "status": "started"
+  },
+  "188 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/esbuild/0.12.15",
+    "wanted": {
+      "dependentId": "/vite/2.4.3",
+      "name": "esbuild",
+      "rawSpec": "^0.12.8"
+    }
+  },
+  "189 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esbuild/0.12.15",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "190 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esbuild/0.12.15",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "191 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/magic-string/0.25.7",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "192 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/rollup/2.54.0",
+    "wanted": {
+      "dependentId": "/vite/2.4.3",
+      "name": "rollup",
+      "rawSpec": "^2.38.5"
+    }
+  },
+  "193 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rollup/2.54.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "194 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/rollup/2.54.0",
+    "size": 1091143,
+    "status": "started"
+  },
+  "195 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rollup/2.54.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "196 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@lukeed/csprng/1.0.0",
+    "wanted": {
+      "dependentId": "/@lukeed/uuid/2.0.0",
+      "name": "@lukeed/csprng",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "197 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@lukeed/csprng/1.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "198 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@lukeed/csprng/1.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "199 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ajv/6.12.6",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "ajv",
+      "rawSpec": "^6.10.0"
+    }
+  },
+  "200 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ajv/6.12.6",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "201 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ajv/6.12.6",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "202 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/@humanwhocodes%2Fconfig-array",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@humanwhocodes%2Fconfig-array"
+  },
+  "203 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/cross-spawn",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/cross-spawn"
+  },
+  "204 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/debug",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/debug"
+  },
+  "205 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/postcss",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/postcss"
+  },
+  "206 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/resolve",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/resolve"
+  },
+  "207 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/@rollup%2Fpluginutils",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@rollup%2Fpluginutils"
+  },
+  "208 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/debug",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/debug"
+  },
+  "209 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/kleur",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/kleur"
+  },
+  "210 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/debug/4.3.2",
+    "wanted": {
+      "dependentId": "/@sveltejs/vite-plugin-svelte/1.0.0-next.14",
+      "name": "debug",
+      "rawSpec": "^4.3.2"
+    }
+  },
+  "211 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/debug/4.3.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "212 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/debug/4.3.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "213 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/resolve/1.20.0",
+    "wanted": {
+      "dependentId": "/vite/2.4.3",
+      "name": "resolve",
+      "rawSpec": "^1.20.0"
+    }
+  },
+  "214 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve/1.20.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "215 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve/1.20.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "216 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/postcss/8.3.6",
+    "wanted": {
+      "dependentId": "/vite/2.4.3",
+      "name": "postcss",
+      "rawSpec": "^8.3.5"
+    }
+  },
+  "217 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss/8.3.6",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "218 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fsevents/2.3.2",
+    "wanted": {
+      "dependentId": "/rollup/2.54.0",
+      "name": "fsevents",
+      "rawSpec": "~2.3.2"
+    }
+  },
+  "219 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss/8.3.6",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "220 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-core-module/2.5.0",
+    "wanted": {
+      "dependentId": "/resolve/1.20.0",
+      "name": "is-core-module",
+      "rawSpec": "^2.2.0"
+    }
+  },
+  "221 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-core-module/2.5.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "222 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/colorette/1.2.2",
+    "wanted": {
+      "dependentId": "/postcss/8.3.6",
+      "name": "colorette",
+      "rawSpec": "^1.2.2"
+    }
+  },
+  "223 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/colorette/1.2.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "224 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-parse/1.0.7",
+    "wanted": {
+      "dependentId": "/resolve/1.20.0",
+      "name": "path-parse",
+      "rawSpec": "^1.0.6"
+    }
+  },
+  "225 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-parse/1.0.7",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "226 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/colorette/1.2.2",
+    "size": 3545,
+    "status": "started"
+  },
+  "227 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/is-core-module/2.5.0",
+    "size": 6925,
+    "status": "started"
+  },
+  "228 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/colorette/1.2.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "229 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-core-module/2.5.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "230 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/has/1.0.3",
+    "wanted": {
+      "dependentId": "/is-core-module/2.5.0",
+      "name": "has",
+      "rawSpec": "^1.0.3"
+    }
+  },
+  "231 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has/1.0.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "232 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/has/1.0.3",
+    "size": 1553,
+    "status": "started"
+  },
+  "233 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has/1.0.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "234 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/function-bind/1.1.1",
+    "wanted": {
+      "dependentId": "/has/1.0.3",
+      "name": "function-bind",
+      "rawSpec": "^1.1.1"
+    }
+  },
+  "235 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/function-bind/1.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "236 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/function-bind/1.1.1",
+    "size": 6301,
+    "status": "started"
+  },
+  "237 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/function-bind/1.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "238 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@rollup/pluginutils/4.1.1",
+    "wanted": {
+      "dependentId": "/@sveltejs/vite-plugin-svelte/1.0.0-next.14",
+      "name": "@rollup/pluginutils",
+      "rawSpec": "^4.1.1"
+    }
+  },
+  "239 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@rollup/pluginutils/4.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "240 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@rollup/pluginutils/4.1.1",
+    "size": 10407,
+    "status": "started"
+  },
+  "241 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@rollup/pluginutils/4.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "242 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/source-map-js/0.6.2",
+    "wanted": {
+      "dependentId": "/postcss/8.3.6",
+      "name": "source-map-js",
+      "rawSpec": "^0.6.2"
+    }
+  },
+  "243 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/source-map-js/0.6.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "244 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/source-map-js/0.6.2",
+    "size": 184341,
+    "status": "started"
+  },
+  "245 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/source-map-js/0.6.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "246 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cross-spawn/7.0.3",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "cross-spawn",
+      "rawSpec": "^7.0.2"
+    }
+  },
+  "247 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cross-spawn/7.0.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "248 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cross-spawn/7.0.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "249 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@humanwhocodes/config-array/0.5.0",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "@humanwhocodes/config-array",
+      "rawSpec": "^0.5.0"
+    }
+  },
+  "250 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@humanwhocodes/config-array/0.5.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "251 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@humanwhocodes/config-array/0.5.0",
+    "size": 11148,
+    "status": "started"
+  },
+  "252 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@humanwhocodes/config-array/0.5.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "253 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/debug/4.3.2",
+    "wanted": {
+      "dependentId": "/eslint/7.31.0",
+      "name": "debug",
+      "rawSpec": "^4.0.1"
+    }
+  },
+  "254 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-visitor-keys/1.3.0",
+    "wanted": {
+      "dependentId": "/eslint-utils/2.1.0",
+      "name": "eslint-visitor-keys",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "255 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-visitor-keys/1.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "256 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-visitor-keys/1.3.0",
+    "wanted": {
+      "dependentId": "/espree/7.3.1",
+      "name": "eslint-visitor-keys",
+      "rawSpec": "^1.3.0"
+    }
+  },
+  "257 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/esutils/2.0.3",
+    "wanted": {
+      "dependentId": "/doctrine/3.0.0",
+      "name": "esutils",
+      "rawSpec": "^2.0.2"
+    }
+  },
+  "258 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/highlight/7.14.5",
+    "wanted": {
+      "dependentId": "/@babel/code-frame/7.12.11",
+      "name": "@babel/highlight",
+      "rawSpec": "^7.10.4"
+    }
+  },
+  "259 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/highlight/7.14.5",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "260 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/type-fest/0.20.2",
+    "wanted": {
+      "dependentId": "/globals/13.10.0",
+      "name": "type-fest",
+      "rawSpec": "^0.20.2"
+    }
+  },
+  "261 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/type-fest/0.20.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "262 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/acorn-jsx/5.3.2",
+    "wanted": {
+      "dependentId": "/espree/7.3.1",
+      "name": "acorn-jsx",
+      "rawSpec": "^5.3.1"
+    }
+  },
+  "263 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/acorn-jsx/5.3.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "264 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/supports-color/7.2.0",
+    "wanted": {
+      "dependentId": "/chalk/4.1.1",
+      "name": "supports-color",
+      "rawSpec": "^7.1.0"
+    }
+  },
+  "265 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/supports-color/7.2.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "266 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/resolve-from/4.0.0",
+    "wanted": {
+      "dependentId": "/import-fresh/3.3.0",
+      "name": "resolve-from",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "267 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve-from/4.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "268 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/eslint-visitor-keys/1.3.0",
+    "size": 7823,
+    "status": "started"
+  },
+  "269 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-visitor-keys/1.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "270 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/type-fest/0.20.2",
+    "size": 37225,
+    "status": "started"
+  },
+  "271 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-extglob/2.1.1",
+    "wanted": {
+      "dependentId": "/is-glob/4.0.1",
+      "name": "is-extglob",
+      "rawSpec": "^2.1.1"
+    }
+  },
+  "272 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-extglob/2.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "273 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/parent-module/1.0.1",
+    "wanted": {
+      "dependentId": "/import-fresh/3.3.0",
+      "name": "parent-module",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "274 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/parent-module/1.0.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "275 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prelude-ls/1.2.1",
+    "wanted": {
+      "dependentId": "/levn/0.4.1",
+      "name": "prelude-ls",
+      "rawSpec": "^1.2.1"
+    }
+  },
+  "276 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prelude-ls/1.2.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "277 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@babel/highlight/7.14.5",
+    "size": 2349,
+    "status": "started"
+  },
+  "278 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/supports-color/7.2.0",
+    "size": 3210,
+    "status": "started"
+  },
+  "279 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/highlight/7.14.5",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "280 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/supports-color/7.2.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "281 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/type-fest/0.20.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "282 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/resolve-from/4.0.0",
+    "size": 2149,
+    "status": "started"
+  },
+  "283 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/type-check/0.4.0",
+    "wanted": {
+      "dependentId": "/levn/0.4.1",
+      "name": "type-check",
+      "rawSpec": "~0.4.0"
+    }
+  },
+  "284 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/type-check/0.4.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "285 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve-from/4.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "286 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/is-extglob/2.1.1",
+    "size": 2663,
+    "status": "started"
+  },
+  "287 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/prelude-ls/1.2.1",
+    "size": 9408,
+    "status": "started"
+  },
+  "288 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/parent-module/1.0.1",
+    "size": 2008,
+    "status": "started"
+  },
+  "289 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prelude-ls/1.2.1",
+    "wanted": {
+      "dependentId": "/optionator/0.9.1",
+      "name": "prelude-ls",
+      "rawSpec": "^1.2.1"
+    }
+  },
+  "290 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/argparse/1.0.10",
+    "wanted": {
+      "dependentId": "/js-yaml/3.14.1",
+      "name": "argparse",
+      "rawSpec": "^1.0.7"
+    }
+  },
+  "291 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/argparse/1.0.10",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "292 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/type-check/0.4.0",
+    "wanted": {
+      "dependentId": "/optionator/0.9.1",
+      "name": "type-check",
+      "rawSpec": "^0.4.0"
+    }
+  },
+  "293 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-extglob/2.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "294 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/parent-module/1.0.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "295 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prelude-ls/1.2.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "296 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/brace-expansion/1.1.11",
+    "wanted": {
+      "dependentId": "/minimatch/3.0.4",
+      "name": "brace-expansion",
+      "rawSpec": "^1.1.7"
+    }
+  },
+  "297 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/brace-expansion/1.1.11",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "298 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/esprima/4.0.1",
+    "wanted": {
+      "dependentId": "/js-yaml/3.14.1",
+      "name": "esprima",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "299 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esprima/4.0.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "300 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/type-check/0.4.0",
+    "size": 6779,
+    "status": "started"
+  },
+  "301 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/type-check/0.4.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "302 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/deep-is/0.1.3",
+    "wanted": {
+      "dependentId": "/optionator/0.9.1",
+      "name": "deep-is",
+      "rawSpec": "^0.1.3"
+    }
+  },
+  "303 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/deep-is/0.1.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "304 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/levn/0.4.1",
+    "wanted": {
+      "dependentId": "/optionator/0.9.1",
+      "name": "levn",
+      "rawSpec": "^0.4.1"
+    }
+  },
+  "305 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/word-wrap/1.2.3",
+    "wanted": {
+      "dependentId": "/optionator/0.9.1",
+      "name": "word-wrap",
+      "rawSpec": "^1.2.3"
+    }
+  },
+  "306 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/word-wrap/1.2.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "307 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/argparse/1.0.10",
+    "size": 29761,
+    "status": "started"
+  },
+  "308 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/argparse/1.0.10",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "309 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/esprima/4.0.1",
+    "size": 52078,
+    "status": "started"
+  },
+  "310 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/deep-is/0.1.3",
+    "size": 3487,
+    "status": "started"
+  },
+  "311 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fast-levenshtein/2.0.6",
+    "wanted": {
+      "dependentId": "/optionator/0.9.1",
+      "name": "fast-levenshtein",
+      "rawSpec": "^2.0.6"
+    }
+  },
+  "312 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fast-levenshtein/2.0.6",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "313 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-regex/5.0.0",
+    "wanted": {
+      "dependentId": "/strip-ansi/6.0.0",
+      "name": "ansi-regex",
+      "rawSpec": "^5.0.0"
+    }
+  },
+  "314 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-regex/5.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "315 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ajv/8.6.2",
+    "wanted": {
+      "dependentId": "/table/6.7.1",
+      "name": "ajv",
+      "rawSpec": "^8.0.1"
+    }
+  },
+  "316 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ajv/8.6.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "317 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/deep-is/0.1.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "318 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/brace-expansion/1.1.11",
+    "size": 4239,
+    "status": "started"
+  },
+  "319 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esprima/4.0.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "320 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/brace-expansion/1.1.11",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "321 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/word-wrap/1.2.3",
+    "size": 4094,
+    "status": "started"
+  },
+  "322 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/word-wrap/1.2.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "323 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lru-cache/6.0.0",
+    "wanted": {
+      "dependentId": "/semver/7.3.5",
+      "name": "lru-cache",
+      "rawSpec": "^6.0.0"
+    }
+  },
+  "324 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lru-cache/6.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "325 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lodash.clonedeep/4.5.0",
+    "wanted": {
+      "dependentId": "/table/6.7.1",
+      "name": "lodash.clonedeep",
+      "rawSpec": "^4.5.0"
+    }
+  },
+  "326 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash.clonedeep/4.5.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "327 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/fast-levenshtein/2.0.6",
+    "size": 3699,
+    "status": "started"
+  },
+  "328 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fast-levenshtein/2.0.6",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "329 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/ajv/8.6.2",
+    "size": 215486,
+    "status": "started"
+  },
+  "330 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/ansi-regex/5.0.0",
+    "size": 2821,
+    "status": "started"
+  },
+  "331 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-regex/5.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "332 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/slice-ansi/4.0.0",
+    "wanted": {
+      "dependentId": "/table/6.7.1",
+      "name": "slice-ansi",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "333 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/slice-ansi/4.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "334 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ajv/6.12.6",
+    "wanted": {
+      "dependentId": "/@eslint/eslintrc/0.4.3",
+      "name": "ajv",
+      "rawSpec": "^6.12.4"
+    }
+  },
+  "335 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/debug/4.3.2",
+    "wanted": {
+      "dependentId": "/@eslint/eslintrc/0.4.3",
+      "name": "debug",
+      "rawSpec": "^4.1.1"
+    }
+  },
+  "336 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lodash.truncate/4.4.2",
+    "wanted": {
+      "dependentId": "/table/6.7.1",
+      "name": "lodash.truncate",
+      "rawSpec": "^4.4.2"
+    }
+  },
+  "337 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash.truncate/4.4.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "338 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/lru-cache/6.0.0",
+    "size": 5788,
+    "status": "started"
+  },
+  "339 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/strip-ansi/6.0.0",
+    "wanted": {
+      "dependentId": "/table/6.7.1",
+      "name": "strip-ansi",
+      "rawSpec": "^6.0.0"
+    }
+  },
+  "340 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lru-cache/6.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "341 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/string-width/4.2.2",
+    "wanted": {
+      "dependentId": "/table/6.7.1",
+      "name": "string-width",
+      "rawSpec": "^4.2.0"
+    }
+  },
+  "342 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string-width/4.2.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "343 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ajv/8.6.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "344 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/slice-ansi/4.0.0",
+    "size": 2979,
+    "status": "started"
+  },
+  "345 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/lodash.truncate/4.4.2",
+    "size": 6255,
+    "status": "started"
+  },
+  "346 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/slice-ansi/4.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "347 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash.truncate/4.4.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "348 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/globals/13.10.0",
+    "wanted": {
+      "dependentId": "/@eslint/eslintrc/0.4.3",
+      "name": "globals",
+      "rawSpec": "^13.9.0"
+    }
+  },
+  "349 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/espree/7.3.1",
+    "wanted": {
+      "dependentId": "/@eslint/eslintrc/0.4.3",
+      "name": "espree",
+      "rawSpec": "^7.3.0"
+    }
+  },
+  "350 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ignore/4.0.6",
+    "wanted": {
+      "dependentId": "/@eslint/eslintrc/0.4.3",
+      "name": "ignore",
+      "rawSpec": "^4.0.6"
+    }
+  },
+  "351 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/string-width/4.2.2",
+    "size": 2381,
+    "status": "started"
+  },
+  "352 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string-width/4.2.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "353 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/import-fresh/3.3.0",
+    "wanted": {
+      "dependentId": "/@eslint/eslintrc/0.4.3",
+      "name": "import-fresh",
+      "rawSpec": "^3.2.1"
+    }
+  },
+  "354 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/strip-json-comments/3.1.1",
+    "wanted": {
+      "dependentId": "/@eslint/eslintrc/0.4.3",
+      "name": "strip-json-comments",
+      "rawSpec": "^3.1.1"
+    }
+  },
+  "355 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/js-yaml/3.14.1",
+    "wanted": {
+      "dependentId": "/@eslint/eslintrc/0.4.3",
+      "name": "js-yaml",
+      "rawSpec": "^3.13.1"
+    }
+  },
+  "356 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/minimatch/3.0.4",
+    "wanted": {
+      "dependentId": "/@eslint/eslintrc/0.4.3",
+      "name": "minimatch",
+      "rawSpec": "^3.0.4"
+    }
+  },
+  "357 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-colors/4.1.1",
+    "wanted": {
+      "dependentId": "/enquirer/2.3.6",
+      "name": "ansi-colors",
+      "rawSpec": "^4.1.1"
+    }
+  },
+  "358 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-colors/4.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "359 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fast-deep-equal/3.1.3",
+    "wanted": {
+      "dependentId": "/ajv/6.12.6",
+      "name": "fast-deep-equal",
+      "rawSpec": "^3.1.1"
+    }
+  },
+  "360 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/json-schema-traverse/0.4.1",
+    "wanted": {
+      "dependentId": "/ajv/6.12.6",
+      "name": "json-schema-traverse",
+      "rawSpec": "^0.4.1"
+    }
+  },
+  "361 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/json-schema-traverse/0.4.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "362 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/uri-js/4.4.1",
+    "wanted": {
+      "dependentId": "/ajv/6.12.6",
+      "name": "uri-js",
+      "rawSpec": "^4.2.2"
+    }
+  },
+  "363 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/uri-js/4.4.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "364 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fast-json-stable-stringify/2.1.0",
+    "wanted": {
+      "dependentId": "/ajv/6.12.6",
+      "name": "fast-json-stable-stringify",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "365 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fast-json-stable-stringify/2.1.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "366 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-key/3.1.1",
+    "wanted": {
+      "dependentId": "/cross-spawn/7.0.3",
+      "name": "path-key",
+      "rawSpec": "^3.1.0"
+    }
+  },
+  "367 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-key/3.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "368 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/shebang-command/2.0.0",
+    "wanted": {
+      "dependentId": "/cross-spawn/7.0.3",
+      "name": "shebang-command",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "369 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-command/2.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "370 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/ansi-colors/4.1.1",
+    "size": 8180,
+    "status": "started"
+  },
+  "371 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-colors/4.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "372 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/which/2.0.2",
+    "wanted": {
+      "dependentId": "/cross-spawn/7.0.3",
+      "name": "which",
+      "rawSpec": "^2.0.1"
+    }
+  },
+  "373 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which/2.0.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "374 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/json-schema-traverse/0.4.1",
+    "size": 5141,
+    "status": "started"
+  },
+  "375 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/uri-js/4.4.1",
+    "size": 132003,
+    "status": "started"
+  },
+  "376 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/json-schema-traverse/0.4.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "377 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/fast-json-stable-stringify/2.1.0",
+    "size": 6318,
+    "status": "started"
+  },
+  "378 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/debug/4.3.2",
+    "wanted": {
+      "dependentId": "/@humanwhocodes/config-array/0.5.0",
+      "name": "debug",
+      "rawSpec": "^4.1.1"
+    }
+  },
+  "379 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/minimatch/3.0.4",
+    "wanted": {
+      "dependentId": "/@humanwhocodes/config-array/0.5.0",
+      "name": "minimatch",
+      "rawSpec": "^3.0.4"
+    }
+  },
+  "380 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fast-json-stable-stringify/2.1.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "381 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/path-key/3.1.1",
+    "size": 2258,
+    "status": "started"
+  },
+  "382 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-key/3.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "383 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/shebang-command/2.0.0",
+    "size": 1506,
+    "status": "started"
+  },
+  "384 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-command/2.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "385 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@humanwhocodes/object-schema/1.2.0",
+    "wanted": {
+      "dependentId": "/@humanwhocodes/config-array/0.5.0",
+      "name": "@humanwhocodes/object-schema",
+      "rawSpec": "^1.2.0"
+    }
+  },
+  "386 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@humanwhocodes/object-schema/1.2.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "387 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/which/2.0.2",
+    "size": 4496,
+    "status": "started"
+  },
+  "388 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prelude-ls/1.2.1",
+    "wanted": {
+      "dependentId": "/type-check/0.4.0",
+      "name": "prelude-ls",
+      "rawSpec": "^1.2.1"
+    }
+  },
+  "389 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/uri-js/4.4.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "390 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which/2.0.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "391 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/helper-validator-identifier/7.14.8",
+    "wanted": {
+      "dependentId": "/@babel/highlight/7.14.5",
+      "name": "@babel/helper-validator-identifier",
+      "rawSpec": "^7.14.5"
+    }
+  },
+  "392 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-validator-identifier/7.14.8",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "393 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/2.4.2",
+    "wanted": {
+      "dependentId": "/@babel/highlight/7.14.5",
+      "name": "chalk",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "394 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/2.4.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "395 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/callsites/3.1.0",
+    "wanted": {
+      "dependentId": "/parent-module/1.0.1",
+      "name": "callsites",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "396 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/callsites/3.1.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "397 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/js-tokens/4.0.0",
+    "wanted": {
+      "dependentId": "/@babel/highlight/7.14.5",
+      "name": "js-tokens",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "398 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/js-tokens/4.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "399 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@humanwhocodes/object-schema/1.2.0",
+    "size": 7758,
+    "status": "started"
+  },
+  "400 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@humanwhocodes/object-schema/1.2.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "401 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/concat-map/0.0.1",
+    "wanted": {
+      "dependentId": "/brace-expansion/1.1.11",
+      "name": "concat-map",
+      "rawSpec": "0.0.1"
+    }
+  },
+  "402 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/concat-map/0.0.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "403 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/balanced-match/1.0.2",
+    "wanted": {
+      "dependentId": "/brace-expansion/1.1.11",
+      "name": "balanced-match",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "404 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/balanced-match/1.0.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "405 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@babel/helper-validator-identifier/7.14.8",
+    "size": 7162,
+    "status": "started"
+  },
+  "406 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-validator-identifier/7.14.8",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "407 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/chalk/2.4.2",
+    "size": 9865,
+    "status": "started"
+  },
+  "408 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fast-deep-equal/3.1.3",
+    "wanted": {
+      "dependentId": "/ajv/8.6.2",
+      "name": "fast-deep-equal",
+      "rawSpec": "^3.1.1"
+    }
+  },
+  "409 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/json-schema-traverse/1.0.0",
+    "wanted": {
+      "dependentId": "/ajv/8.6.2",
+      "name": "json-schema-traverse",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "410 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/json-schema-traverse/1.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "411 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/2.4.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "412 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/callsites/3.1.0",
+    "size": 2433,
+    "status": "started"
+  },
+  "413 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/callsites/3.1.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "414 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/yallist/4.0.0",
+    "wanted": {
+      "dependentId": "/lru-cache/6.0.0",
+      "name": "yallist",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "415 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/yallist/4.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "416 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/uri-js/4.4.1",
+    "wanted": {
+      "dependentId": "/ajv/8.6.2",
+      "name": "uri-js",
+      "rawSpec": "^4.2.2"
+    }
+  },
+  "417 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/js-tokens/4.0.0",
+    "size": 6542,
+    "status": "started"
+  },
+  "418 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/sprintf-js/1.0.3",
+    "wanted": {
+      "dependentId": "/argparse/1.0.10",
+      "name": "sprintf-js",
+      "rawSpec": "~1.0.2"
+    }
+  },
+  "419 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sprintf-js/1.0.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "420 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/js-tokens/4.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "421 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/balanced-match/1.0.2",
+    "size": 2668,
+    "status": "started"
+  },
+  "422 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/balanced-match/1.0.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "423 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/require-from-string/2.0.2",
+    "wanted": {
+      "dependentId": "/ajv/8.6.2",
+      "name": "require-from-string",
+      "rawSpec": "^2.0.2"
+    }
+  },
+  "424 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/require-from-string/2.0.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "425 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/json-schema-traverse/1.0.0",
+    "size": 6074,
+    "status": "started"
+  },
+  "426 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/json-schema-traverse/1.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "427 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/sprintf-js/1.0.3",
+    "size": 10330,
+    "status": "started"
+  },
+  "428 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sprintf-js/1.0.3",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "429 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/yallist/4.0.0",
+    "size": 4494,
+    "status": "started"
+  },
+  "430 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/yallist/4.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "431 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/astral-regex/2.0.0",
+    "wanted": {
+      "dependentId": "/slice-ansi/4.0.0",
+      "name": "astral-regex",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "432 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/astral-regex/2.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "433 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/strip-ansi/6.0.0",
+    "wanted": {
+      "dependentId": "/string-width/4.2.2",
+      "name": "strip-ansi",
+      "rawSpec": "^6.0.0"
+    }
+  },
+  "434 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-fullwidth-code-point/3.0.0",
+    "wanted": {
+      "dependentId": "/slice-ansi/4.0.0",
+      "name": "is-fullwidth-code-point",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "435 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-fullwidth-code-point/3.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "436 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-fullwidth-code-point/3.0.0",
+    "wanted": {
+      "dependentId": "/string-width/4.2.2",
+      "name": "is-fullwidth-code-point",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "437 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/require-from-string/2.0.2",
+    "size": 1816,
+    "status": "started"
+  },
+  "438 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/require-from-string/2.0.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "439 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/emoji-regex/8.0.0",
+    "wanted": {
+      "dependentId": "/string-width/4.2.2",
+      "name": "emoji-regex",
+      "rawSpec": "^8.0.0"
+    }
+  },
+  "440 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/emoji-regex/8.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "441 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/punycode/2.1.1",
+    "wanted": {
+      "dependentId": "/uri-js/4.4.1",
+      "name": "punycode",
+      "rawSpec": "^2.1.0"
+    }
+  },
+  "442 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/punycode/2.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "443 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/shebang-regex/3.0.0",
+    "wanted": {
+      "dependentId": "/shebang-command/2.0.0",
+      "name": "shebang-regex",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "444 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-regex/3.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "445 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/is-fullwidth-code-point/3.0.0",
+    "size": 2169,
+    "status": "started"
+  },
+  "446 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-fullwidth-code-point/3.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "447 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/astral-regex/2.0.0",
+    "size": 1803,
+    "status": "started"
+  },
+  "448 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/astral-regex/2.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "449 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/isexe/2.0.0",
+    "wanted": {
+      "dependentId": "/which/2.0.2",
+      "name": "isexe",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "450 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/isexe/2.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "451 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/shebang-regex/3.0.0",
+    "size": 1503,
+    "status": "started"
+  },
+  "452 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/shebang-regex/3.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "453 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/punycode/2.1.1",
+    "size": 7270,
+    "status": "started"
+  },
+  "454 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/supports-color/5.5.0",
+    "wanted": {
+      "dependentId": "/chalk/2.4.2",
+      "name": "supports-color",
+      "rawSpec": "^5.3.0"
+    }
+  },
+  "455 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/supports-color/5.5.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "456 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/punycode/2.1.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "457 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/escape-string-regexp/1.0.5",
+    "wanted": {
+      "dependentId": "/chalk/2.4.2",
+      "name": "escape-string-regexp",
+      "rawSpec": "^1.0.5"
+    }
+  },
+  "458 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/escape-string-regexp/1.0.5",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "459 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/emoji-regex/8.0.0",
+    "size": 6664,
+    "status": "started"
+  },
+  "460 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/emoji-regex/8.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "461 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/acorn-jsx/5.3.2",
+    "size": 7635,
+    "status": "started"
+  },
+  "462 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/acorn-jsx/5.3.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "463 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/isexe/2.0.0",
+    "size": 3756,
+    "status": "started"
+  },
+  "464 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/isexe/2.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "465 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/supports-color/5.5.0",
+    "size": 3067,
+    "status": "started"
+  },
+  "466 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/supports-color/5.5.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "467 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/escape-string-regexp/1.0.5",
+    "size": 1578,
+    "status": "started"
+  },
+  "468 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/escape-string-regexp/1.0.5",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "469 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/lodash.clonedeep/4.5.0",
+    "size": 11629,
+    "status": "started"
+  },
+  "470 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash.clonedeep/4.5.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "471 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/concat-map/0.0.1",
+    "size": 2263,
+    "status": "started"
+  },
+  "472 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/concat-map/0.0.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "473 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/kleur",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/kleur"
+  },
+  "474 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/nanoid",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/nanoid"
+  },
+  "475 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz",
+      "type": "request-timeout",
+      "attempts": 1,
+      "resource": "https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz"
+  },
+  "476 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/flat-cache/3.0.4",
+    "wanted": {
+      "dependentId": "/file-entry-cache/6.0.1",
+      "name": "flat-cache",
+      "rawSpec": "^3.0.4"
+    }
+  },
+  "477 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/flat-cache/3.0.4",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "478 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/estraverse/4.3.0",
+    "wanted": {
+      "dependentId": "/eslint-scope/5.1.1",
+      "name": "estraverse",
+      "rawSpec": "^4.1.1"
+    }
+  },
+  "479 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/estraverse/4.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "480 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/estraverse/5.2.0",
+    "wanted": {
+      "dependentId": "/esquery/1.4.0",
+      "name": "estraverse",
+      "rawSpec": "^5.1.0"
+    }
+  },
+  "481 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/estraverse/5.2.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "482 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/flatted/3.2.1",
+    "wanted": {
+      "dependentId": "/flat-cache/3.0.4",
+      "name": "flatted",
+      "rawSpec": "^3.1.0"
+    }
+  },
+  "483 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/flatted/3.2.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "484 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/estraverse/4.3.0",
+    "size": 7883,
+    "status": "started"
+  },
+  "485 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/estraverse/4.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "486 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/flatted/3.2.1",
+    "size": 57674,
+    "status": "started"
+  },
+  "487 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/flatted/3.2.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "488 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/estraverse/5.2.0",
+    "size": 8025,
+    "status": "started"
+  },
+  "489 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/estraverse/5.2.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "490 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/ansi-styles",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/ansi-styles"
+  },
+  "491 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/esrecurse",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/esrecurse"
+  },
+  "492 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/acorn",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/acorn"
+  },
+  "493 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/is-glob",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/is-glob"
+  },
+  "494 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/kleur/4.1.4",
+    "wanted": {
+      "dependentId": "/@sveltejs/vite-plugin-svelte/1.0.0-next.14",
+      "name": "kleur",
+      "rawSpec": "^4.1.4"
+    }
+  },
+  "495 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/kleur/4.1.4",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "496 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/kleur/4.1.4",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "found_in_store"
+  },
+  "497 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-styles/4.3.0",
+    "wanted": {
+      "dependentId": "/chalk/4.1.1",
+      "name": "ansi-styles",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "498 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/4.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "499 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-styles/4.3.0",
+    "wanted": {
+      "dependentId": "/slice-ansi/4.0.0",
+      "name": "ansi-styles",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "500 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-styles/3.2.1",
+    "wanted": {
+      "dependentId": "/chalk/2.4.2",
+      "name": "ansi-styles",
+      "rawSpec": "^3.2.1"
+    }
+  },
+  "501 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/3.2.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "502 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/esrecurse/4.3.0",
+    "wanted": {
+      "dependentId": "/eslint-scope/5.1.1",
+      "name": "esrecurse",
+      "rawSpec": "^4.3.0"
+    }
+  },
+  "503 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esrecurse/4.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "504 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/sourcemap-codec/1.4.8",
+    "wanted": {
+      "dependentId": "/magic-string/0.25.7",
+      "name": "sourcemap-codec",
+      "rawSpec": "^1.4.4"
+    }
+  },
+  "505 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sourcemap-codec/1.4.8",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "506 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/has-flag/4.0.0",
+    "wanted": {
+      "dependentId": "/supports-color/7.2.0",
+      "name": "has-flag",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "507 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-flag/4.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "508 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/has-flag/3.0.0",
+    "wanted": {
+      "dependentId": "/supports-color/5.5.0",
+      "name": "has-flag",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "509 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-flag/3.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "510 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/estraverse/5.2.0",
+    "wanted": {
+      "dependentId": "/esrecurse/4.3.0",
+      "name": "estraverse",
+      "rawSpec": "^5.2.0"
+    }
+  },
+  "511 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/ansi-styles/3.2.1",
+    "size": 3808,
+    "status": "started"
+  },
+  "512 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/esrecurse/4.3.0",
+    "size": 4053,
+    "status": "started"
+  },
+  "513 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/3.2.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "514 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esrecurse/4.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "515 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ms/2.1.2",
+    "wanted": {
+      "dependentId": "/debug/4.3.2",
+      "name": "ms",
+      "rawSpec": "2.1.2"
+    }
+  },
+  "516 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ms/2.1.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "517 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/has-flag/3.0.0",
+    "size": 1751,
+    "status": "started"
+  },
+  "518 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-flag/3.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "519 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/sourcemap-codec/1.4.8",
+    "size": 7135,
+    "status": "started"
+  },
+  "520 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/ms/2.1.2",
+    "size": 3017,
+    "status": "started"
+  },
+  "521 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sourcemap-codec/1.4.8",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "522 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ms/2.1.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "523 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/nanoid",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/nanoid"
+  },
+  "524 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz",
+      "type": "request-timeout",
+      "attempts": 2,
+      "resource": "https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz"
+  },
+  "525 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/rimraf",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/rimraf"
+  },
+  "526 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/flat-cache/-/flat-cache-3.0.4.tgz",
+      "type": "request-timeout",
+      "attempts": 1,
+      "resource": "https://registry.npmjs.org/flat-cache/-/flat-cache-3.0.4.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/flat-cache/-/flat-cache-3.0.4.tgz"
+  },
+  "527 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/picomatch/2.3.0",
+    "wanted": {
+      "dependentId": "/@rollup/pluginutils/4.1.1",
+      "name": "picomatch",
+      "rawSpec": "^2.2.2"
+    }
+  },
+  "528 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/picomatch/2.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "529 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/ansi-styles/4.3.0",
+    "size": 5849,
+    "status": "started"
+  },
+  "530 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/4.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "531 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/picomatch/2.3.0",
+    "size": 23519,
+    "status": "started"
+  },
+  "532 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/picomatch/2.3.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "533 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/has-flag/4.0.0",
+    "size": 2206,
+    "status": "started"
+  },
+  "534 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has-flag/4.0.0",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "535 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/acorn",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/acorn"
+  },
+  "536 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/is-glob",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/is-glob"
+  },
+  "537 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/estree-walker",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/estree-walker"
+  },
+  "538 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/color-convert",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/color-convert"
+  },
+  "539 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/rimraf",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/rimraf"
+  },
+  "540 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/flat-cache/-/flat-cache-3.0.4.tgz",
+      "type": "request-timeout",
+      "attempts": 2,
+      "resource": "https://registry.npmjs.org/flat-cache/-/flat-cache-3.0.4.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/flat-cache/-/flat-cache-3.0.4.tgz"
+  },
+  "541 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/estree-walker/2.0.2",
+    "wanted": {
+      "dependentId": "/@rollup/pluginutils/4.1.1",
+      "name": "estree-walker",
+      "rawSpec": "^2.0.1"
+    }
+  },
+  "542 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/estree-walker/2.0.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "543 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/estree-walker/2.0.2",
+    "size": 8353,
+    "status": "started"
+  },
+  "544 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/estree-walker/2.0.2",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "545 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/acorn/7.4.1",
+    "wanted": {
+      "dependentId": "/espree/7.3.1",
+      "name": "acorn",
+      "rawSpec": "^7.4.0"
+    }
+  },
+  "546 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/acorn/7.4.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "resolved"
+  },
+  "547 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/acorn/7.4.1",
+    "size": 261243,
+    "status": "started"
+  },
+  "548 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/acorn/7.4.1",
+    "requester": "/Users/kaigroteluschen/Library/Mobile Documents/com~apple~CloudDocs/VS Code/ccbash-web/svelte-test/test",
+    "status": "fetched"
+  },
+  "549 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "network timeout at: https://registry.npmjs.org/color-convert",
+      "type": "request-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/color-convert"
+  },
+  "550 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 1,
+    "pkgsStack": [
+      {
+        "id": "registry.npmjs.org/@sveltejs/kit/1.0.0-next.137",
+        "name": "@sveltejs/kit",
+        "version": "1.0.0-next.137"
+      },
+      {
+        "id": "registry.npmjs.org/vite/2.4.3",
+        "name": "vite",
+        "version": "2.4.3"
+      },
+      {
+        "id": "registry.npmjs.org/postcss/8.3.6",
+        "name": "postcss",
+        "version": "8.3.6"
+      }
+    ],
+    "err": {
+      "name": "Error",
+      "message": "GET https://registry.npmjs.org/nanoid: network timeout at: https://registry.npmjs.org/nanoid",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "Error: GET https://registry.npmjs.org/nanoid: network timeout at: https://registry.npmjs.org/nanoid\n    at RetryOperation._fn (/Users/kaigroteluschen/.nvm/versions/node/v14.17.3/lib/node_modules/pnpm/dist/pnpm.cjs:79554:18)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at runNextTicks (internal/process/task_queues.js:64:3)\n    at processTimers (internal/timers.js:497:9)"
+    }
+  }
+}

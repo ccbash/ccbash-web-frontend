@@ -10,6 +10,7 @@ export async function get({ params }) {
         description
         image {
           url
+          alternativeText
         }
         display_services
         display_team
@@ -38,9 +39,7 @@ export async function get({ params }) {
           url
           alternativeText
         }
-        presented
-        mail
-        phone
+        title
         about
       }
     }
@@ -50,9 +49,7 @@ export async function get({ params }) {
     const result = await client.query({ query });
     return {
       status: 200,
-      body: {
-        data: result.data
-      }
+      body: result.data
     }
   } catch (err) {
     return {

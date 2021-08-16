@@ -5,6 +5,7 @@ export async function get({ params }) {
 
   const query = gql`
     query home {
+      
       homepage {	
         headline
         description
@@ -16,6 +17,7 @@ export async function get({ params }) {
         display_team
         display_latest
       }
+
       categories {
         name
         slug
@@ -32,6 +34,7 @@ export async function get({ params }) {
 	        alternativeText
         }
       }
+
       writers {
         uid
         name
@@ -41,6 +44,22 @@ export async function get({ params }) {
         }
         title
         about
+      }
+
+      articles(limit: 3, , sort: "created_at:desc") {
+        id
+        title
+        description
+        slug
+        image {
+          alternativeText
+          url
+          size
+        }
+        author {
+          name
+          uid
+        }
       }
     }
   `;

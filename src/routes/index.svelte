@@ -20,11 +20,13 @@
 <script>
 	import Category from '$lib/elements/home_categories.svelte';
 	import Team from '$lib/elements/home_team.svelte';
+	import Page from '$lib/elements/page.svelte';
 	import { variables } from '$lib/variables.js';
     export let homepage;
 	export let categories;
 	export let writers;
-	console.log(writers);
+	export let articles;
+	// console.log(writers);
 </script>
 
 <svelte:head>
@@ -47,11 +49,24 @@
 	{/each}
 
 	<h2>Das Team</h2>
-	{#each writers as member}
+	<div class="cc-row content-centered">
+		{#each writers as member}
 		<Team {...member} />
-	{/each}
+		{/each}
+	</div>
 
-	
+	<h2>Technologien</h2>
+
+	<div class="cc-row content-centered">
+		{#each articles as article}
+		<Page
+			link="{article.slug}"
+			image="{article.image}"
+			headline="{article.title}"
+			description="{article.description}"
+			/>
+		{/each}
+	</div>
 </div>
 
 
@@ -103,5 +118,12 @@
 		-webkit-hyphens: none;
 		-ms-hyphens: none;
 		hyphens: none; 
+	}
+	
+	.cc-row {
+		display: flex;
+		width:   100%;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 </style>

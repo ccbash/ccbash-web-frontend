@@ -258,3 +258,21 @@ Backgrounds and Colors
   border-style: initial;
   border-color: initial;
 }
+
+.content-centered {
+  justify-content: center !important;
+}
+
+.content-even {
+  justify-content: space-evenly !important;
+}
+
+.content-left {
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+
+.content-right {
+  justify-content: flex-end !important;
+  align-items: flex-end !important;
+}

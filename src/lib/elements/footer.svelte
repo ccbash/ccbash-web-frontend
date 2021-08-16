@@ -67,5 +67,24 @@
   </footer>
 
 <style>
+  .cc-row {
+    display: flex;
+    width:   100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
+  .cc-card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    width: 100%;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 400px) {
+    .cc-card {
+      width: 25%;
+    }
+  }
 </style>

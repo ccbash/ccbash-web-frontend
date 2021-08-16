@@ -8,18 +8,16 @@
     export let picture;
 </script>
 
-<div class="cc-row">
 
-    <div class="cc-page-width">   
-        <div class="page-image">
-            <img src="{variables.cmsurl + picture.url}" alt="{picture.alternativeText}">
-        </div>
-             
-        <div class="page-content">
-            <h3>{name}</h3>
-            {about}
-        </div> 
+<div class="cc-page-width">   
+    <div class="page-image">
+        <img src="{variables.cmsurl + picture.url}" alt="{picture.alternativeText}">
     </div>
+            
+    <div class="page-content">
+        <h3>{name}</h3>
+        {about}
+    </div> 
 </div>
 
 <style>

@@ -1,13 +1,14 @@
 <script>
   import { variables } from '$lib/variables.js';
+  export let type;
   export let link;
   export let image;
   export let headline;
   export let description;
 </script>
    
-<div class="cc-page">
-  <a href="{link}">
+<div class="page">
+  <a href="{type}/{link}">
     <img src="{variables.cmsurl + image.url}" alt="{image.alternativeText}">
     <h3>{headline}</h3>
     <p>{description}</p>
@@ -20,7 +21,7 @@
 CC Page
 ******************** */
 
-  .cc-page {
+  .page {
     display: flex;
     position: relative;
     flex: 0 0 auto;
@@ -31,38 +32,33 @@ CC Page
     transition: background-color 0.3s ease-in-out;
   }
 
-  .cc-page:hover {
+  .page:hover {
     background-color: rgba(0,0,0,0.1);
   }
 
-  .cc-page h3 {
+  .page h3 {
     margin: 0.5rem;
   }
 
-  .cc-page h4 {
-    color: rgb(50, 50, 50);  
-    font-size: 1.3rem;  
-    font-weight: 400;  
-    letter-spacing: 0px;
-    margin: 0.5rem;
-  }
-
-  .cc-page p {
+  .page p {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
 
-  .cc-page img {
+  .page img {
     border-radius: 6px;
     margin-bottom: 0.5rem;
     width: 75%;
   }
 
-  .cc-page.light h4 {  
-    color: rgb(225, 225, 225);  
+  .followme-link {
+    vertical-align: middle;
   }
 
-  .cc-page.light p {
-    color: rgb(225, 225, 225);  
+  .followme-link::before {
+    content: "\f0a9 ";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    margin-right: 0.3rem; 
   }
 </style>

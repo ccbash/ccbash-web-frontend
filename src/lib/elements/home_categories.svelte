@@ -2,12 +2,12 @@
 	import { variables } from '$lib/variables.js';
 
     export let name;
-    export let slug;
+    // export let slug;
     export let articles;
     export let description;
     export let color_schema;
     export let image;
-	console.log(articles)
+	// console.log(articles)
 </script>
 
 <div class="cc-block">
@@ -149,12 +149,6 @@
         margin-right: 0.5rem;
     }
 
-    .cc-page img {
-        border-radius: 6px;
-        margin-bottom: 0.5rem;
-        width: 75%;
-    }
-
     .cc-page.light h4 {  
         color: rgb(225, 225, 225);  
     }
@@ -169,29 +163,4 @@
         margin: 1rem;
     }
 
-    .cc-page-width .page-image {
-        align-self: center;
-        width: 100%;
-        max-width: 16rem;
-    }
-
-    .cc-page-width .page-image img {
-        border-radius: 6px;
-        width: 100%;
-    }
-
-    .cc-page-width .page-content {
-        align-self: center;
-        padding: 1rem;
-    }
-
-    @media screen and (min-width: 46rem) {
-        .cc-page-width {
-            flex-direction: row;
-        }
-
-        .cc-page-width:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-    }
 </style>

@@ -19,7 +19,7 @@
 
 <script>
 	import Category from '$lib/elements/home_categories.svelte';
-	import Team from '$lib/elements/home_team.svelte';
+	import Page_Width from '$lib/elements/page-width.svelte';
 	import Page from '$lib/elements/page.svelte';
 	import { variables } from '$lib/variables.js';
     export let homepage;
@@ -51,7 +51,11 @@
 	<h2>Das Team</h2>
 	<div class="cc-row content-centered">
 		{#each writers as member}
-		<Team {...member} />
+		<Page_Width
+			image="{member.picture}"
+			headline="{member.name}"
+			description="{member.about}" 
+		/>
 		{/each}
 	</div>
 
@@ -60,6 +64,7 @@
 	<div class="cc-row content-centered">
 		{#each articles as article}
 		<Page
+			type="article"
 			link="{article.slug}"
 			image="{article.image}"
 			headline="{article.title}"

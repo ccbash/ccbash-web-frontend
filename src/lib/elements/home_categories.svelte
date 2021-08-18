@@ -10,7 +10,7 @@
 	// console.log(articles)
 </script>
 
-<div class="cc-block">
+<div class="block">
 
     <div class="cc-hero-image">
         <img src="{variables.cmsurl + image.url}" alt="{image.alternativeText}"/>
@@ -23,7 +23,7 @@
         <p>{description}</p>
     </div>
 
-    <div class="cc-row {color_schema} content-even">
+    <div class="row {color_schema} content-even">
         {#each articles as article}
         <div class="cc-page {color_schema}">
             <a href="{article.slug}">
@@ -37,7 +37,8 @@
 </div>
 
 <style>
-    .cc-block {
+    .block {
+        width: 100%;
         position: relative;
         background-color: white;
         border-radius: 4px;
@@ -53,17 +54,29 @@
         -webkit-background-size: cover;
     }
 
+    .cc-row.light {
+        background-color:rgba(0, 0, 0, 0.6);
+    }
+    .row {
+        position: relative;
+        background-color:rgba(255, 255, 255, 0.8);
+		display: flex;
+
+		flex-direction: row;
+		flex-wrap: wrap;
+	}   
+
     .cc-hero-image {
         height: 100%;
+        position: absolute;  
     }
 
     .cc-hero-image img {
         bottom: 0px;
         left: 0px;
-        position: absolute;  
         right: 0px;
         top: 0px;
-        height: 100%;
+        width: 100%;
         object-fit: cover;
         z-index: 0;
     }
@@ -107,14 +120,6 @@
     
     .cc-inline-textbox.light p {
         color: rgb(245, 245, 245);
-    }
-
-    .cc-row {
-        background-color:rgba(255, 255, 255, 0.8);
-    }
-
-    .cc-row.light {
-        background-color:rgba(0, 0, 0, 0.6);
     }
 
     .cc-page {

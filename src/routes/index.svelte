@@ -42,14 +42,16 @@
 	</p>
 </div>
 
-<div class="cc-content">
+<div class="content">
 	<h2> Services by ccbash </h2>
+	<div class="row">
 	{#each categories as cat}
 		<Category {...cat} />
 	{/each}
+	</div>
 
 	<h2>Das Team</h2>
-	<div class="cc-row content-centered">
+	<div class="row">
 		{#each writers as member}
 		<Page_Width
 			image="{member.picture}"
@@ -60,8 +62,7 @@
 	</div>
 
 	<h2>Technologien</h2>
-
-	<div class="cc-row content-centered">
+	<div class="row">
 		{#each articles as article}
 		<Page
 			type="article"
@@ -76,6 +77,13 @@
 
 
 <style>
+	.content {
+		margin: 2.5rem auto 3rem;
+  		max-width: 65rem;
+  		width: 90%;
+  		background-color: rgb(250, 250, 250);
+	}
+
 	.cc-hero {
 		position: relative;
 		align-items: center;  
@@ -95,6 +103,7 @@
 
 	.cc-hero img {
 		position: relative;
+		height: 6rem;
 	}
 
 	.cc-hero h1 {
@@ -125,7 +134,8 @@
 		hyphens: none; 
 	}
 	
-	.cc-row {
+	.row {
+  		justify-content: center !important;
 		display: flex;
 		width:   100%;
 		flex-direction: row;

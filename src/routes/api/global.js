@@ -2,16 +2,21 @@ import { client } from '$lib/client.js';
 import { gql } from '@apollo/client/core/core.cjs.js';
 
 export async function get({ params }) {
-
   const query = gql`
-    query Categories {
+    query Global {
       global {
         favicon { 
           url
         }
+        address
+        contact
         siteName
         siteUrl
         Menu {
+          name
+          slug
+        }
+        Footer {
           name
           slug
         }
@@ -21,9 +26,7 @@ export async function get({ params }) {
         }
         socialnetworks {
           network
-          icon {
-            previewUrl
-          }
+          icon_class
           profilelink
         }
       }

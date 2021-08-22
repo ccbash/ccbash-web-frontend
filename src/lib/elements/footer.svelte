@@ -1,6 +1,6 @@
 <script>
-  import { set_now } from 'svelte/internal';
-  import logo from './ccbash_logo.svg';
+  import snarkdown from 'snarkdown'
+
   export let siteurl;
   export let address;
   export let contact;
@@ -30,25 +30,17 @@
         </div>
   
         <div class="cc-card">
-          <ul class="list-unstyled">
-            <li> {address} </li>
-            <li> Lehmbruckstr 18 </li>
-            <li> 10245 Berlin </li>  
-          </ul>
+          {@html snarkdown(address)}
         </div>
           
         <div class="cc-card">
-          <ul class="list-unstyled">
-            <li> {contact} </li>
-            <li> mail info@ccbash.de </li>
-            <li> web www.ccbash.de </li>
-          </ul>
+          {@html snarkdown(contact)}
         </div>
   
         <div class="cc-card">
           <ul class="list-unstyled">
             {#each footer as entry}
-            <li><a href="{entry.slug}" class="followme-link">{entry.name}</a></li>
+            <li><a href="{entry.slug}" sveltekit:prefetch class="followme-link">{entry.name}</a></li>
             {/each}
           </ul>
         </div>
@@ -81,6 +73,12 @@
     flex: 0 0 auto;
     width: 100%;
     align-items: center;
+    list-style: none;
+  }
+  
+  ul {
+    padding-left: 0px;
+    list-style: none;
   }
 
   @media screen and (min-width: 400px) {

@@ -1,32 +1,23 @@
-<script context="module">
-    export async function load( {fetch} ) {
-      const res = await fetch('/api/article/latest3' ); // fix that in dynamic
-      
-      if (res.ok) {
-        const data = await res.json();
-        return { 
-          props: data 
-        };
-      };
-  
-      return {
-        status: res.status,
-        error: new Error()
-      };
-    }
-  </script>
 
 <script>
-    import Page from '$lib/elements/page.svelte'
-    export let object;
-    export let articles;
+    import { onMount } from "svelte";
+    import Page from '$lib/elements/page.svelte';
 
-    console.log(articles);
+    let data = {};
+    let articles = [];
+    export let object;
+
+    onMount(async () => {
+		const res = await fetch('/api/article/latest.' + object.count );
+		data = await res.json();
+        articles = data.articles;
+	});
+
 </script>
-     
 
 <div class="row">
-    <h2>{object.headline}</h2>
+    <h2> {object.headline}</h2>
+
     {#each articles as article}
     <Page
         type="article"
@@ -34,8 +25,9 @@
         image="{article.image}"
         headline="{article.title}"
         description="{article.description}"
-    />
+        />
     {/each}
+
 </div>
   
 <style>

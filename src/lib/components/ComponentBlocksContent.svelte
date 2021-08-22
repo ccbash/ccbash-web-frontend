@@ -1,9 +1,11 @@
 <script>
+    import snarkdown from 'snarkdown';
+
     export let object;
 </script>
      
 <div class="cc-content single">
-    {object.content}
+    {@html snarkdown(object.content)}
 </div>
   
 <style>

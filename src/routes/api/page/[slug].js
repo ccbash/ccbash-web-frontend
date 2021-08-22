@@ -3,6 +3,7 @@ import { gql } from '@apollo/client/core/core.cjs.js';
 
 export async function get({ params }) {
     const { slug } = params;
+    console.log(slug);
     const query = gql`
     query PagesBySlug ($slug: String!) {
         pages (
@@ -10,16 +11,12 @@ export async function get({ params }) {
         ) {
                 slug
                 title
+                description
+                image {
+                    url
+                    alternativeText
+                }
                 outline {
-                    ... on ComponentBlocksHero {
-                        __typename
-                        title
-                        description
-                        image {
-                            url
-                            alternativeText
-                        }
-                    }
                     ... on ComponentBlocksContent {
                         __typename
                         content
@@ -27,6 +24,7 @@ export async function get({ params }) {
                     ... on ComponentBlocksServices {
                         __typename
                         headline
+                        services_only
                         categories(sort: "weight:asc") {
                             name
                             color_schema

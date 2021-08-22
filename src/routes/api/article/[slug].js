@@ -3,22 +3,24 @@ import { gql } from '@apollo/client/core/core.cjs.js';
 
 export async function get({ params }) {
     const { slug } = params;
+    console.log('Query API: article, Slug: ' + slug);
     const query = gql`
-        query ArticleBySlug ($slug: String!) {
-            articles (
-                where: {slug: $slug}
-            ) {
+    query ArticlesBySlug ($slug: String!) {
+        articles (
+            where: {slug: $slug}
+        ) {
                 slug
                 title
                 description
-                content
                 image {
-                    alternativeText
                     url
+                    alternativeText
                 }
-                author {
-                    name
-                    uid
+                outline {
+                    ... on ComponentBlocksContent {
+                        __typename
+                        content
+                    }
                 }
             }
         }

@@ -8,7 +8,7 @@
 </script>
    
 <div class="page">
-  <a href="{type}/{link}">
+  <a href="/{type}/{link}">
     <img src="{variables.cmsurl + image.url}" alt="{image.alternativeText}">
     <h3>{headline}</h3>
     <p>{description}</p>

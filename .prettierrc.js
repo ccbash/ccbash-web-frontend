@@ -1,12 +1,10 @@
-module.exports = {
-	arrowParens: 'avoid',
-	singleQuote: true,
-	printWidth: 90,
-	plugins: ['prettier-plugin-svelte'],
-	semi: false,
-	svelteSortOrder: 'options-styles-scripts-markup',
-	svelteStrictMode: false,
-	svelteBracketNewLine: true,
-	svelteIndentScriptAndStyle: true,
-	trailingComma: 'none'
-  }
+export const arrowParens = 'avoid';
+export const singleQuote = true;
+export const printWidth = 90;
+export const plugins = ['prettier-plugin-svelte'];
+export const semi = false;
+export const svelteSortOrder = 'options-styles-scripts-markup';
+export const svelteStrictMode = false;
+export const svelteBracketNewLine = true;
+export const svelteIndentScriptAndStyle = true;
+export const trailingComma = 'none';

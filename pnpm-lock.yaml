@@ -11,6 +11,7 @@ specifiers:
   eslint-config-prettier: ^8.3.0
   eslint-plugin-svelte3: ^3.2.0
   graphql: ^15.5.1
+  pretier: ^0.0.1
   prettier: ~2.3.2
   prettier-plugin-svelte: ^2.4.0
   snarkdown: ^2.0.0
@@ -22,11 +23,12 @@ dependencies:
   cookie: 0.4.1
   diff-match-patch: 1.0.5
   graphql: 15.5.1
+  pretier: 0.0.1
   snarkdown: 2.0.0
 
 devDependencies:
   '@apollo/client': 3.4.10_graphql@15.5.1
-  '@sveltejs/kit': 1.0.0-next.158_11461cee467ed643905de7a5f1f768f8
+  '@sveltejs/kit': 1.0.0-next.162_11461cee467ed643905de7a5f1f768f8
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   eslint-plugin-svelte3: 3.2.0_eslint@7.32.0+svelte@3.42.4
@@ -35,13 +37,21 @@ devDependencies:
   svelte: 3.42.4
 
 packages:
-
   /@apollo/client/3.4.10_graphql@15.5.1:
-    resolution: {integrity: sha1-zuntdbG7fzkcVdeTAOz4cJbll5I=, tarball: https://r.cnpmjs.org/@apollo/client/download/@apollo/client-3.4.10.tgz}
+    resolution:
+      {
+        integrity: sha1-zuntdbG7fzkcVdeTAOz4cJbll5I=,
+        tarball: https://r.cnpmjs.org/@apollo/client/download/@apollo/client-3.4.10.tgz
+      }
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0
       react: ^16.8.0 || ^17.0.0
       subscriptions-transport-ws: ^0.9.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      subscriptions-transport-ws:
+        optional: true
     dependencies:
       '@graphql-typed-document-node/core': 3.1.0_graphql@15.5.1
       '@wry/context': 0.6.1
@@ -59,19 +69,31 @@ packages:
     dev: true
 
   /@babel/code-frame/7.12.11:
-    resolution: {integrity: sha1-9K1DWqJj25NbjxDyxVLSP7cWpj8=, tarball: https://r.cnpmjs.org/@babel/code-frame/download/@babel/code-frame-7.12.11.tgz}
+    resolution:
+      {
+        integrity: sha1-9K1DWqJj25NbjxDyxVLSP7cWpj8=,
+        tarball: https://r.cnpmjs.org/@babel/code-frame/download/@babel/code-frame-7.12.11.tgz
+      }
     dependencies:
       '@babel/highlight': 7.14.5
     dev: true
 
   /@babel/helper-validator-identifier/7.14.9:
-    resolution: {integrity: sha1-ZlTRcbICT22O4VG/JQlpmRkTHUg=, tarball: https://r.cnpmjs.org/@babel/helper-validator-identifier/download/@babel/helper-validator-identifier-7.14.9.tgz}
-    engines: {node: '>=6.9.0'}
+    resolution:
+      {
+        integrity: sha1-ZlTRcbICT22O4VG/JQlpmRkTHUg=,
+        tarball: https://r.cnpmjs.org/@babel/helper-validator-identifier/download/@babel/helper-validator-identifier-7.14.9.tgz
+      }
+    engines: { node: '>=6.9.0' }
     dev: true
 
   /@babel/highlight/7.14.5:
-    resolution: {integrity: sha1-aGGlLwOWZAUAH2qlNKAaJNmejNk=, tarball: https://r.cnpmjs.org/@babel/highlight/download/@babel/highlight-7.14.5.tgz}
-    engines: {node: '>=6.9.0'}
+    resolution:
+      {
+        integrity: sha1-aGGlLwOWZAUAH2qlNKAaJNmejNk=,
+        tarball: https://r.cnpmjs.org/@babel/highlight/download/@babel/highlight-7.14.5.tgz
+      }
+    engines: { node: '>=6.9.0' }
     dependencies:
       '@babel/helper-validator-identifier': 7.14.9
       chalk: 2.4.2
@@ -79,8 +101,12 @@ packages:
     dev: true
 
   /@eslint/eslintrc/0.4.3:
-    resolution: {integrity: sha1-nkKYHvA1vrPdSa3ResuW6P9vOUw=, tarball: https://r.cnpmjs.org/@eslint/eslintrc/download/@eslint/eslintrc-0.4.3.tgz}
-    engines: {node: ^10.12.0 || >=12.0.0}
+    resolution:
+      {
+        integrity: sha1-nkKYHvA1vrPdSa3ResuW6P9vOUw=,
+        tarball: https://r.cnpmjs.org/@eslint/eslintrc/download/@eslint/eslintrc-0.4.3.tgz
+      }
+    engines: { node: ^10.12.0 || >=12.0.0 }
     dependencies:
       ajv: 6.12.6
       debug: 4.3.2
@@ -94,11 +120,19 @@ packages:
     dev: true
 
   /@fontsource/fira-mono/4.5.0:
-    resolution: {integrity: sha1-vql6VLYNwmnRx4RpsAeDWvRN+n8=, tarball: https://r.cnpmjs.org/@fontsource/fira-mono/download/@fontsource/fira-mono-4.5.0.tgz}
+    resolution:
+      {
+        integrity: sha1-vql6VLYNwmnRx4RpsAeDWvRN+n8=,
+        tarball: https://r.cnpmjs.org/@fontsource/fira-mono/download/@fontsource/fira-mono-4.5.0.tgz
+      }
     dev: false
 
   /@graphql-typed-document-node/core/3.1.0_graphql@15.5.1:
-    resolution: {integrity: sha1-Du5jc+EUGL/gtWOPZU33pMpqOVA=, tarball: https://r.cnpmjs.org/@graphql-typed-document-node/core/download/@graphql-typed-document-node/core-3.1.0.tgz}
+    resolution:
+      {
+        integrity: sha1-Du5jc+EUGL/gtWOPZU33pMpqOVA=,
+        tarball: https://r.cnpmjs.org/@graphql-typed-document-node/core/download/@graphql-typed-document-node/core-3.1.0.tgz
+      }
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
     dependencies:
@@ -106,8 +140,12 @@ packages:
     dev: true
 
   /@humanwhocodes/config-array/0.5.0:
-    resolution: {integrity: sha1-FAeWfUxu7Nc4j4Os8er00Mbljvk=, tarball: https://r.cnpmjs.org/@humanwhocodes/config-array/download/@humanwhocodes/config-array-0.5.0.tgz}
-    engines: {node: '>=10.10.0'}
+    resolution:
+      {
+        integrity: sha1-FAeWfUxu7Nc4j4Os8er00Mbljvk=,
+        tarball: https://r.cnpmjs.org/@humanwhocodes/config-array/download/@humanwhocodes/config-array-0.5.0.tgz
+      }
+    engines: { node: '>=10.10.0' }
     dependencies:
       '@humanwhocodes/object-schema': 1.2.0
       debug: 4.3.2
@@ -115,52 +153,76 @@ packages:
     dev: true
 
   /@humanwhocodes/object-schema/1.2.0:
-    resolution: {integrity: sha1-h956+cIxgm/daKxyWPd8Qp4OX88=, tarball: https://r.cnpmjs.org/@humanwhocodes/object-schema/download/@humanwhocodes/object-schema-1.2.0.tgz}
+    resolution:
+      {
+        integrity: sha1-h956+cIxgm/daKxyWPd8Qp4OX88=,
+        tarball: https://r.cnpmjs.org/@humanwhocodes/object-schema/download/@humanwhocodes/object-schema-1.2.0.tgz
+      }
     dev: true
 
   /@lukeed/csprng/1.0.0:
-    resolution: {integrity: sha1-czoSI4J0nSfi5G7Dj4xxydU6ljY=, tarball: https://r.cnpmjs.org/@lukeed/csprng/download/@lukeed/csprng-1.0.0.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-czoSI4J0nSfi5G7Dj4xxydU6ljY=,
+        tarball: https://r.cnpmjs.org/@lukeed/csprng/download/@lukeed/csprng-1.0.0.tgz
+      }
+    engines: { node: '>=8' }
     dev: false
 
   /@lukeed/uuid/2.0.0:
-    resolution: {integrity: sha1-HA8zwHHLaQK8O55HV4KtpzFO+b0=, tarball: https://r.cnpmjs.org/@lukeed/uuid/download/@lukeed/uuid-2.0.0.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-HA8zwHHLaQK8O55HV4KtpzFO+b0=,
+        tarball: https://r.cnpmjs.org/@lukeed/uuid/download/@lukeed/uuid-2.0.0.tgz
+      }
+    engines: { node: '>=8' }
     dependencies:
       '@lukeed/csprng': 1.0.0
     dev: false
 
   /@rollup/pluginutils/4.1.1:
-    resolution: {integrity: sha1-HU2obdTt7RVlalfZM/2iuaCNR+w=, tarball: https://r.cnpmjs.org/@rollup/pluginutils/download/@rollup/pluginutils-4.1.1.tgz}
-    engines: {node: '>= 8.0.0'}
+    resolution:
+      {
+        integrity: sha1-HU2obdTt7RVlalfZM/2iuaCNR+w=,
+        tarball: https://r.cnpmjs.org/@rollup/pluginutils/download/@rollup/pluginutils-4.1.1.tgz
+      }
+    engines: { node: '>= 8.0.0' }
     dependencies:
       estree-walker: 2.0.2
       picomatch: 2.3.0
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.158_11461cee467ed643905de7a5f1f768f8:
-    resolution: {integrity: sha1-1fUMexTZdi94KKi291U+h1nH7Zo=, tarball: https://r.cnpmjs.org/@sveltejs/kit/download/@sveltejs/kit-1.0.0-next.158.tgz}
-    engines: {node: ^12.20 || >=14.13}
+  /@sveltejs/kit/1.0.0-next.162_11461cee467ed643905de7a5f1f768f8:
+    resolution:
+      {
+        integrity: sha1-FA6sFzRTfQ9UiPB18s2CcxI+pkk=,
+        tarball: https://r.cnpmjs.org/@sveltejs/kit/download/@sveltejs/kit-1.0.0-next.162.tgz
+      }
+    engines: { node: ^12.20 || >=14.13 }
     hasBin: true
     peerDependencies:
       svelte: ^3.39.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.19_6b8478a504b81764f5e1b11b41e17257
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.21_f2a0fb53a2ed0bce7deafa97fe059bf6
       cheap-watch: 1.0.3
       sade: 1.7.4
       svelte: 3.42.4
-      vite: 2.5.1
+      vite: 2.5.3
     transitivePeerDependencies:
       - diff-match-patch
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.19_6b8478a504b81764f5e1b11b41e17257:
-    resolution: {integrity: sha1-lkarws0ZghRttLs0Gq/bXzLxndI=, tarball: https://r.cnpmjs.org/@sveltejs/vite-plugin-svelte/download/@sveltejs/vite-plugin-svelte-1.0.0-next.19.tgz}
-    engines: {node: ^12.20 || ^14.13.1 || >= 16}
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.21_f2a0fb53a2ed0bce7deafa97fe059bf6:
+    resolution:
+      {
+        integrity: sha1-V7nCfidkDljC6nu2sSY84KDGauE=,
+        tarball: https://r.cnpmjs.org/@sveltejs/vite-plugin-svelte/download/@sveltejs/vite-plugin-svelte-1.0.0-next.21.tgz
+      }
+    engines: { node: ^12.20 || ^14.13.1 || >= 16 }
     peerDependencies:
       diff-match-patch: ^1.0.5
       svelte: ^3.34.0
-      vite: ^2.3.7
+      vite: ^2.5.3
     dependencies:
       '@rollup/pluginutils': 4.1.1
       debug: 4.3.2
@@ -170,32 +232,48 @@ packages:
       require-relative: 0.8.7
       svelte: 3.42.4
       svelte-hmr: 0.14.7_svelte@3.42.4
-      vite: 2.5.1
+      vite: 2.5.3
     dev: true
 
   /@wry/context/0.6.1:
-    resolution: {integrity: sha1-w8KcCtYirbAPalMwPE+WXuBuvrI=, tarball: https://r.cnpmjs.org/@wry/context/download/@wry/context-0.6.1.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-w8KcCtYirbAPalMwPE+WXuBuvrI=,
+        tarball: https://r.cnpmjs.org/@wry/context/download/@wry/context-0.6.1.tgz
+      }
+    engines: { node: '>=8' }
     dependencies:
       tslib: 2.3.1
     dev: true
 
   /@wry/equality/0.5.2:
-    resolution: {integrity: sha1-csinp9iE3/MLYS9PhGTromwIDnM=, tarball: https://r.cnpmjs.org/@wry/equality/download/@wry/equality-0.5.2.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-csinp9iE3/MLYS9PhGTromwIDnM=,
+        tarball: https://r.cnpmjs.org/@wry/equality/download/@wry/equality-0.5.2.tgz
+      }
+    engines: { node: '>=8' }
     dependencies:
       tslib: 2.3.1
     dev: true
 
   /@wry/trie/0.3.1:
-    resolution: {integrity: sha1-Inm3kPFQMvi86n/JRNJ5iOWzsTk=, tarball: https://r.cnpmjs.org/@wry/trie/download/@wry/trie-0.3.1.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-Inm3kPFQMvi86n/JRNJ5iOWzsTk=,
+        tarball: https://r.cnpmjs.org/@wry/trie/download/@wry/trie-0.3.1.tgz
+      }
+    engines: { node: '>=8' }
     dependencies:
       tslib: 2.3.1
     dev: true
 
   /acorn-jsx/5.3.2_acorn@7.4.1:
-    resolution: {integrity: sha1-ftW7VZCLOy8bxVxq8WU7rafweTc=, tarball: https://r.cnpmjs.org/acorn-jsx/download/acorn-jsx-5.3.2.tgz}
+    resolution:
+      {
+        integrity: sha1-ftW7VZCLOy8bxVxq8WU7rafweTc=,
+        tarball: https://r.cnpmjs.org/acorn-jsx/download/acorn-jsx-5.3.2.tgz
+      }
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
@@ -203,13 +281,21 @@ packages:
     dev: true
 
   /acorn/7.4.1:
-    resolution: {integrity: sha1-/q7SVZc9LndVW4PbwIhRpsY1IPo=, tarball: https://r.cnpmjs.org/acorn/download/acorn-7.4.1.tgz}
-    engines: {node: '>=0.4.0'}
+    resolution:
+      {
+        integrity: sha1-/q7SVZc9LndVW4PbwIhRpsY1IPo=,
+        tarball: https://r.cnpmjs.org/acorn/download/acorn-7.4.1.tgz
+      }
+    engines: { node: '>=0.4.0' }
     hasBin: true
     dev: true
 
   /ajv/6.12.6:
-    resolution: {integrity: sha1-uvWmLoArB9l3A0WG+MO69a3ybfQ=, tarball: https://r.cnpmjs.org/ajv/download/ajv-6.12.6.tgz}
+    resolution:
+      {
+        integrity: sha1-uvWmLoArB9l3A0WG+MO69a3ybfQ=,
+        tarball: https://r.cnpmjs.org/ajv/download/ajv-6.12.6.tgz
+      }
     dependencies:
       fast-deep-equal: 3.1.3
       fast-json-stable-stringify: 2.1.0
@@ -218,7 +304,11 @@ packages:
     dev: true
 
   /ajv/8.6.2:
-    resolution: {integrity: sha1-L7ReDl/LwIEzJsHD2lNdGIG7BXE=, tarball: https://r.cnpmjs.org/ajv/download/ajv-8.6.2.tgz}
+    resolution:
+      {
+        integrity: sha1-L7ReDl/LwIEzJsHD2lNdGIG7BXE=,
+        tarball: https://r.cnpmjs.org/ajv/download/ajv-8.6.2.tgz
+      }
     dependencies:
       fast-deep-equal: 3.1.3
       json-schema-traverse: 1.0.0
@@ -227,59 +317,99 @@ packages:
     dev: true
 
   /ansi-colors/4.1.1:
-    resolution: {integrity: sha1-y7muJWv3UK8eqzRPIpqif+lLo0g=, tarball: https://r.cnpmjs.org/ansi-colors/download/ansi-colors-4.1.1.tgz}
-    engines: {node: '>=6'}
+    resolution:
+      {
+        integrity: sha1-y7muJWv3UK8eqzRPIpqif+lLo0g=,
+        tarball: https://r.cnpmjs.org/ansi-colors/download/ansi-colors-4.1.1.tgz
+      }
+    engines: { node: '>=6' }
     dev: true
 
   /ansi-regex/5.0.0:
-    resolution: {integrity: sha1-OIU59VF5vzkznIGvMKZU1p+Hy3U=, tarball: https://r.cnpmjs.org/ansi-regex/download/ansi-regex-5.0.0.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-OIU59VF5vzkznIGvMKZU1p+Hy3U=,
+        tarball: https://r.cnpmjs.org/ansi-regex/download/ansi-regex-5.0.0.tgz
+      }
+    engines: { node: '>=8' }
     dev: true
 
   /ansi-styles/3.2.1:
-    resolution: {integrity: sha1-QfuyAkPlCxK+DwS43tvwdSDOhB0=, tarball: https://r.cnpmjs.org/ansi-styles/download/ansi-styles-3.2.1.tgz}
-    engines: {node: '>=4'}
+    resolution:
+      {
+        integrity: sha1-QfuyAkPlCxK+DwS43tvwdSDOhB0=,
+        tarball: https://r.cnpmjs.org/ansi-styles/download/ansi-styles-3.2.1.tgz
+      }
+    engines: { node: '>=4' }
     dependencies:
       color-convert: 1.9.3
     dev: true
 
   /ansi-styles/4.3.0:
-    resolution: {integrity: sha1-7dgDYornHATIWuegkG7a00tkiTc=, tarball: https://r.cnpmjs.org/ansi-styles/download/ansi-styles-4.3.0.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-7dgDYornHATIWuegkG7a00tkiTc=,
+        tarball: https://r.cnpmjs.org/ansi-styles/download/ansi-styles-4.3.0.tgz
+      }
+    engines: { node: '>=8' }
     dependencies:
       color-convert: 2.0.1
     dev: true
 
   /argparse/1.0.10:
-    resolution: {integrity: sha1-vNZ5HqWuCXJeF+WtmIE0zUCz2RE=, tarball: https://r.cnpmjs.org/argparse/download/argparse-1.0.10.tgz}
+    resolution:
+      {
+        integrity: sha1-vNZ5HqWuCXJeF+WtmIE0zUCz2RE=,
+        tarball: https://r.cnpmjs.org/argparse/download/argparse-1.0.10.tgz
+      }
     dependencies:
       sprintf-js: 1.0.3
     dev: true
 
   /astral-regex/2.0.0:
-    resolution: {integrity: sha1-SDFDxWeu7UeFdZwIZXhtx319LjE=, tarball: https://r.cnpmjs.org/astral-regex/download/astral-regex-2.0.0.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-SDFDxWeu7UeFdZwIZXhtx319LjE=,
+        tarball: https://r.cnpmjs.org/astral-regex/download/astral-regex-2.0.0.tgz
+      }
+    engines: { node: '>=8' }
     dev: true
 
   /balanced-match/1.0.2:
-    resolution: {integrity: sha1-6D46fj8wCzTLnYf2FfoMvzV2kO4=, tarball: https://r.cnpmjs.org/balanced-match/download/balanced-match-1.0.2.tgz}
+    resolution:
+      {
+        integrity: sha1-6D46fj8wCzTLnYf2FfoMvzV2kO4=,
+        tarball: https://r.cnpmjs.org/balanced-match/download/balanced-match-1.0.2.tgz
+      }
     dev: true
 
   /brace-expansion/1.1.11:
-    resolution: {integrity: sha1-PH/L9SnYcibz0vUrlm/1Jx60Qd0=, tarball: https://r.cnpmjs.org/brace-expansion/download/brace-expansion-1.1.11.tgz}
+    resolution:
+      {
+        integrity: sha1-PH/L9SnYcibz0vUrlm/1Jx60Qd0=,
+        tarball: https://r.cnpmjs.org/brace-expansion/download/brace-expansion-1.1.11.tgz
+      }
     dependencies:
       balanced-match: 1.0.2
       concat-map: 0.0.1
     dev: true
 
   /callsites/3.1.0:
-    resolution: {integrity: sha1-s2MKvYlDQy9Us/BRkjjjPNffL3M=, tarball: https://r.cnpmjs.org/callsites/download/callsites-3.1.0.tgz}
-    engines: {node: '>=6'}
+    resolution:
+      {
+        integrity: sha1-s2MKvYlDQy9Us/BRkjjjPNffL3M=,
+        tarball: https://r.cnpmjs.org/callsites/download/callsites-3.1.0.tgz
+      }
+    engines: { node: '>=6' }
     dev: true
 
   /chalk/2.4.2:
-    resolution: {integrity: sha1-zUJUFnelQzPPVBpJEIwUMrRMlCQ=, tarball: https://r.cnpmjs.org/chalk/download/chalk-2.4.2.tgz}
-    engines: {node: '>=4'}
+    resolution:
+      {
+        integrity: sha1-zUJUFnelQzPPVBpJEIwUMrRMlCQ=,
+        tarball: https://r.cnpmjs.org/chalk/download/chalk-2.4.2.tgz
+      }
+    engines: { node: '>=4' }
     dependencies:
       ansi-styles: 3.2.1
       escape-string-regexp: 1.0.5
@@ -287,55 +417,95 @@ packages:
     dev: true
 
   /chalk/4.1.2:
-    resolution: {integrity: sha1-qsTit3NKdAhnrrFr8CqtVWoeegE=, tarball: https://r.cnpmjs.org/chalk/download/chalk-4.1.2.tgz}
-    engines: {node: '>=10'}
+    resolution:
+      {
+        integrity: sha1-qsTit3NKdAhnrrFr8CqtVWoeegE=,
+        tarball: https://r.cnpmjs.org/chalk/download/chalk-4.1.2.tgz
+      }
+    engines: { node: '>=10' }
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
     dev: true
 
   /cheap-watch/1.0.3:
-    resolution: {integrity: sha1-PEJlcYvPjxrgj15FD59Gk0MuAo4=, tarball: https://r.cnpmjs.org/cheap-watch/download/cheap-watch-1.0.3.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-PEJlcYvPjxrgj15FD59Gk0MuAo4=,
+        tarball: https://r.cnpmjs.org/cheap-watch/download/cheap-watch-1.0.3.tgz
+      }
+    engines: { node: '>=8' }
     dev: true
 
   /color-convert/1.9.3:
-    resolution: {integrity: sha1-u3GFBpDh8TZWfeYp0tVHHe2kweg=, tarball: https://r.cnpmjs.org/color-convert/download/color-convert-1.9.3.tgz}
+    resolution:
+      {
+        integrity: sha1-u3GFBpDh8TZWfeYp0tVHHe2kweg=,
+        tarball: https://r.cnpmjs.org/color-convert/download/color-convert-1.9.3.tgz
+      }
     dependencies:
       color-name: 1.1.3
     dev: true
 
   /color-convert/2.0.1:
-    resolution: {integrity: sha1-ctOmjVmMm9s68q0ehPIdiWq9TeM=, tarball: https://r.cnpmjs.org/color-convert/download/color-convert-2.0.1.tgz}
-    engines: {node: '>=7.0.0'}
+    resolution:
+      {
+        integrity: sha1-ctOmjVmMm9s68q0ehPIdiWq9TeM=,
+        tarball: https://r.cnpmjs.org/color-convert/download/color-convert-2.0.1.tgz
+      }
+    engines: { node: '>=7.0.0' }
     dependencies:
       color-name: 1.1.4
     dev: true
 
   /color-name/1.1.3:
-    resolution: {integrity: sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=, tarball: https://r.cnpmjs.org/color-name/download/color-name-1.1.3.tgz}
+    resolution:
+      {
+        integrity: sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=,
+        tarball: https://r.cnpmjs.org/color-name/download/color-name-1.1.3.tgz
+      }
     dev: true
 
   /color-name/1.1.4:
-    resolution: {integrity: sha1-wqCah6y95pVD3m9j+jmVyCbFNqI=, tarball: https://r.cnpmjs.org/color-name/download/color-name-1.1.4.tgz}
+    resolution:
+      {
+        integrity: sha1-wqCah6y95pVD3m9j+jmVyCbFNqI=,
+        tarball: https://r.cnpmjs.org/color-name/download/color-name-1.1.4.tgz
+      }
     dev: true
 
   /colorette/1.3.0:
-    resolution: {integrity: sha1-/0XS8O2yRAadO3cq3rBP7TjQoK8=, tarball: https://r.cnpmjs.org/colorette/download/colorette-1.3.0.tgz}
+    resolution:
+      {
+        integrity: sha1-/0XS8O2yRAadO3cq3rBP7TjQoK8=,
+        tarball: https://r.cnpmjs.org/colorette/download/colorette-1.3.0.tgz
+      }
     dev: true
 
   /concat-map/0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=, tarball: https://r.cnpmjs.org/concat-map/download/concat-map-0.0.1.tgz}
+    resolution:
+      {
+        integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=,
+        tarball: https://r.cnpmjs.org/concat-map/download/concat-map-0.0.1.tgz
+      }
     dev: true
 
   /cookie/0.4.1:
-    resolution: {integrity: sha1-r9cT/ibr0hupXOth+agRblClN9E=, tarball: https://r.cnpmjs.org/cookie/download/cookie-0.4.1.tgz}
-    engines: {node: '>= 0.6'}
+    resolution:
+      {
+        integrity: sha1-r9cT/ibr0hupXOth+agRblClN9E=,
+        tarball: https://r.cnpmjs.org/cookie/download/cookie-0.4.1.tgz
+      }
+    engines: { node: '>= 0.6' }
     dev: false
 
   /cross-spawn/7.0.3:
-    resolution: {integrity: sha1-9zqFudXUHQRVUcF34ogtSshXKKY=, tarball: https://r.cnpmjs.org/cross-spawn/download/cross-spawn-7.0.3.tgz}
-    engines: {node: '>= 8'}
+    resolution:
+      {
+        integrity: sha1-9zqFudXUHQRVUcF34ogtSshXKKY=,
+        tarball: https://r.cnpmjs.org/cross-spawn/download/cross-spawn-7.0.3.tgz
+      }
+    engines: { node: '>= 8' }
     dependencies:
       path-key: 3.1.1
       shebang-command: 2.0.0
@@ -343,56 +513,96 @@ packages:
     dev: true
 
   /debug/4.3.2:
-    resolution: {integrity: sha1-8KScGKyHeeMdSgxgKd+3aHPHQos=, tarball: https://r.cnpmjs.org/debug/download/debug-4.3.2.tgz}
-    engines: {node: '>=6.0'}
+    resolution:
+      {
+        integrity: sha1-8KScGKyHeeMdSgxgKd+3aHPHQos=,
+        tarball: https://r.cnpmjs.org/debug/download/debug-4.3.2.tgz
+      }
+    engines: { node: '>=6.0' }
     dependencies:
       ms: 2.1.2
     dev: true
 
   /deep-is/0.1.3:
-    resolution: {integrity: sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=, tarball: https://r.cnpmjs.org/deep-is/download/deep-is-0.1.3.tgz}
+    resolution:
+      {
+        integrity: sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=,
+        tarball: https://r.cnpmjs.org/deep-is/download/deep-is-0.1.3.tgz
+      }
     dev: true
 
   /diff-match-patch/1.0.5:
-    resolution: {integrity: sha1-q7WE1fEM0Rlt/FWqA3AVkq4/ezc=, tarball: https://r.cnpmjs.org/diff-match-patch/download/diff-match-patch-1.0.5.tgz}
+    resolution:
+      {
+        integrity: sha1-q7WE1fEM0Rlt/FWqA3AVkq4/ezc=,
+        tarball: https://r.cnpmjs.org/diff-match-patch/download/diff-match-patch-1.0.5.tgz
+      }
     dev: false
 
   /doctrine/3.0.0:
-    resolution: {integrity: sha1-rd6+rXKmV023g2OdyHoSF3OXOWE=, tarball: https://r.cnpmjs.org/doctrine/download/doctrine-3.0.0.tgz}
-    engines: {node: '>=6.0.0'}
+    resolution:
+      {
+        integrity: sha1-rd6+rXKmV023g2OdyHoSF3OXOWE=,
+        tarball: https://r.cnpmjs.org/doctrine/download/doctrine-3.0.0.tgz
+      }
+    engines: { node: '>=6.0.0' }
     dependencies:
       esutils: 2.0.3
     dev: true
 
   /emoji-regex/8.0.0:
-    resolution: {integrity: sha1-6Bj9ac5cz8tARZT4QpY79TFkzDc=, tarball: https://r.cnpmjs.org/emoji-regex/download/emoji-regex-8.0.0.tgz}
+    resolution:
+      {
+        integrity: sha1-6Bj9ac5cz8tARZT4QpY79TFkzDc=,
+        tarball: https://r.cnpmjs.org/emoji-regex/download/emoji-regex-8.0.0.tgz
+      }
     dev: true
 
   /enquirer/2.3.6:
-    resolution: {integrity: sha1-Kn/l3WNKHkElqXXsmU/1RW3Dc00=, tarball: https://r.cnpmjs.org/enquirer/download/enquirer-2.3.6.tgz}
-    engines: {node: '>=8.6'}
+    resolution:
+      {
+        integrity: sha1-Kn/l3WNKHkElqXXsmU/1RW3Dc00=,
+        tarball: https://r.cnpmjs.org/enquirer/download/enquirer-2.3.6.tgz
+      }
+    engines: { node: '>=8.6' }
     dependencies:
       ansi-colors: 4.1.1
     dev: true
 
-  /esbuild/0.12.24:
-    resolution: {integrity: sha1-IZZvrSWoDzaO0wgQHogQK84Nxo8=, tarball: https://r.cnpmjs.org/esbuild/download/esbuild-0.12.24.tgz}
+  /esbuild/0.12.25:
+    resolution:
+      {
+        integrity: sha1-whMc7wIs+f6UqqXgARCyf8l2Iho=,
+        tarball: https://r.cnpmjs.org/esbuild/download/esbuild-0.12.25.tgz
+      }
     hasBin: true
     requiresBuild: true
     dev: true
 
   /escape-string-regexp/1.0.5:
-    resolution: {integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=, tarball: https://r.cnpmjs.org/escape-string-regexp/download/escape-string-regexp-1.0.5.tgz}
-    engines: {node: '>=0.8.0'}
+    resolution:
+      {
+        integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=,
+        tarball: https://r.cnpmjs.org/escape-string-regexp/download/escape-string-regexp-1.0.5.tgz
+      }
+    engines: { node: '>=0.8.0' }
     dev: true
 
   /escape-string-regexp/4.0.0:
-    resolution: {integrity: sha1-FLqDpdNz49MR5a/KKc9b+tllvzQ=, tarball: https://r.cnpmjs.org/escape-string-regexp/download/escape-string-regexp-4.0.0.tgz}
-    engines: {node: '>=10'}
+    resolution:
+      {
+        integrity: sha1-FLqDpdNz49MR5a/KKc9b+tllvzQ=,
+        tarball: https://r.cnpmjs.org/escape-string-regexp/download/escape-string-regexp-4.0.0.tgz
+      }
+    engines: { node: '>=10' }
     dev: true
 
   /eslint-config-prettier/8.3.0_eslint@7.32.0:
-    resolution: {integrity: sha1-90cbILb+ipqSVMxoRFQgKIai3Xo=, tarball: https://r.cnpmjs.org/eslint-config-prettier/download/eslint-config-prettier-8.3.0.tgz}
+    resolution:
+      {
+        integrity: sha1-90cbILb+ipqSVMxoRFQgKIai3Xo=,
+        tarball: https://r.cnpmjs.org/eslint-config-prettier/download/eslint-config-prettier-8.3.0.tgz
+      }
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -401,8 +611,12 @@ packages:
     dev: true
 
   /eslint-plugin-svelte3/3.2.0_eslint@7.32.0+svelte@3.42.4:
-    resolution: {integrity: sha1-pt606tSzGmR+qIo4I9fJZXj3RoM=, tarball: https://r.cnpmjs.org/eslint-plugin-svelte3/download/eslint-plugin-svelte3-3.2.0.tgz}
-    engines: {node: '>=10'}
+    resolution:
+      {
+        integrity: sha1-pt606tSzGmR+qIo4I9fJZXj3RoM=,
+        tarball: https://r.cnpmjs.org/eslint-plugin-svelte3/download/eslint-plugin-svelte3-3.2.0.tgz
+      }
+    engines: { node: '>=10' }
     peerDependencies:
       eslint: '>=6.0.0'
       svelte: ^3.2.0
@@ -412,33 +626,53 @@ packages:
     dev: true
 
   /eslint-scope/5.1.1:
-    resolution: {integrity: sha1-54blmmbLkrP2wfsNUIqrF0hI9Iw=, tarball: https://r.cnpmjs.org/eslint-scope/download/eslint-scope-5.1.1.tgz}
-    engines: {node: '>=8.0.0'}
+    resolution:
+      {
+        integrity: sha1-54blmmbLkrP2wfsNUIqrF0hI9Iw=,
+        tarball: https://r.cnpmjs.org/eslint-scope/download/eslint-scope-5.1.1.tgz
+      }
+    engines: { node: '>=8.0.0' }
     dependencies:
       esrecurse: 4.3.0
       estraverse: 4.3.0
     dev: true
 
   /eslint-utils/2.1.0:
-    resolution: {integrity: sha1-0t5eA0JOcH3BDHQGjd7a5wh0Gyc=, tarball: https://r.cnpmjs.org/eslint-utils/download/eslint-utils-2.1.0.tgz}
-    engines: {node: '>=6'}
+    resolution:
+      {
+        integrity: sha1-0t5eA0JOcH3BDHQGjd7a5wh0Gyc=,
+        tarball: https://r.cnpmjs.org/eslint-utils/download/eslint-utils-2.1.0.tgz
+      }
+    engines: { node: '>=6' }
     dependencies:
       eslint-visitor-keys: 1.3.0
     dev: true
 
   /eslint-visitor-keys/1.3.0:
-    resolution: {integrity: sha1-MOvR73wv3/AcOk8VEESvJfqwUj4=, tarball: https://r.cnpmjs.org/eslint-visitor-keys/download/eslint-visitor-keys-1.3.0.tgz}
-    engines: {node: '>=4'}
+    resolution:
+      {
+        integrity: sha1-MOvR73wv3/AcOk8VEESvJfqwUj4=,
+        tarball: https://r.cnpmjs.org/eslint-visitor-keys/download/eslint-visitor-keys-1.3.0.tgz
+      }
+    engines: { node: '>=4' }
     dev: true
 
   /eslint-visitor-keys/2.1.0:
-    resolution: {integrity: sha1-9lMoJZMFknOSyTjtROsKXJsr0wM=, tarball: https://r.cnpmjs.org/eslint-visitor-keys/download/eslint-visitor-keys-2.1.0.tgz}
-    engines: {node: '>=10'}
+    resolution:
+      {
+        integrity: sha1-9lMoJZMFknOSyTjtROsKXJsr0wM=,
+        tarball: https://r.cnpmjs.org/eslint-visitor-keys/download/eslint-visitor-keys-2.1.0.tgz
+      }
+    engines: { node: '>=10' }
     dev: true
 
   /eslint/7.32.0:
-    resolution: {integrity: sha1-xtMooUvj+wjI0dIeEsAv23oqgS0=, tarball: https://r.cnpmjs.org/eslint/download/eslint-7.32.0.tgz}
-    engines: {node: ^10.12.0 || >=12.0.0}
+    resolution:
+      {
+        integrity: sha1-xtMooUvj+wjI0dIeEsAv23oqgS0=,
+        tarball: https://r.cnpmjs.org/eslint/download/eslint-7.32.0.tgz
+      }
+    engines: { node: ^10.12.0 || >=12.0.0 }
     hasBin: true
     dependencies:
       '@babel/code-frame': 7.12.11
@@ -484,8 +718,12 @@ packages:
     dev: true
 
   /espree/7.3.1:
-    resolution: {integrity: sha1-8t8zC3Usb1UBn4vYm3ZgA5wbu7Y=, tarball: https://r.cnpmjs.org/espree/download/espree-7.3.1.tgz}
-    engines: {node: ^10.12.0 || >=12.0.0}
+    resolution:
+      {
+        integrity: sha1-8t8zC3Usb1UBn4vYm3ZgA5wbu7Y=,
+        tarball: https://r.cnpmjs.org/espree/download/espree-7.3.1.tgz
+      }
+    engines: { node: ^10.12.0 || >=12.0.0 }
     dependencies:
       acorn: 7.4.1
       acorn-jsx: 5.3.2_acorn@7.4.1
@@ -493,102 +731,178 @@ packages:
     dev: true
 
   /esprima/4.0.1:
-    resolution: {integrity: sha1-E7BM2z5sXRnfkatph6hpVhmwqnE=, tarball: https://r.cnpmjs.org/esprima/download/esprima-4.0.1.tgz}
-    engines: {node: '>=4'}
+    resolution:
+      {
+        integrity: sha1-E7BM2z5sXRnfkatph6hpVhmwqnE=,
+        tarball: https://r.cnpmjs.org/esprima/download/esprima-4.0.1.tgz
+      }
+    engines: { node: '>=4' }
     hasBin: true
     dev: true
 
   /esquery/1.4.0:
-    resolution: {integrity: sha1-IUj/w4uC6McFff7UhCWz5h8PJKU=, tarball: https://r.cnpmjs.org/esquery/download/esquery-1.4.0.tgz}
-    engines: {node: '>=0.10'}
+    resolution:
+      {
+        integrity: sha1-IUj/w4uC6McFff7UhCWz5h8PJKU=,
+        tarball: https://r.cnpmjs.org/esquery/download/esquery-1.4.0.tgz
+      }
+    engines: { node: '>=0.10' }
     dependencies:
       estraverse: 5.2.0
     dev: true
 
   /esrecurse/4.3.0:
-    resolution: {integrity: sha1-eteWTWeauyi+5yzsY3WLHF0smSE=, tarball: https://r.cnpmjs.org/esrecurse/download/esrecurse-4.3.0.tgz}
-    engines: {node: '>=4.0'}
+    resolution:
+      {
+        integrity: sha1-eteWTWeauyi+5yzsY3WLHF0smSE=,
+        tarball: https://r.cnpmjs.org/esrecurse/download/esrecurse-4.3.0.tgz
+      }
+    engines: { node: '>=4.0' }
     dependencies:
       estraverse: 5.2.0
     dev: true
 
   /estraverse/4.3.0:
-    resolution: {integrity: sha1-OYrT88WiSUi+dyXoPRGn3ijNvR0=, tarball: https://r.cnpmjs.org/estraverse/download/estraverse-4.3.0.tgz}
-    engines: {node: '>=4.0'}
+    resolution:
+      {
+        integrity: sha1-OYrT88WiSUi+dyXoPRGn3ijNvR0=,
+        tarball: https://r.cnpmjs.org/estraverse/download/estraverse-4.3.0.tgz
+      }
+    engines: { node: '>=4.0' }
     dev: true
 
   /estraverse/5.2.0:
-    resolution: {integrity: sha1-MH30JUfmzHMk088DwVXVzbjFOIA=, tarball: https://r.cnpmjs.org/estraverse/download/estraverse-5.2.0.tgz}
-    engines: {node: '>=4.0'}
+    resolution:
+      {
+        integrity: sha1-MH30JUfmzHMk088DwVXVzbjFOIA=,
+        tarball: https://r.cnpmjs.org/estraverse/download/estraverse-5.2.0.tgz
+      }
+    engines: { node: '>=4.0' }
     dev: true
 
   /estree-walker/2.0.2:
-    resolution: {integrity: sha1-UvAQF4wqTBF6d1fP6UKtt9LaTKw=, tarball: https://r.cnpmjs.org/estree-walker/download/estree-walker-2.0.2.tgz}
+    resolution:
+      {
+        integrity: sha1-UvAQF4wqTBF6d1fP6UKtt9LaTKw=,
+        tarball: https://r.cnpmjs.org/estree-walker/download/estree-walker-2.0.2.tgz
+      }
     dev: true
 
   /esutils/2.0.3:
-    resolution: {integrity: sha1-dNLrTeC42hKTcRkQ1Qd1ubcQ72Q=, tarball: https://r.cnpmjs.org/esutils/download/esutils-2.0.3.tgz}
-    engines: {node: '>=0.10.0'}
+    resolution:
+      {
+        integrity: sha1-dNLrTeC42hKTcRkQ1Qd1ubcQ72Q=,
+        tarball: https://r.cnpmjs.org/esutils/download/esutils-2.0.3.tgz
+      }
+    engines: { node: '>=0.10.0' }
     dev: true
 
   /fast-deep-equal/3.1.3:
-    resolution: {integrity: sha1-On1WtVnWy8PrUSMlJE5hmmXGxSU=, tarball: https://r.cnpmjs.org/fast-deep-equal/download/fast-deep-equal-3.1.3.tgz}
+    resolution:
+      {
+        integrity: sha1-On1WtVnWy8PrUSMlJE5hmmXGxSU=,
+        tarball: https://r.cnpmjs.org/fast-deep-equal/download/fast-deep-equal-3.1.3.tgz
+      }
     dev: true
 
   /fast-json-stable-stringify/2.1.0:
-    resolution: {integrity: sha1-h0v2nG9ATCtdmcSBNBOZ/VWJJjM=, tarball: https://r.cnpmjs.org/fast-json-stable-stringify/download/fast-json-stable-stringify-2.1.0.tgz}
+    resolution:
+      {
+        integrity: sha1-h0v2nG9ATCtdmcSBNBOZ/VWJJjM=,
+        tarball: https://r.cnpmjs.org/fast-json-stable-stringify/download/fast-json-stable-stringify-2.1.0.tgz
+      }
     dev: true
 
   /fast-levenshtein/2.0.6:
-    resolution: {integrity: sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=, tarball: https://r.cnpmjs.org/fast-levenshtein/download/fast-levenshtein-2.0.6.tgz}
+    resolution:
+      {
+        integrity: sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=,
+        tarball: https://r.cnpmjs.org/fast-levenshtein/download/fast-levenshtein-2.0.6.tgz
+      }
     dev: true
 
   /file-entry-cache/6.0.1:
-    resolution: {integrity: sha1-IRst2WWcsDlLBz5zI6w8kz1SICc=, tarball: https://r.cnpmjs.org/file-entry-cache/download/file-entry-cache-6.0.1.tgz}
-    engines: {node: ^10.12.0 || >=12.0.0}
+    resolution:
+      {
+        integrity: sha1-IRst2WWcsDlLBz5zI6w8kz1SICc=,
+        tarball: https://r.cnpmjs.org/file-entry-cache/download/file-entry-cache-6.0.1.tgz
+      }
+    engines: { node: ^10.12.0 || >=12.0.0 }
     dependencies:
       flat-cache: 3.0.4
     dev: true
 
   /flat-cache/3.0.4:
-    resolution: {integrity: sha1-YbAzgwKy/p+Vfcwy/CqH8cMEixE=, tarball: https://r.cnpmjs.org/flat-cache/download/flat-cache-3.0.4.tgz}
-    engines: {node: ^10.12.0 || >=12.0.0}
+    resolution:
+      {
+        integrity: sha1-YbAzgwKy/p+Vfcwy/CqH8cMEixE=,
+        tarball: https://r.cnpmjs.org/flat-cache/download/flat-cache-3.0.4.tgz
+      }
+    engines: { node: ^10.12.0 || >=12.0.0 }
     dependencies:
       flatted: 3.2.2
       rimraf: 3.0.2
     dev: true
 
   /flatted/3.2.2:
-    resolution: {integrity: sha1-ZL/tXLaP48p4s+shStl7Y77c5WE=, tarball: https://r.cnpmjs.org/flatted/download/flatted-3.2.2.tgz}
+    resolution:
+      {
+        integrity: sha1-ZL/tXLaP48p4s+shStl7Y77c5WE=,
+        tarball: https://r.cnpmjs.org/flatted/download/flatted-3.2.2.tgz
+      }
     dev: true
 
   /fs.realpath/1.0.0:
-    resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=, tarball: https://r.cnpmjs.org/fs.realpath/download/fs.realpath-1.0.0.tgz}
+    resolution:
+      {
+        integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=,
+        tarball: https://r.cnpmjs.org/fs.realpath/download/fs.realpath-1.0.0.tgz
+      }
     dev: true
 
   /fsevents/2.3.2:
-    resolution: {integrity: sha1-ilJveLj99GI7cJ4Ll1xSwkwC/Ro=, tarball: https://r.cnpmjs.org/fsevents/download/fsevents-2.3.2.tgz}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    resolution:
+      {
+        integrity: sha1-ilJveLj99GI7cJ4Ll1xSwkwC/Ro=,
+        tarball: https://r.cnpmjs.org/fsevents/download/fsevents-2.3.2.tgz
+      }
+    engines: { node: ^8.16.0 || ^10.6.0 || >=11.0.0 }
     dev: true
     optional: true
 
   /function-bind/1.1.1:
-    resolution: {integrity: sha1-pWiZ0+o8m6uHS7l3O3xe3pL0iV0=, tarball: https://r.cnpmjs.org/function-bind/download/function-bind-1.1.1.tgz}
+    resolution:
+      {
+        integrity: sha1-pWiZ0+o8m6uHS7l3O3xe3pL0iV0=,
+        tarball: https://r.cnpmjs.org/function-bind/download/function-bind-1.1.1.tgz
+      }
     dev: true
 
   /functional-red-black-tree/1.0.1:
-    resolution: {integrity: sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=, tarball: https://r.cnpmjs.org/functional-red-black-tree/download/functional-red-black-tree-1.0.1.tgz}
+    resolution:
+      {
+        integrity: sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=,
+        tarball: https://r.cnpmjs.org/functional-red-black-tree/download/functional-red-black-tree-1.0.1.tgz
+      }
     dev: true
 
   /glob-parent/5.1.2:
-    resolution: {integrity: sha1-hpgyxYA0/mikCTwX3BXoNA2EAcQ=, tarball: https://r.cnpmjs.org/glob-parent/download/glob-parent-5.1.2.tgz}
-    engines: {node: '>= 6'}
+    resolution:
+      {
+        integrity: sha1-hpgyxYA0/mikCTwX3BXoNA2EAcQ=,
+        tarball: https://r.cnpmjs.org/glob-parent/download/glob-parent-5.1.2.tgz
+      }
+    engines: { node: '>= 6' }
     dependencies:
       is-glob: 4.0.1
     dev: true
 
   /glob/7.1.7:
-    resolution: {integrity: sha1-Oxk+kjPwHULQs/eClLvutBj5SpA=, tarball: https://r.cnpmjs.org/glob/download/glob-7.1.7.tgz}
+    resolution:
+      {
+        integrity: sha1-Oxk+kjPwHULQs/eClLvutBj5SpA=,
+        tarball: https://r.cnpmjs.org/glob/download/glob-7.1.7.tgz
+      }
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -599,15 +913,23 @@ packages:
     dev: true
 
   /globals/13.11.0:
-    resolution: {integrity: sha1-QO9njaEX/nvS4o8fqySVG9AlW+c=, tarball: https://r.cnpmjs.org/globals/download/globals-13.11.0.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-QO9njaEX/nvS4o8fqySVG9AlW+c=,
+        tarball: https://r.cnpmjs.org/globals/download/globals-13.11.0.tgz
+      }
+    engines: { node: '>=8' }
     dependencies:
       type-fest: 0.20.2
     dev: true
 
   /graphql-tag/2.12.5_graphql@15.5.1:
-    resolution: {integrity: sha1-XP+XSme0F3R9BcjZ9fPLRJXQ248=, tarball: https://r.cnpmjs.org/graphql-tag/download/graphql-tag-2.12.5.tgz}
-    engines: {node: '>=10'}
+    resolution:
+      {
+        integrity: sha1-XP+XSme0F3R9BcjZ9fPLRJXQ248=,
+        tarball: https://r.cnpmjs.org/graphql-tag/download/graphql-tag-2.12.5.tgz
+      }
+    engines: { node: '>=10' }
     peerDependencies:
       graphql: ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
     dependencies:
@@ -616,95 +938,163 @@ packages:
     dev: true
 
   /graphql/15.5.1:
-    resolution: {integrity: sha1-8vhEFdiYXnuEcx5/NTb4u504Oq0=, tarball: https://r.cnpmjs.org/graphql/download/graphql-15.5.1.tgz}
-    engines: {node: '>= 10.x'}
+    resolution:
+      {
+        integrity: sha1-8vhEFdiYXnuEcx5/NTb4u504Oq0=,
+        tarball: https://r.cnpmjs.org/graphql/download/graphql-15.5.1.tgz
+      }
+    engines: { node: '>= 10.x' }
     dev: false
 
   /has-flag/3.0.0:
-    resolution: {integrity: sha1-tdRU3CGZriJWmfNGfloH87lVuv0=, tarball: https://r.cnpmjs.org/has-flag/download/has-flag-3.0.0.tgz}
-    engines: {node: '>=4'}
+    resolution:
+      {
+        integrity: sha1-tdRU3CGZriJWmfNGfloH87lVuv0=,
+        tarball: https://r.cnpmjs.org/has-flag/download/has-flag-3.0.0.tgz
+      }
+    engines: { node: '>=4' }
     dev: true
 
   /has-flag/4.0.0:
-    resolution: {integrity: sha1-lEdx/ZyByBJlxNaUGGDaBrtZR5s=, tarball: https://r.cnpmjs.org/has-flag/download/has-flag-4.0.0.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-lEdx/ZyByBJlxNaUGGDaBrtZR5s=,
+        tarball: https://r.cnpmjs.org/has-flag/download/has-flag-4.0.0.tgz
+      }
+    engines: { node: '>=8' }
     dev: true
 
   /has/1.0.3:
-    resolution: {integrity: sha1-ci18v8H2qoJB8W3YFOAR4fQeh5Y=, tarball: https://r.cnpmjs.org/has/download/has-1.0.3.tgz}
-    engines: {node: '>= 0.4.0'}
+    resolution:
+      {
+        integrity: sha1-ci18v8H2qoJB8W3YFOAR4fQeh5Y=,
+        tarball: https://r.cnpmjs.org/has/download/has-1.0.3.tgz
+      }
+    engines: { node: '>= 0.4.0' }
     dependencies:
       function-bind: 1.1.1
     dev: true
 
   /hoist-non-react-statics/3.3.2:
-    resolution: {integrity: sha1-7OCsr3HWLClpwuxZ/v9CpLGoW0U=, tarball: https://r.cnpmjs.org/hoist-non-react-statics/download/hoist-non-react-statics-3.3.2.tgz}
+    resolution:
+      {
+        integrity: sha1-7OCsr3HWLClpwuxZ/v9CpLGoW0U=,
+        tarball: https://r.cnpmjs.org/hoist-non-react-statics/download/hoist-non-react-statics-3.3.2.tgz
+      }
     dependencies:
       react-is: 16.13.1
     dev: true
 
   /ignore/4.0.6:
-    resolution: {integrity: sha1-dQ49tYYgh7RzfrrIIH/9HvJ7Jfw=, tarball: https://r.cnpmjs.org/ignore/download/ignore-4.0.6.tgz}
-    engines: {node: '>= 4'}
+    resolution:
+      {
+        integrity: sha1-dQ49tYYgh7RzfrrIIH/9HvJ7Jfw=,
+        tarball: https://r.cnpmjs.org/ignore/download/ignore-4.0.6.tgz
+      }
+    engines: { node: '>= 4' }
     dev: true
 
   /import-fresh/3.3.0:
-    resolution: {integrity: sha1-NxYsJfy566oublPVtNiM4X2eDCs=, tarball: https://r.cnpmjs.org/import-fresh/download/import-fresh-3.3.0.tgz}
-    engines: {node: '>=6'}
+    resolution:
+      {
+        integrity: sha1-NxYsJfy566oublPVtNiM4X2eDCs=,
+        tarball: https://r.cnpmjs.org/import-fresh/download/import-fresh-3.3.0.tgz
+      }
+    engines: { node: '>=6' }
     dependencies:
       parent-module: 1.0.1
       resolve-from: 4.0.0
     dev: true
 
   /imurmurhash/0.1.4:
-    resolution: {integrity: sha1-khi5srkoojixPcT7a21XbyMUU+o=, tarball: https://r.cnpmjs.org/imurmurhash/download/imurmurhash-0.1.4.tgz}
-    engines: {node: '>=0.8.19'}
+    resolution:
+      {
+        integrity: sha1-khi5srkoojixPcT7a21XbyMUU+o=,
+        tarball: https://r.cnpmjs.org/imurmurhash/download/imurmurhash-0.1.4.tgz
+      }
+    engines: { node: '>=0.8.19' }
     dev: true
 
   /inflight/1.0.6:
-    resolution: {integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=, tarball: https://r.cnpmjs.org/inflight/download/inflight-1.0.6.tgz}
+    resolution:
+      {
+        integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=,
+        tarball: https://r.cnpmjs.org/inflight/download/inflight-1.0.6.tgz
+      }
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
     dev: true
 
   /inherits/2.0.4:
-    resolution: {integrity: sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=, tarball: https://r.cnpmjs.org/inherits/download/inherits-2.0.4.tgz}
+    resolution:
+      {
+        integrity: sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=,
+        tarball: https://r.cnpmjs.org/inherits/download/inherits-2.0.4.tgz
+      }
     dev: true
 
   /is-core-module/2.6.0:
-    resolution: {integrity: sha1-11U7JSb+Wbkro+QMjfdX7Ipwnhk=, tarball: https://r.cnpmjs.org/is-core-module/download/is-core-module-2.6.0.tgz}
+    resolution:
+      {
+        integrity: sha1-11U7JSb+Wbkro+QMjfdX7Ipwnhk=,
+        tarball: https://r.cnpmjs.org/is-core-module/download/is-core-module-2.6.0.tgz
+      }
     dependencies:
       has: 1.0.3
     dev: true
 
   /is-extglob/2.1.1:
-    resolution: {integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=, tarball: https://r.cnpmjs.org/is-extglob/download/is-extglob-2.1.1.tgz}
-    engines: {node: '>=0.10.0'}
+    resolution:
+      {
+        integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=,
+        tarball: https://r.cnpmjs.org/is-extglob/download/is-extglob-2.1.1.tgz
+      }
+    engines: { node: '>=0.10.0' }
     dev: true
 
   /is-fullwidth-code-point/3.0.0:
-    resolution: {integrity: sha1-8Rb4Bk/pCz94RKOJl8C3UFEmnx0=, tarball: https://r.cnpmjs.org/is-fullwidth-code-point/download/is-fullwidth-code-point-3.0.0.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-8Rb4Bk/pCz94RKOJl8C3UFEmnx0=,
+        tarball: https://r.cnpmjs.org/is-fullwidth-code-point/download/is-fullwidth-code-point-3.0.0.tgz
+      }
+    engines: { node: '>=8' }
     dev: true
 
   /is-glob/4.0.1:
-    resolution: {integrity: sha1-dWfb6fL14kZ7x3q4PEopSCQHpdw=, tarball: https://r.cnpmjs.org/is-glob/download/is-glob-4.0.1.tgz}
-    engines: {node: '>=0.10.0'}
+    resolution:
+      {
+        integrity: sha1-dWfb6fL14kZ7x3q4PEopSCQHpdw=,
+        tarball: https://r.cnpmjs.org/is-glob/download/is-glob-4.0.1.tgz
+      }
+    engines: { node: '>=0.10.0' }
     dependencies:
       is-extglob: 2.1.1
     dev: true
 
   /isexe/2.0.0:
-    resolution: {integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=, tarball: https://r.cnpmjs.org/isexe/download/isexe-2.0.0.tgz}
+    resolution:
+      {
+        integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=,
+        tarball: https://r.cnpmjs.org/isexe/download/isexe-2.0.0.tgz
+      }
     dev: true
 
   /js-tokens/4.0.0:
-    resolution: {integrity: sha1-GSA/tZmR35jjoocFDUZHzerzJJk=, tarball: https://r.cnpmjs.org/js-tokens/download/js-tokens-4.0.0.tgz}
+    resolution:
+      {
+        integrity: sha1-GSA/tZmR35jjoocFDUZHzerzJJk=,
+        tarball: https://r.cnpmjs.org/js-tokens/download/js-tokens-4.0.0.tgz
+      }
     dev: true
 
   /js-yaml/3.14.1:
-    resolution: {integrity: sha1-2ugS/bOCX6MGYJqHFzg8UMNqBTc=, tarball: https://r.cnpmjs.org/js-yaml/download/js-yaml-3.14.1.tgz}
+    resolution:
+      {
+        integrity: sha1-2ugS/bOCX6MGYJqHFzg8UMNqBTc=,
+        tarball: https://r.cnpmjs.org/js-yaml/download/js-yaml-3.14.1.tgz
+      }
     hasBin: true
     dependencies:
       argparse: 1.0.10
@@ -712,108 +1102,188 @@ packages:
     dev: true
 
   /json-schema-traverse/0.4.1:
-    resolution: {integrity: sha1-afaofZUTq4u4/mO9sJecRI5oRmA=, tarball: https://r.cnpmjs.org/json-schema-traverse/download/json-schema-traverse-0.4.1.tgz}
+    resolution:
+      {
+        integrity: sha1-afaofZUTq4u4/mO9sJecRI5oRmA=,
+        tarball: https://r.cnpmjs.org/json-schema-traverse/download/json-schema-traverse-0.4.1.tgz
+      }
     dev: true
 
   /json-schema-traverse/1.0.0:
-    resolution: {integrity: sha1-rnvLNlard6c7pcSb9lTzjmtoYOI=, tarball: https://r.cnpmjs.org/json-schema-traverse/download/json-schema-traverse-1.0.0.tgz}
+    resolution:
+      {
+        integrity: sha1-rnvLNlard6c7pcSb9lTzjmtoYOI=,
+        tarball: https://r.cnpmjs.org/json-schema-traverse/download/json-schema-traverse-1.0.0.tgz
+      }
     dev: true
 
   /json-stable-stringify-without-jsonify/1.0.1:
-    resolution: {integrity: sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=, tarball: https://r.cnpmjs.org/json-stable-stringify-without-jsonify/download/json-stable-stringify-without-jsonify-1.0.1.tgz}
+    resolution:
+      {
+        integrity: sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=,
+        tarball: https://r.cnpmjs.org/json-stable-stringify-without-jsonify/download/json-stable-stringify-without-jsonify-1.0.1.tgz
+      }
     dev: true
 
   /kleur/4.1.4:
-    resolution: {integrity: sha1-jCAph9fld3ZtA5qM1GGTTAHNoE0=, tarball: https://r.cnpmjs.org/kleur/download/kleur-4.1.4.tgz}
-    engines: {node: '>=6'}
+    resolution:
+      {
+        integrity: sha1-jCAph9fld3ZtA5qM1GGTTAHNoE0=,
+        tarball: https://r.cnpmjs.org/kleur/download/kleur-4.1.4.tgz
+      }
+    engines: { node: '>=6' }
     dev: true
 
   /levn/0.4.1:
-    resolution: {integrity: sha1-rkViwAdHO5MqYgDUAyaN0v/8at4=, tarball: https://r.cnpmjs.org/levn/download/levn-0.4.1.tgz}
-    engines: {node: '>= 0.8.0'}
+    resolution:
+      {
+        integrity: sha1-rkViwAdHO5MqYgDUAyaN0v/8at4=,
+        tarball: https://r.cnpmjs.org/levn/download/levn-0.4.1.tgz
+      }
+    engines: { node: '>= 0.8.0' }
     dependencies:
       prelude-ls: 1.2.1
       type-check: 0.4.0
     dev: true
 
   /lodash.clonedeep/4.5.0:
-    resolution: {integrity: sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=, tarball: https://r.cnpmjs.org/lodash.clonedeep/download/lodash.clonedeep-4.5.0.tgz}
+    resolution:
+      {
+        integrity: sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=,
+        tarball: https://r.cnpmjs.org/lodash.clonedeep/download/lodash.clonedeep-4.5.0.tgz
+      }
     dev: true
 
   /lodash.merge/4.6.2:
-    resolution: {integrity: sha1-VYqlO0O2YeGSWgr9+japoQhf5Xo=, tarball: https://r.cnpmjs.org/lodash.merge/download/lodash.merge-4.6.2.tgz}
+    resolution:
+      {
+        integrity: sha1-VYqlO0O2YeGSWgr9+japoQhf5Xo=,
+        tarball: https://r.cnpmjs.org/lodash.merge/download/lodash.merge-4.6.2.tgz
+      }
     dev: true
 
   /lodash.truncate/4.4.2:
-    resolution: {integrity: sha1-WjUNoLERO4N+z//VgSy+WNbq4ZM=, tarball: https://r.cnpmjs.org/lodash.truncate/download/lodash.truncate-4.4.2.tgz}
+    resolution:
+      {
+        integrity: sha1-WjUNoLERO4N+z//VgSy+WNbq4ZM=,
+        tarball: https://r.cnpmjs.org/lodash.truncate/download/lodash.truncate-4.4.2.tgz
+      }
     dev: true
 
   /loose-envify/1.4.0:
-    resolution: {integrity: sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=, tarball: https://r.cnpmjs.org/loose-envify/download/loose-envify-1.4.0.tgz}
+    resolution:
+      {
+        integrity: sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=,
+        tarball: https://r.cnpmjs.org/loose-envify/download/loose-envify-1.4.0.tgz
+      }
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
     dev: true
 
   /lru-cache/6.0.0:
-    resolution: {integrity: sha1-bW/mVw69lqr5D8rR2vo7JWbbOpQ=, tarball: https://r.cnpmjs.org/lru-cache/download/lru-cache-6.0.0.tgz}
-    engines: {node: '>=10'}
+    resolution:
+      {
+        integrity: sha1-bW/mVw69lqr5D8rR2vo7JWbbOpQ=,
+        tarball: https://r.cnpmjs.org/lru-cache/download/lru-cache-6.0.0.tgz
+      }
+    engines: { node: '>=10' }
     dependencies:
       yallist: 4.0.0
     dev: true
 
   /magic-string/0.25.7:
-    resolution: {integrity: sha1-P0l9b9NMZpxnmNy4IfLvMfVEUFE=, tarball: https://r.cnpmjs.org/magic-string/download/magic-string-0.25.7.tgz}
+    resolution:
+      {
+        integrity: sha1-P0l9b9NMZpxnmNy4IfLvMfVEUFE=,
+        tarball: https://r.cnpmjs.org/magic-string/download/magic-string-0.25.7.tgz
+      }
     dependencies:
       sourcemap-codec: 1.4.8
     dev: true
 
   /minimatch/3.0.4:
-    resolution: {integrity: sha1-UWbihkV/AzBgZL5Ul+jbsMPTIIM=, tarball: https://r.cnpmjs.org/minimatch/download/minimatch-3.0.4.tgz}
+    resolution:
+      {
+        integrity: sha1-UWbihkV/AzBgZL5Ul+jbsMPTIIM=,
+        tarball: https://r.cnpmjs.org/minimatch/download/minimatch-3.0.4.tgz
+      }
     dependencies:
       brace-expansion: 1.1.11
     dev: true
 
   /mri/1.1.6:
-    resolution: {integrity: sha1-SZUuEETbIdv5D2zZK8nJp3fUFaY=, tarball: https://r.cnpmjs.org/mri/download/mri-1.1.6.tgz}
-    engines: {node: '>=4'}
+    resolution:
+      {
+        integrity: sha1-SZUuEETbIdv5D2zZK8nJp3fUFaY=,
+        tarball: https://r.cnpmjs.org/mri/download/mri-1.1.6.tgz
+      }
+    engines: { node: '>=4' }
     dev: true
 
   /ms/2.1.2:
-    resolution: {integrity: sha1-0J0fNXtEP0kzgqjrPM0YOHKuYAk=, tarball: https://r.cnpmjs.org/ms/download/ms-2.1.2.tgz}
+    resolution:
+      {
+        integrity: sha1-0J0fNXtEP0kzgqjrPM0YOHKuYAk=,
+        tarball: https://r.cnpmjs.org/ms/download/ms-2.1.2.tgz
+      }
     dev: true
 
   /nanoid/3.1.25:
-    resolution: {integrity: sha1-CcoydHwOVD8OGBS303k0d/nI4VI=, tarball: https://r.cnpmjs.org/nanoid/download/nanoid-3.1.25.tgz}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    resolution:
+      {
+        integrity: sha1-CcoydHwOVD8OGBS303k0d/nI4VI=,
+        tarball: https://r.cnpmjs.org/nanoid/download/nanoid-3.1.25.tgz
+      }
+    engines: { node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1 }
     hasBin: true
     dev: true
 
   /natural-compare/1.4.0:
-    resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=, tarball: https://r.cnpmjs.org/natural-compare/download/natural-compare-1.4.0.tgz}
+    resolution:
+      {
+        integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=,
+        tarball: https://r.cnpmjs.org/natural-compare/download/natural-compare-1.4.0.tgz
+      }
     dev: true
 
   /object-assign/4.1.1:
-    resolution: {integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=, tarball: https://r.cnpmjs.org/object-assign/download/object-assign-4.1.1.tgz}
-    engines: {node: '>=0.10.0'}
+    resolution:
+      {
+        integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=,
+        tarball: https://r.cnpmjs.org/object-assign/download/object-assign-4.1.1.tgz
+      }
+    engines: { node: '>=0.10.0' }
     dev: true
 
   /once/1.4.0:
-    resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=, tarball: https://r.cnpmjs.org/once/download/once-1.4.0.tgz}
+    resolution:
+      {
+        integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=,
+        tarball: https://r.cnpmjs.org/once/download/once-1.4.0.tgz
+      }
     dependencies:
       wrappy: 1.0.2
     dev: true
 
   /optimism/0.16.1:
-    resolution: {integrity: sha1-fI78HzF58YMHuIfhjBXFtxM/bn0=, tarball: https://r.cnpmjs.org/optimism/download/optimism-0.16.1.tgz}
+    resolution:
+      {
+        integrity: sha1-fI78HzF58YMHuIfhjBXFtxM/bn0=,
+        tarball: https://r.cnpmjs.org/optimism/download/optimism-0.16.1.tgz
+      }
     dependencies:
       '@wry/context': 0.6.1
       '@wry/trie': 0.3.1
     dev: true
 
   /optionator/0.9.1:
-    resolution: {integrity: sha1-TyNqY3Pa4FZqbUPhMmZ09QwpFJk=, tarball: https://r.cnpmjs.org/optionator/download/optionator-0.9.1.tgz}
-    engines: {node: '>= 0.8.0'}
+    resolution:
+      {
+        integrity: sha1-TyNqY3Pa4FZqbUPhMmZ09QwpFJk=,
+        tarball: https://r.cnpmjs.org/optionator/download/optionator-0.9.1.tgz
+      }
+    engines: { node: '>= 0.8.0' }
     dependencies:
       deep-is: 0.1.3
       fast-levenshtein: 2.0.6
@@ -824,34 +1294,58 @@ packages:
     dev: true
 
   /parent-module/1.0.1:
-    resolution: {integrity: sha1-aR0nCeeMefrjoVZiJFLQB2LKqqI=, tarball: https://r.cnpmjs.org/parent-module/download/parent-module-1.0.1.tgz}
-    engines: {node: '>=6'}
+    resolution:
+      {
+        integrity: sha1-aR0nCeeMefrjoVZiJFLQB2LKqqI=,
+        tarball: https://r.cnpmjs.org/parent-module/download/parent-module-1.0.1.tgz
+      }
+    engines: { node: '>=6' }
     dependencies:
       callsites: 3.1.0
     dev: true
 
   /path-is-absolute/1.0.1:
-    resolution: {integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=, tarball: https://r.cnpmjs.org/path-is-absolute/download/path-is-absolute-1.0.1.tgz}
-    engines: {node: '>=0.10.0'}
+    resolution:
+      {
+        integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=,
+        tarball: https://r.cnpmjs.org/path-is-absolute/download/path-is-absolute-1.0.1.tgz
+      }
+    engines: { node: '>=0.10.0' }
     dev: true
 
   /path-key/3.1.1:
-    resolution: {integrity: sha1-WB9q3mWMu6ZaDTOA3ndTKVBU83U=, tarball: https://r.cnpmjs.org/path-key/download/path-key-3.1.1.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-WB9q3mWMu6ZaDTOA3ndTKVBU83U=,
+        tarball: https://r.cnpmjs.org/path-key/download/path-key-3.1.1.tgz
+      }
+    engines: { node: '>=8' }
     dev: true
 
   /path-parse/1.0.7:
-    resolution: {integrity: sha1-+8EUtgykKzDZ2vWFjkvWi77bZzU=, tarball: https://r.cnpmjs.org/path-parse/download/path-parse-1.0.7.tgz}
+    resolution:
+      {
+        integrity: sha1-+8EUtgykKzDZ2vWFjkvWi77bZzU=,
+        tarball: https://r.cnpmjs.org/path-parse/download/path-parse-1.0.7.tgz
+      }
     dev: true
 
   /picomatch/2.3.0:
-    resolution: {integrity: sha1-8fBh3o9qS/AiiS4tEoI0+5gwKXI=, tarball: https://r.cnpmjs.org/picomatch/download/picomatch-2.3.0.tgz}
-    engines: {node: '>=8.6'}
+    resolution:
+      {
+        integrity: sha1-8fBh3o9qS/AiiS4tEoI0+5gwKXI=,
+        tarball: https://r.cnpmjs.org/picomatch/download/picomatch-2.3.0.tgz
+      }
+    engines: { node: '>=8.6' }
     dev: true
 
   /postcss/8.3.6:
-    resolution: {integrity: sha1-JzDddql5afN/U7mmCWGXvjEcxOo=, tarball: https://r.cnpmjs.org/postcss/download/postcss-8.3.6.tgz}
-    engines: {node: ^10 || ^12 || >=14}
+    resolution:
+      {
+        integrity: sha1-JzDddql5afN/U7mmCWGXvjEcxOo=,
+        tarball: https://r.cnpmjs.org/postcss/download/postcss-8.3.6.tgz
+      }
+    engines: { node: ^10 || ^12 || >=14 }
     dependencies:
       colorette: 1.3.0
       nanoid: 3.1.25
@@ -859,12 +1353,28 @@ packages:
     dev: true
 
   /prelude-ls/1.2.1:
-    resolution: {integrity: sha1-3rxkidem5rDnYRiIzsiAM30xY5Y=, tarball: https://r.cnpmjs.org/prelude-ls/download/prelude-ls-1.2.1.tgz}
-    engines: {node: '>= 0.8.0'}
+    resolution:
+      {
+        integrity: sha1-3rxkidem5rDnYRiIzsiAM30xY5Y=,
+        tarball: https://r.cnpmjs.org/prelude-ls/download/prelude-ls-1.2.1.tgz
+      }
+    engines: { node: '>= 0.8.0' }
     dev: true
 
+  /pretier/0.0.1:
+    resolution:
+      {
+        integrity: sha1-e/u3D9NA3j960t/fhCaZItJPPVw=,
+        tarball: https://r.cnpmjs.org/pretier/download/pretier-0.0.1.tgz
+      }
+    dev: false
+
   /prettier-plugin-svelte/2.4.0_prettier@2.3.2+svelte@3.42.4:
-    resolution: {integrity: sha1-SCu2ADvx1b1/8AImGkKjK4fULQA=, tarball: https://r.cnpmjs.org/prettier-plugin-svelte/download/prettier-plugin-svelte-2.4.0.tgz}
+    resolution:
+      {
+        integrity: sha1-SCu2ADvx1b1/8AImGkKjK4fULQA=,
+        tarball: https://r.cnpmjs.org/prettier-plugin-svelte/download/prettier-plugin-svelte-2.4.0.tgz
+      }
     peerDependencies:
       prettier: ^1.16.4 || ^2.0.0
       svelte: ^3.2.0
@@ -874,18 +1384,30 @@ packages:
     dev: true
 
   /prettier/2.3.2:
-    resolution: {integrity: sha1-7ygKBewlNxLkhiM9tcbyNEHnNC0=, tarball: https://r.cnpmjs.org/prettier/download/prettier-2.3.2.tgz}
-    engines: {node: '>=10.13.0'}
+    resolution:
+      {
+        integrity: sha1-7ygKBewlNxLkhiM9tcbyNEHnNC0=,
+        tarball: https://r.cnpmjs.org/prettier/download/prettier-2.3.2.tgz
+      }
+    engines: { node: '>=10.13.0' }
     hasBin: true
     dev: true
 
   /progress/2.0.3:
-    resolution: {integrity: sha1-foz42PW48jnBvGi+tOt4Vn1XLvg=, tarball: https://r.cnpmjs.org/progress/download/progress-2.0.3.tgz}
-    engines: {node: '>=0.4.0'}
+    resolution:
+      {
+        integrity: sha1-foz42PW48jnBvGi+tOt4Vn1XLvg=,
+        tarball: https://r.cnpmjs.org/progress/download/progress-2.0.3.tgz
+      }
+    engines: { node: '>=0.4.0' }
     dev: true
 
   /prop-types/15.7.2:
-    resolution: {integrity: sha1-UsQedbjIfnK52TYOAga5ncv/psU=, tarball: https://r.cnpmjs.org/prop-types/download/prop-types-15.7.2.tgz}
+    resolution:
+      {
+        integrity: sha1-UsQedbjIfnK52TYOAga5ncv/psU=,
+        tarball: https://r.cnpmjs.org/prop-types/download/prop-types-15.7.2.tgz
+      }
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
@@ -893,85 +1415,141 @@ packages:
     dev: true
 
   /punycode/2.1.1:
-    resolution: {integrity: sha1-tYsBCsQMIsVldhbI0sLALHv0eew=, tarball: https://r.cnpmjs.org/punycode/download/punycode-2.1.1.tgz}
-    engines: {node: '>=6'}
+    resolution:
+      {
+        integrity: sha1-tYsBCsQMIsVldhbI0sLALHv0eew=,
+        tarball: https://r.cnpmjs.org/punycode/download/punycode-2.1.1.tgz
+      }
+    engines: { node: '>=6' }
     dev: true
 
   /react-is/16.13.1:
-    resolution: {integrity: sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=, tarball: https://r.cnpmjs.org/react-is/download/react-is-16.13.1.tgz}
+    resolution:
+      {
+        integrity: sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=,
+        tarball: https://r.cnpmjs.org/react-is/download/react-is-16.13.1.tgz
+      }
     dev: true
 
   /regexpp/3.2.0:
-    resolution: {integrity: sha1-BCWido2PI7rXDKS5BGH6LxIT4bI=, tarball: https://r.cnpmjs.org/regexpp/download/regexpp-3.2.0.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-BCWido2PI7rXDKS5BGH6LxIT4bI=,
+        tarball: https://r.cnpmjs.org/regexpp/download/regexpp-3.2.0.tgz
+      }
+    engines: { node: '>=8' }
     dev: true
 
   /require-from-string/2.0.2:
-    resolution: {integrity: sha1-iaf92TgmEmcxjq/hT5wy5ZjDaQk=, tarball: https://r.cnpmjs.org/require-from-string/download/require-from-string-2.0.2.tgz}
-    engines: {node: '>=0.10.0'}
+    resolution:
+      {
+        integrity: sha1-iaf92TgmEmcxjq/hT5wy5ZjDaQk=,
+        tarball: https://r.cnpmjs.org/require-from-string/download/require-from-string-2.0.2.tgz
+      }
+    engines: { node: '>=0.10.0' }
     dev: true
 
   /require-relative/0.8.7:
-    resolution: {integrity: sha1-eZlTn8ngR6N5KPoZb44VY9q9Nt4=, tarball: https://r.cnpmjs.org/require-relative/download/require-relative-0.8.7.tgz}
+    resolution:
+      {
+        integrity: sha1-eZlTn8ngR6N5KPoZb44VY9q9Nt4=,
+        tarball: https://r.cnpmjs.org/require-relative/download/require-relative-0.8.7.tgz
+      }
     dev: true
 
   /resolve-from/4.0.0:
-    resolution: {integrity: sha1-SrzYUq0y3Xuqv+m0DgCjbbXzkuY=, tarball: https://r.cnpmjs.org/resolve-from/download/resolve-from-4.0.0.tgz}
-    engines: {node: '>=4'}
+    resolution:
+      {
+        integrity: sha1-SrzYUq0y3Xuqv+m0DgCjbbXzkuY=,
+        tarball: https://r.cnpmjs.org/resolve-from/download/resolve-from-4.0.0.tgz
+      }
+    engines: { node: '>=4' }
     dev: true
 
   /resolve/1.20.0:
-    resolution: {integrity: sha1-YpoBP7P3B1XW8LeTXMHCxTeLGXU=, tarball: https://r.cnpmjs.org/resolve/download/resolve-1.20.0.tgz}
+    resolution:
+      {
+        integrity: sha1-YpoBP7P3B1XW8LeTXMHCxTeLGXU=,
+        tarball: https://r.cnpmjs.org/resolve/download/resolve-1.20.0.tgz
+      }
     dependencies:
       is-core-module: 2.6.0
       path-parse: 1.0.7
     dev: true
 
   /rimraf/3.0.2:
-    resolution: {integrity: sha1-8aVAK6YiCtUswSgrrBrjqkn9Bho=, tarball: https://r.cnpmjs.org/rimraf/download/rimraf-3.0.2.tgz}
+    resolution:
+      {
+        integrity: sha1-8aVAK6YiCtUswSgrrBrjqkn9Bho=,
+        tarball: https://r.cnpmjs.org/rimraf/download/rimraf-3.0.2.tgz
+      }
     hasBin: true
     dependencies:
       glob: 7.1.7
     dev: true
 
   /rollup/2.56.3:
-    resolution: {integrity: sha1-tj7a3ZhRsNYYptDmr4IBlVp3rv8=, tarball: https://r.cnpmjs.org/rollup/download/rollup-2.56.3.tgz}
-    engines: {node: '>=10.0.0'}
+    resolution:
+      {
+        integrity: sha1-tj7a3ZhRsNYYptDmr4IBlVp3rv8=,
+        tarball: https://r.cnpmjs.org/rollup/download/rollup-2.56.3.tgz
+      }
+    engines: { node: '>=10.0.0' }
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
 
   /sade/1.7.4:
-    resolution: {integrity: sha1-6mgeDGXSSNIJXJBXjAPKC7G1RpE=, tarball: https://r.cnpmjs.org/sade/download/sade-1.7.4.tgz}
-    engines: {node: '>= 6'}
+    resolution:
+      {
+        integrity: sha1-6mgeDGXSSNIJXJBXjAPKC7G1RpE=,
+        tarball: https://r.cnpmjs.org/sade/download/sade-1.7.4.tgz
+      }
+    engines: { node: '>= 6' }
     dependencies:
       mri: 1.1.6
     dev: true
 
   /semver/7.3.5:
-    resolution: {integrity: sha1-C2Ich5NI2JmOSw5L6Us/EuYBjvc=, tarball: https://r.cnpmjs.org/semver/download/semver-7.3.5.tgz}
-    engines: {node: '>=10'}
+    resolution:
+      {
+        integrity: sha1-C2Ich5NI2JmOSw5L6Us/EuYBjvc=,
+        tarball: https://r.cnpmjs.org/semver/download/semver-7.3.5.tgz
+      }
+    engines: { node: '>=10' }
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
     dev: true
 
   /shebang-command/2.0.0:
-    resolution: {integrity: sha1-zNCvT4g1+9wmW4JGGq8MNmY/NOo=, tarball: https://r.cnpmjs.org/shebang-command/download/shebang-command-2.0.0.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-zNCvT4g1+9wmW4JGGq8MNmY/NOo=,
+        tarball: https://r.cnpmjs.org/shebang-command/download/shebang-command-2.0.0.tgz
+      }
+    engines: { node: '>=8' }
     dependencies:
       shebang-regex: 3.0.0
     dev: true
 
   /shebang-regex/3.0.0:
-    resolution: {integrity: sha1-rhbxZE2HPsrYQ7AwexQzYtTEIXI=, tarball: https://r.cnpmjs.org/shebang-regex/download/shebang-regex-3.0.0.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-rhbxZE2HPsrYQ7AwexQzYtTEIXI=,
+        tarball: https://r.cnpmjs.org/shebang-regex/download/shebang-regex-3.0.0.tgz
+      }
+    engines: { node: '>=8' }
     dev: true
 
   /slice-ansi/4.0.0:
-    resolution: {integrity: sha1-UA6N0P1VsFgVCGJVsxla3ypF/ms=, tarball: https://r.cnpmjs.org/slice-ansi/download/slice-ansi-4.0.0.tgz}
-    engines: {node: '>=10'}
+    resolution:
+      {
+        integrity: sha1-UA6N0P1VsFgVCGJVsxla3ypF/ms=,
+        tarball: https://r.cnpmjs.org/slice-ansi/download/slice-ansi-4.0.0.tgz
+      }
+    engines: { node: '>=10' }
     dependencies:
       ansi-styles: 4.3.0
       astral-regex: 2.0.0
@@ -979,25 +1557,45 @@ packages:
     dev: true
 
   /snarkdown/2.0.0:
-    resolution: {integrity: sha1-sf6025G5+UqOu9elDz6ZruGLHgM=, tarball: https://r.cnpmjs.org/snarkdown/download/snarkdown-2.0.0.tgz}
+    resolution:
+      {
+        integrity: sha1-sf6025G5+UqOu9elDz6ZruGLHgM=,
+        tarball: https://r.cnpmjs.org/snarkdown/download/snarkdown-2.0.0.tgz
+      }
     dev: false
 
   /source-map-js/0.6.2:
-    resolution: {integrity: sha1-C7XeYxtBz72mz7qL0FqA79/SOF4=, tarball: https://r.cnpmjs.org/source-map-js/download/source-map-js-0.6.2.tgz}
-    engines: {node: '>=0.10.0'}
+    resolution:
+      {
+        integrity: sha1-C7XeYxtBz72mz7qL0FqA79/SOF4=,
+        tarball: https://r.cnpmjs.org/source-map-js/download/source-map-js-0.6.2.tgz
+      }
+    engines: { node: '>=0.10.0' }
     dev: true
 
   /sourcemap-codec/1.4.8:
-    resolution: {integrity: sha1-6oBL2UhXQC5pktBaOO8a41qatMQ=, tarball: https://r.cnpmjs.org/sourcemap-codec/download/sourcemap-codec-1.4.8.tgz}
+    resolution:
+      {
+        integrity: sha1-6oBL2UhXQC5pktBaOO8a41qatMQ=,
+        tarball: https://r.cnpmjs.org/sourcemap-codec/download/sourcemap-codec-1.4.8.tgz
+      }
     dev: true
 
   /sprintf-js/1.0.3:
-    resolution: {integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=, tarball: https://r.cnpmjs.org/sprintf-js/download/sprintf-js-1.0.3.tgz}
+    resolution:
+      {
+        integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=,
+        tarball: https://r.cnpmjs.org/sprintf-js/download/sprintf-js-1.0.3.tgz
+      }
     dev: true
 
   /string-width/4.2.2:
-    resolution: {integrity: sha1-2v1PlVmnWFz7pSnGoKT3NIjr1MU=, tarball: https://r.cnpmjs.org/string-width/download/string-width-4.2.2.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-2v1PlVmnWFz7pSnGoKT3NIjr1MU=,
+        tarball: https://r.cnpmjs.org/string-width/download/string-width-4.2.2.tgz
+      }
+    engines: { node: '>=8' }
     dependencies:
       emoji-regex: 8.0.0
       is-fullwidth-code-point: 3.0.0
@@ -1005,33 +1603,53 @@ packages:
     dev: true
 
   /strip-ansi/6.0.0:
-    resolution: {integrity: sha1-CxVx3XZpzNTz4G4U7x7tJiJa5TI=, tarball: https://r.cnpmjs.org/strip-ansi/download/strip-ansi-6.0.0.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-CxVx3XZpzNTz4G4U7x7tJiJa5TI=,
+        tarball: https://r.cnpmjs.org/strip-ansi/download/strip-ansi-6.0.0.tgz
+      }
+    engines: { node: '>=8' }
     dependencies:
       ansi-regex: 5.0.0
     dev: true
 
   /strip-json-comments/3.1.1:
-    resolution: {integrity: sha1-MfEoGzgyYwQ0gxwxDAHMzajL4AY=, tarball: https://r.cnpmjs.org/strip-json-comments/download/strip-json-comments-3.1.1.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-MfEoGzgyYwQ0gxwxDAHMzajL4AY=,
+        tarball: https://r.cnpmjs.org/strip-json-comments/download/strip-json-comments-3.1.1.tgz
+      }
+    engines: { node: '>=8' }
     dev: true
 
   /supports-color/5.5.0:
-    resolution: {integrity: sha1-4uaaRKyHcveKHsCzW2id9lMO/I8=, tarball: https://r.cnpmjs.org/supports-color/download/supports-color-5.5.0.tgz}
-    engines: {node: '>=4'}
+    resolution:
+      {
+        integrity: sha1-4uaaRKyHcveKHsCzW2id9lMO/I8=,
+        tarball: https://r.cnpmjs.org/supports-color/download/supports-color-5.5.0.tgz
+      }
+    engines: { node: '>=4' }
     dependencies:
       has-flag: 3.0.0
     dev: true
 
   /supports-color/7.2.0:
-    resolution: {integrity: sha1-G33NyzK4E4gBs+R4umpRyqiWSNo=, tarball: https://r.cnpmjs.org/supports-color/download/supports-color-7.2.0.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-G33NyzK4E4gBs+R4umpRyqiWSNo=,
+        tarball: https://r.cnpmjs.org/supports-color/download/supports-color-7.2.0.tgz
+      }
+    engines: { node: '>=8' }
     dependencies:
       has-flag: 4.0.0
     dev: true
 
   /svelte-hmr/0.14.7_svelte@3.42.4:
-    resolution: {integrity: sha1-f6gmHHsiXZQJ8KhvO56lw8pvZgc=, tarball: https://r.cnpmjs.org/svelte-hmr/download/svelte-hmr-0.14.7.tgz}
+    resolution:
+      {
+        integrity: sha1-f6gmHHsiXZQJ8KhvO56lw8pvZgc=,
+        tarball: https://r.cnpmjs.org/svelte-hmr/download/svelte-hmr-0.14.7.tgz
+      }
     peerDependencies:
       svelte: '>=3.19.0'
     dependencies:
@@ -1039,18 +1657,30 @@ packages:
     dev: true
 
   /svelte/3.42.4:
-    resolution: {integrity: sha1-g47Zj6eyb8X//k3w17o0XxxUz08=, tarball: https://r.cnpmjs.org/svelte/download/svelte-3.42.4.tgz}
-    engines: {node: '>= 8'}
+    resolution:
+      {
+        integrity: sha1-g47Zj6eyb8X//k3w17o0XxxUz08=,
+        tarball: https://r.cnpmjs.org/svelte/download/svelte-3.42.4.tgz
+      }
+    engines: { node: '>= 8' }
     dev: true
 
   /symbol-observable/4.0.0:
-    resolution: {integrity: sha1-W0JfGSJ56H8vm5N6yFQNGYSzkgU=, tarball: https://r.cnpmjs.org/symbol-observable/download/symbol-observable-4.0.0.tgz}
-    engines: {node: '>=0.10'}
+    resolution:
+      {
+        integrity: sha1-W0JfGSJ56H8vm5N6yFQNGYSzkgU=,
+        tarball: https://r.cnpmjs.org/symbol-observable/download/symbol-observable-4.0.0.tgz
+      }
+    engines: { node: '>=0.10' }
     dev: true
 
   /table/6.7.1:
-    resolution: {integrity: sha1-7gVZK3FDgxqMlPPO5qrkwczvM+I=, tarball: https://r.cnpmjs.org/table/download/table-6.7.1.tgz}
-    engines: {node: '>=10.0.0'}
+    resolution:
+      {
+        integrity: sha1-7gVZK3FDgxqMlPPO5qrkwczvM+I=,
+        tarball: https://r.cnpmjs.org/table/download/table-6.7.1.tgz
+      }
+    engines: { node: '>=10.0.0' }
     dependencies:
       ajv: 8.6.2
       lodash.clonedeep: 4.5.0
@@ -1061,48 +1691,80 @@ packages:
     dev: true
 
   /text-table/0.2.0:
-    resolution: {integrity: sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=, tarball: https://r.cnpmjs.org/text-table/download/text-table-0.2.0.tgz}
+    resolution:
+      {
+        integrity: sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=,
+        tarball: https://r.cnpmjs.org/text-table/download/text-table-0.2.0.tgz
+      }
     dev: true
 
   /ts-invariant/0.9.1:
-    resolution: {integrity: sha1-h9/emJSkzjx3EbArG0Sef9c4SxM=, tarball: https://r.cnpmjs.org/ts-invariant/download/ts-invariant-0.9.1.tgz}
-    engines: {node: '>=8'}
+    resolution:
+      {
+        integrity: sha1-h9/emJSkzjx3EbArG0Sef9c4SxM=,
+        tarball: https://r.cnpmjs.org/ts-invariant/download/ts-invariant-0.9.1.tgz
+      }
+    engines: { node: '>=8' }
     dependencies:
       tslib: 2.3.1
     dev: true
 
   /tslib/2.3.1:
-    resolution: {integrity: sha1-6KM1rdXOrlGqJh0ypJAVjvBC7wE=, tarball: https://r.cnpmjs.org/tslib/download/tslib-2.3.1.tgz}
+    resolution:
+      {
+        integrity: sha1-6KM1rdXOrlGqJh0ypJAVjvBC7wE=,
+        tarball: https://r.cnpmjs.org/tslib/download/tslib-2.3.1.tgz
+      }
     dev: true
 
   /type-check/0.4.0:
-    resolution: {integrity: sha1-B7ggO/pwVsBlcFDjzNLDdzC6uPE=, tarball: https://r.cnpmjs.org/type-check/download/type-check-0.4.0.tgz}
-    engines: {node: '>= 0.8.0'}
+    resolution:
+      {
+        integrity: sha1-B7ggO/pwVsBlcFDjzNLDdzC6uPE=,
+        tarball: https://r.cnpmjs.org/type-check/download/type-check-0.4.0.tgz
+      }
+    engines: { node: '>= 0.8.0' }
     dependencies:
       prelude-ls: 1.2.1
     dev: true
 
   /type-fest/0.20.2:
-    resolution: {integrity: sha1-G/IH9LKPkVg2ZstfvTJ4hzAc1fQ=, tarball: https://r.cnpmjs.org/type-fest/download/type-fest-0.20.2.tgz}
-    engines: {node: '>=10'}
+    resolution:
+      {
+        integrity: sha1-G/IH9LKPkVg2ZstfvTJ4hzAc1fQ=,
+        tarball: https://r.cnpmjs.org/type-fest/download/type-fest-0.20.2.tgz
+      }
+    engines: { node: '>=10' }
     dev: true
 
   /uri-js/4.4.1:
-    resolution: {integrity: sha1-mxpSWVIlhZ5V9mnZKPiMbFfyp34=, tarball: https://r.cnpmjs.org/uri-js/download/uri-js-4.4.1.tgz}
+    resolution:
+      {
+        integrity: sha1-mxpSWVIlhZ5V9mnZKPiMbFfyp34=,
+        tarball: https://r.cnpmjs.org/uri-js/download/uri-js-4.4.1.tgz
+      }
     dependencies:
       punycode: 2.1.1
     dev: true
 
   /v8-compile-cache/2.3.0:
-    resolution: {integrity: sha1-LeGWGMZtwkfc+2+ZM4A12CRaLO4=, tarball: https://r.cnpmjs.org/v8-compile-cache/download/v8-compile-cache-2.3.0.tgz}
+    resolution:
+      {
+        integrity: sha1-LeGWGMZtwkfc+2+ZM4A12CRaLO4=,
+        tarball: https://r.cnpmjs.org/v8-compile-cache/download/v8-compile-cache-2.3.0.tgz
+      }
     dev: true
 
-  /vite/2.5.1:
-    resolution: {integrity: sha1-lTxxoDTAezrgRI1XZk7JxoYvI6g=, tarball: https://r.cnpmjs.org/vite/download/vite-2.5.1.tgz}
-    engines: {node: '>=12.2.0'}
+  /vite/2.5.3:
+    resolution:
+      {
+        integrity: sha1-iNQKnvub7Ga9h6dnbFaJ81/2N0I=,
+        tarball: https://r.cnpmjs.org/vite/download/vite-2.5.3.tgz
+      }
+    engines: { node: '>=12.2.0' }
     hasBin: true
     dependencies:
-      esbuild: 0.12.24
+      esbuild: 0.12.25
       postcss: 8.3.6
       resolve: 1.20.0
       rollup: 2.56.3
@@ -1111,32 +1773,56 @@ packages:
     dev: true
 
   /which/2.0.2:
-    resolution: {integrity: sha1-fGqN0KY2oDJ+ELWckobu6T8/UbE=, tarball: https://r.cnpmjs.org/which/download/which-2.0.2.tgz}
-    engines: {node: '>= 8'}
+    resolution:
+      {
+        integrity: sha1-fGqN0KY2oDJ+ELWckobu6T8/UbE=,
+        tarball: https://r.cnpmjs.org/which/download/which-2.0.2.tgz
+      }
+    engines: { node: '>= 8' }
     hasBin: true
     dependencies:
       isexe: 2.0.0
     dev: true
 
   /word-wrap/1.2.3:
-    resolution: {integrity: sha1-YQY29rH3A4kb00dxzLF/uTtHB5w=, tarball: https://r.cnpmjs.org/word-wrap/download/word-wrap-1.2.3.tgz}
-    engines: {node: '>=0.10.0'}
+    resolution:
+      {
+        integrity: sha1-YQY29rH3A4kb00dxzLF/uTtHB5w=,
+        tarball: https://r.cnpmjs.org/word-wrap/download/word-wrap-1.2.3.tgz
+      }
+    engines: { node: '>=0.10.0' }
     dev: true
 
   /wrappy/1.0.2:
-    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=, tarball: https://r.cnpmjs.org/wrappy/download/wrappy-1.0.2.tgz}
+    resolution:
+      {
+        integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=,
+        tarball: https://r.cnpmjs.org/wrappy/download/wrappy-1.0.2.tgz
+      }
     dev: true
 
   /yallist/4.0.0:
-    resolution: {integrity: sha1-m7knkNnA7/7GO+c1GeEaNQGaOnI=, tarball: https://r.cnpmjs.org/yallist/download/yallist-4.0.0.tgz}
+    resolution:
+      {
+        integrity: sha1-m7knkNnA7/7GO+c1GeEaNQGaOnI=,
+        tarball: https://r.cnpmjs.org/yallist/download/yallist-4.0.0.tgz
+      }
     dev: true
 
   /zen-observable-ts/1.2.0:
-    resolution: {integrity: sha1-aSX2Dppejzr3IVG5035Xicz3ATk=, tarball: https://r.cnpmjs.org/zen-observable-ts/download/zen-observable-ts-1.2.0.tgz}
+    resolution:
+      {
+        integrity: sha1-aSX2Dppejzr3IVG5035Xicz3ATk=,
+        tarball: https://r.cnpmjs.org/zen-observable-ts/download/zen-observable-ts-1.2.0.tgz
+      }
     dependencies:
       zen-observable: 0.8.15
     dev: true
 
   /zen-observable/0.8.15:
-    resolution: {integrity: sha1-lkFcUS2OP/2SCv04iWBOMLnqrBU=, tarball: https://r.cnpmjs.org/zen-observable/download/zen-observable-0.8.15.tgz}
+    resolution:
+      {
+        integrity: sha1-lkFcUS2OP/2SCv04iWBOMLnqrBU=,
+        tarball: https://r.cnpmjs.org/zen-observable/download/zen-observable-0.8.15.tgz
+      }
     dev: true

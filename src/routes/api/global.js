@@ -1,11 +1,11 @@
-import { client } from '$lib/client.js';
-import { gql } from '@apollo/client/core/core.cjs.js';
+import { client } from '$lib/client.js'
+import { gql } from '@apollo/client/core/core.cjs.js'
 
-export async function get({ params }) {
+export async function get() {
   const query = gql`
     query Global {
       global {
-        favicon { 
+        favicon {
           url
         }
         address
@@ -31,10 +31,10 @@ export async function get({ params }) {
         }
       }
     }
-  `;
+  `
 
   try {
-    const result = await client.query({ query });
+    const result = await client.query({ query })
     return {
       status: 200,
       body: result.data

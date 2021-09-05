@@ -1,77 +1,75 @@
-import { client } from '$lib/client.js';
-import { gql } from '@apollo/client/core/core.cjs.js';
+import { client } from '$lib/client.js'
+import { gql } from '@apollo/client/core/core.cjs.js'
 
 export async function get({ params }) {
-    const { slug } = params;
-    console.log('QUERY page data: ' + slug);
-    const query = gql`
-    query PagesBySlug ($slug: String!) {
-        pages (
-            where: {slug: $slug}
-        ) {
-                slug
+  const { slug } = params
+  console.log('QUERY page data: ' + slug)
+  const query = gql`
+    query PagesBySlug($slug: String!) {
+      pages(where: { slug: $slug }) {
+        slug
+        title
+        description
+        image {
+          url
+          alternativeText
+        }
+        outline {
+          ... on ComponentBlocksContent {
+            __typename
+            content
+          }
+          ... on ComponentBlocksServices {
+            __typename
+            headline
+            services_only
+            categories(sort: "weight:asc") {
+              name
+              color_schema
+              description
+              image {
+                url
+                alternativeText
+              }
+              articles(where: { service: true }) {
                 title
                 description
-                image {
-                    url
-                    alternativeText
-                }
-                outline {
-                    ... on ComponentBlocksContent {
-                        __typename
-                        content
-                    }
-                    ... on ComponentBlocksServices {
-                        __typename
-                        headline
-                        services_only
-                        categories(sort: "weight:asc") {
-                            name
-                            color_schema
-                            description
-                            image {
-                                url
-                                alternativeText
-                            }
-                            articles (where: {service: true} ){
-                                title
-                                description
-                                slug
-                            }
-                        }
-                    }
-                    ... on ComponentBlocksTeam {
-                        __typename
-                        Headline
-                        authors {
-                            name
-                            picture {
-                                url
-                                alternativeText
-                            }
-                            about
-                        }
-                    }
-                    ... on ComponentBlocksArticles {
-                        __typename
-                        headline
-                        count
-                    }
-                }
+                slug
+              }
             }
+          }
+          ... on ComponentBlocksTeam {
+            __typename
+            Headline
+            authors {
+              name
+              picture {
+                url
+                alternativeText
+              }
+              about
+            }
+          }
+          ... on ComponentBlocksArticles {
+            __typename
+            headline
+            count
+          }
         }
-    `;
-
-    try {
-        const result = await client.query({ query, variables: { slug } });
-        return {
-            status: 200,
-            body: result.data
-        }
-    } catch (err) {
-        return {
-            status: 500,
-            error: 'Error retrieving data'
-        }
+      }
     }
+  `
+
+  try {
+    const result = await client.query({ query, variables: { slug } })
+    return {
+      status: 200,
+      body: result.data
+    }
+  } catch (err) {
+    return {
+      status: 500,
+      error: 'Error retrieving data'
+    }
+  }
 }

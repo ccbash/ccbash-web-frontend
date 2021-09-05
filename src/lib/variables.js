@@ -1,4 +1,3 @@
-
 export const variables = {
-    cmsurl: 'https://cms.ccbash.de'
-};
+  cmsurl: 'https://cms.ccbash.de'
+}

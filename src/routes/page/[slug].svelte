@@ -1,56 +1,55 @@
-<script context="module">
+<style>
+  .cc-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+</style>
 
-  export async function load( {fetch, page} ) {
-    const { slug } = page.params;
-    console.log('----------');
-    console.log('PAGE found:' + slug);
-    const res = await fetch('/api/page/' + slug );
+<script context="module">
+  export async function load({ fetch, page }) {
+    const { slug } = page.params
+    console.log('----------')
+    console.log('PAGE found:' + slug)
+    const res = await fetch('/api/page/' + slug)
 
     if (res.ok) {
-      const data = await res.json();
-      return { 
-        props: data 
-      };
-    };
+      const data = await res.json()
+      return {
+        props: data
+      }
+    }
 
     return {
       status: res.status,
       error: new Error()
-    };
-  }	
+    }
+  }
 </script>
 
 <script>
-    import ComponentBlocksArticles from '$lib/components/ComponentBlocksArticles.svelte';
-    import ComponentBlocksContent from '$lib/components/ComponentBlocksContent.svelte';
-    import ComponentBlocksServices from '$lib/components/ComponentBlocksServices.svelte';
-    import ComponentBlocksTeam from '$lib/components/ComponentBlocksTeam.svelte';
-    import Hero from '$lib/elements/hero.svelte'
-    export let pages;
-    export let page = pages[0];
-    console.log('PAGE building:' + page.title);
-    const component = { 
-      ComponentBlocksArticles: ComponentBlocksArticles,
-      ComponentBlocksContent: ComponentBlocksContent,
-      ComponentBlocksServices: ComponentBlocksServices,
-      ComponentBlocksTeam: ComponentBlocksTeam
-    };
+  import ComponentBlocksArticles from '$lib/components/ComponentBlocksArticles.svelte'
+  import ComponentBlocksContent from '$lib/components/ComponentBlocksContent.svelte'
+  import ComponentBlocksServices from '$lib/components/ComponentBlocksServices.svelte'
+  import ComponentBlocksTeam from '$lib/components/ComponentBlocksTeam.svelte'
+  import Hero from '$lib/elements/hero.svelte'
+  export let pages
+  export let page = pages[0]
+  console.log('PAGE building:' + page.title)
+  const component = {
+    ComponentBlocksArticles: ComponentBlocksArticles,
+    ComponentBlocksContent: ComponentBlocksContent,
+    ComponentBlocksServices: ComponentBlocksServices,
+    ComponentBlocksTeam: ComponentBlocksTeam
+  }
 </script>
 
 <Hero {...page} />
 
 <div class="cc-container">
-    {#each page.outline as block}
-        <svelte:component this={component[block.__typename]} object={block} />
-    {/each}
+  {#each page.outline as block}
+    <svelte:component this={component[block.__typename]} object={block} />
+  {/each}
 </div>
-
-<style>
-.cc-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width:   100vw;
-}
-</style>

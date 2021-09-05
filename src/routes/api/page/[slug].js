@@ -3,7 +3,7 @@ import { gql } from '@apollo/client/core/core.cjs.js';
 
 export async function get({ params }) {
     const { slug } = params;
-    console.log(slug);
+    console.log('QUERY page data: ' + slug);
     const query = gql`
     query PagesBySlug ($slug: String!) {
         pages (
@@ -33,9 +33,10 @@ export async function get({ params }) {
                                 url
                                 alternativeText
                             }
-                            articles {
+                            articles (where: {service: true} ){
                                 title
                                 description
+                                slug
                             }
                         }
                     }

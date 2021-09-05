@@ -40,7 +40,7 @@
         <div class="cc-card">
           <ul class="list-unstyled">
             {#each footer as entry}
-            <li><a href="{entry.slug}" sveltekit:prefetch class="followme-link">{entry.name}</a></li>
+            <li><a href="{entry.slug}" class="followme-link">{entry.name}</a></li>
             {/each}
           </ul>
         </div>

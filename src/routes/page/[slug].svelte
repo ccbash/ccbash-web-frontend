@@ -2,6 +2,8 @@
 
   export async function load( {fetch, page} ) {
     const { slug } = page.params;
+    console.log('----------');
+    console.log('PAGE found:' + slug);
     const res = await fetch('/api/page/' + slug );
 
     if (res.ok) {
@@ -26,7 +28,7 @@
     import Hero from '$lib/elements/hero.svelte'
     export let pages;
     export let page = pages[0];
-    
+    console.log('PAGE building:' + page.title);
     const component = { 
       ComponentBlocksArticles: ComponentBlocksArticles,
       ComponentBlocksContent: ComponentBlocksContent,

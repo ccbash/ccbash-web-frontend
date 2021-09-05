@@ -1,20 +1,20 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@apollo/client': ^3.3.15
-  '@fontsource/fira-mono': ^4.2.2
+  '@apollo/client': ^3.4.10
+  '@fontsource/fira-mono': ^4.5.0
   '@lukeed/uuid': ^2.0.0
   '@sveltejs/kit': next
   cookie: ^0.4.1
   diff-match-patch: ^1.0.5
-  eslint: ^7.30.0
+  eslint: ^7.32.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-svelte3: ^3.2.0
-  graphql: ^14.0.0 || ^15.0.0
+  graphql: ^15.5.1
   prettier: ~2.3.2
-  prettier-plugin-svelte: ^2.3.1
+  prettier-plugin-svelte: ^2.4.0
   snarkdown: ^2.0.0
-  svelte: ^3.38.3
+  svelte: ^3.42.4
 
 dependencies:
   '@fontsource/fira-mono': 4.5.0
@@ -25,43 +25,37 @@ dependencies:
   snarkdown: 2.0.0
 
 devDependencies:
-  '@apollo/client': 3.3.21_graphql@15.5.1
-  '@sveltejs/kit': 1.0.0-next.154_eb9c483077a99b6cdcb6e9ed7c5a4b0b
-  eslint: 7.31.0
-  eslint-config-prettier: 8.3.0_eslint@7.31.0
-  eslint-plugin-svelte3: 3.2.0_eslint@7.31.0+svelte@3.40.2
+  '@apollo/client': 3.4.10_graphql@15.5.1
+  '@sveltejs/kit': 1.0.0-next.158_11461cee467ed643905de7a5f1f768f8
+  eslint: 7.32.0
+  eslint-config-prettier: 8.3.0_eslint@7.32.0
+  eslint-plugin-svelte3: 3.2.0_eslint@7.32.0+svelte@3.42.4
   prettier: 2.3.2
-  prettier-plugin-svelte: 2.3.1_prettier@2.3.2+svelte@3.40.2
-  svelte: 3.40.2
+  prettier-plugin-svelte: 2.4.0_prettier@2.3.2+svelte@3.42.4
+  svelte: 3.42.4
 
 packages:
 
-  /@apollo/client/3.3.21_graphql@15.5.1:
-    resolution: {integrity: sha1-KGK6pOHO2MXonr5vxSh3/GSnJqo=, tarball: https://r.cnpmjs.org/@apollo/client/download/@apollo/client-3.3.21.tgz}
+  /@apollo/client/3.4.10_graphql@15.5.1:
+    resolution: {integrity: sha1-zuntdbG7fzkcVdeTAOz4cJbll5I=, tarball: https://r.cnpmjs.org/@apollo/client/download/@apollo/client-3.4.10.tgz}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0
       react: ^16.8.0 || ^17.0.0
       subscriptions-transport-ws: ^0.9.0
-    peerDependenciesMeta:
-      react:
-        optional: true
-      subscriptions-transport-ws:
-        optional: true
     dependencies:
       '@graphql-typed-document-node/core': 3.1.0_graphql@15.5.1
-      '@types/zen-observable': 0.8.3
-      '@wry/context': 0.6.0
-      '@wry/equality': 0.5.1
-      fast-json-stable-stringify: 2.1.0
+      '@wry/context': 0.6.1
+      '@wry/equality': 0.5.2
+      '@wry/trie': 0.3.1
       graphql: 15.5.1
       graphql-tag: 2.12.5_graphql@15.5.1
       hoist-non-react-statics: 3.3.2
       optimism: 0.16.1
       prop-types: 15.7.2
       symbol-observable: 4.0.0
-      ts-invariant: 0.8.2
-      tslib: 1.14.1
-      zen-observable: 0.8.15
+      ts-invariant: 0.9.1
+      tslib: 2.3.1
+      zen-observable-ts: 1.2.0
     dev: true
 
   /@babel/code-frame/7.12.11:
@@ -70,8 +64,8 @@ packages:
       '@babel/highlight': 7.14.5
     dev: true
 
-  /@babel/helper-validator-identifier/7.14.8:
-    resolution: {integrity: sha1-Mr4zp1bynieKDWRPoIosng+Io0w=, tarball: https://r.cnpmjs.org/@babel/helper-validator-identifier/download/@babel/helper-validator-identifier-7.14.8.tgz}
+  /@babel/helper-validator-identifier/7.14.9:
+    resolution: {integrity: sha1-ZlTRcbICT22O4VG/JQlpmRkTHUg=, tarball: https://r.cnpmjs.org/@babel/helper-validator-identifier/download/@babel/helper-validator-identifier-7.14.9.tgz}
     engines: {node: '>=6.9.0'}
     dev: true
 
@@ -79,7 +73,7 @@ packages:
     resolution: {integrity: sha1-aGGlLwOWZAUAH2qlNKAaJNmejNk=, tarball: https://r.cnpmjs.org/@babel/highlight/download/@babel/highlight-7.14.5.tgz}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/helper-validator-identifier': 7.14.8
+      '@babel/helper-validator-identifier': 7.14.9
       chalk: 2.4.2
       js-tokens: 4.0.0
     dev: true
@@ -91,7 +85,7 @@ packages:
       ajv: 6.12.6
       debug: 4.3.2
       espree: 7.3.1
-      globals: 13.10.0
+      globals: 13.11.0
       ignore: 4.0.6
       import-fresh: 3.3.0
       js-yaml: 3.14.1
@@ -144,23 +138,23 @@ packages:
       picomatch: 2.3.0
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.154_eb9c483077a99b6cdcb6e9ed7c5a4b0b:
-    resolution: {integrity: sha1-pTFxjEH/Ryd6XBci8JDkBE6CqOk=, tarball: https://r.cnpmjs.org/@sveltejs/kit/download/@sveltejs/kit-1.0.0-next.154.tgz}
+  /@sveltejs/kit/1.0.0-next.158_11461cee467ed643905de7a5f1f768f8:
+    resolution: {integrity: sha1-1fUMexTZdi94KKi291U+h1nH7Zo=, tarball: https://r.cnpmjs.org/@sveltejs/kit/download/@sveltejs/kit-1.0.0-next.158.tgz}
     engines: {node: ^12.20 || >=14.13}
     hasBin: true
     peerDependencies:
       svelte: ^3.39.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.19_e41d2cebbe16eb752255785b03423df4
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.19_6b8478a504b81764f5e1b11b41e17257
       cheap-watch: 1.0.3
       sade: 1.7.4
-      svelte: 3.40.2
-      vite: 2.5.0
+      svelte: 3.42.4
+      vite: 2.5.1
     transitivePeerDependencies:
       - diff-match-patch
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.19_e41d2cebbe16eb752255785b03423df4:
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.19_6b8478a504b81764f5e1b11b41e17257:
     resolution: {integrity: sha1-lkarws0ZghRttLs0Gq/bXzLxndI=, tarball: https://r.cnpmjs.org/@sveltejs/vite-plugin-svelte/download/@sveltejs/vite-plugin-svelte-1.0.0-next.19.tgz}
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
     peerDependencies:
@@ -174,34 +168,30 @@ packages:
       kleur: 4.1.4
       magic-string: 0.25.7
       require-relative: 0.8.7
-      svelte: 3.40.2
-      svelte-hmr: 0.14.7_svelte@3.40.2
-      vite: 2.5.0
+      svelte: 3.42.4
+      svelte-hmr: 0.14.7_svelte@3.42.4
+      vite: 2.5.1
     dev: true
 
-  /@types/zen-observable/0.8.3:
-    resolution: {integrity: sha1-eB02DCgkNklLMv59n3+OZLMRiqM=, tarball: https://r.cnpmjs.org/@types/zen-observable/download/@types/zen-observable-0.8.3.tgz}
-    dev: true
-
-  /@wry/context/0.6.0:
-    resolution: {integrity: sha1-+QPs64nSOO9+gWjtMPRRH5LYPgY=, tarball: https://r.cnpmjs.org/@wry/context/download/@wry/context-0.6.0.tgz}
+  /@wry/context/0.6.1:
+    resolution: {integrity: sha1-w8KcCtYirbAPalMwPE+WXuBuvrI=, tarball: https://r.cnpmjs.org/@wry/context/download/@wry/context-0.6.1.tgz}
     engines: {node: '>=8'}
     dependencies:
-      tslib: 2.3.0
+      tslib: 2.3.1
     dev: true
 
-  /@wry/equality/0.5.1:
-    resolution: {integrity: sha1-si5OFnTXvxQ5+Mzcz9anhfbeaLA=, tarball: https://r.cnpmjs.org/@wry/equality/download/@wry/equality-0.5.1.tgz}
+  /@wry/equality/0.5.2:
+    resolution: {integrity: sha1-csinp9iE3/MLYS9PhGTromwIDnM=, tarball: https://r.cnpmjs.org/@wry/equality/download/@wry/equality-0.5.2.tgz}
     engines: {node: '>=8'}
     dependencies:
-      tslib: 2.3.0
+      tslib: 2.3.1
     dev: true
 
-  /@wry/trie/0.3.0:
-    resolution: {integrity: sha1-MkXnSYjE4wMymeR5ob8ARDB1JGM=, tarball: https://r.cnpmjs.org/@wry/trie/download/@wry/trie-0.3.0.tgz}
+  /@wry/trie/0.3.1:
+    resolution: {integrity: sha1-Inm3kPFQMvi86n/JRNJ5iOWzsTk=, tarball: https://r.cnpmjs.org/@wry/trie/download/@wry/trie-0.3.1.tgz}
     engines: {node: '>=8'}
     dependencies:
-      tslib: 2.3.0
+      tslib: 2.3.1
     dev: true
 
   /acorn-jsx/5.3.2_acorn@7.4.1:
@@ -296,8 +286,8 @@ packages:
       supports-color: 5.5.0
     dev: true
 
-  /chalk/4.1.1:
-    resolution: {integrity: sha1-yAs/qyi/Y3HmhjMl7uZ+YYt35q0=, tarball: https://r.cnpmjs.org/chalk/download/chalk-4.1.1.tgz}
+  /chalk/4.1.2:
+    resolution: {integrity: sha1-qsTit3NKdAhnrrFr8CqtVWoeegE=, tarball: https://r.cnpmjs.org/chalk/download/chalk-4.1.2.tgz}
     engines: {node: '>=10'}
     dependencies:
       ansi-styles: 4.3.0
@@ -385,8 +375,8 @@ packages:
       ansi-colors: 4.1.1
     dev: true
 
-  /esbuild/0.12.22:
-    resolution: {integrity: sha1-YDGhJXuNAwfTBr7Wc7ecNmhgf1E=, tarball: https://r.cnpmjs.org/esbuild/download/esbuild-0.12.22.tgz}
+  /esbuild/0.12.24:
+    resolution: {integrity: sha1-IZZvrSWoDzaO0wgQHogQK84Nxo8=, tarball: https://r.cnpmjs.org/esbuild/download/esbuild-0.12.24.tgz}
     hasBin: true
     requiresBuild: true
     dev: true
@@ -401,24 +391,24 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-prettier/8.3.0_eslint@7.31.0:
+  /eslint-config-prettier/8.3.0_eslint@7.32.0:
     resolution: {integrity: sha1-90cbILb+ipqSVMxoRFQgKIai3Xo=, tarball: https://r.cnpmjs.org/eslint-config-prettier/download/eslint-config-prettier-8.3.0.tgz}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
-      eslint: 7.31.0
+      eslint: 7.32.0
     dev: true
 
-  /eslint-plugin-svelte3/3.2.0_eslint@7.31.0+svelte@3.40.2:
+  /eslint-plugin-svelte3/3.2.0_eslint@7.32.0+svelte@3.42.4:
     resolution: {integrity: sha1-pt606tSzGmR+qIo4I9fJZXj3RoM=, tarball: https://r.cnpmjs.org/eslint-plugin-svelte3/download/eslint-plugin-svelte3-3.2.0.tgz}
     engines: {node: '>=10'}
     peerDependencies:
       eslint: '>=6.0.0'
       svelte: ^3.2.0
     dependencies:
-      eslint: 7.31.0
-      svelte: 3.40.2
+      eslint: 7.32.0
+      svelte: 3.42.4
     dev: true
 
   /eslint-scope/5.1.1:
@@ -446,8 +436,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint/7.31.0:
-    resolution: {integrity: sha1-+XK1OUJL8mBJB6lwhgcyxdmdOso=, tarball: https://r.cnpmjs.org/eslint/download/eslint-7.31.0.tgz}
+  /eslint/7.32.0:
+    resolution: {integrity: sha1-xtMooUvj+wjI0dIeEsAv23oqgS0=, tarball: https://r.cnpmjs.org/eslint/download/eslint-7.32.0.tgz}
     engines: {node: ^10.12.0 || >=12.0.0}
     hasBin: true
     dependencies:
@@ -455,7 +445,7 @@ packages:
       '@eslint/eslintrc': 0.4.3
       '@humanwhocodes/config-array': 0.5.0
       ajv: 6.12.6
-      chalk: 4.1.1
+      chalk: 4.1.2
       cross-spawn: 7.0.3
       debug: 4.3.2
       doctrine: 3.0.0
@@ -471,7 +461,7 @@ packages:
       file-entry-cache: 6.0.1
       functional-red-black-tree: 1.0.1
       glob-parent: 5.1.2
-      globals: 13.10.0
+      globals: 13.11.0
       ignore: 4.0.6
       import-fresh: 3.3.0
       imurmurhash: 0.1.4
@@ -564,12 +554,12 @@ packages:
     resolution: {integrity: sha1-YbAzgwKy/p+Vfcwy/CqH8cMEixE=, tarball: https://r.cnpmjs.org/flat-cache/download/flat-cache-3.0.4.tgz}
     engines: {node: ^10.12.0 || >=12.0.0}
     dependencies:
-      flatted: 3.2.1
+      flatted: 3.2.2
       rimraf: 3.0.2
     dev: true
 
-  /flatted/3.2.1:
-    resolution: {integrity: sha1-u+8IDZX8pnCTYscwRKFjT3xufQU=, tarball: https://r.cnpmjs.org/flatted/download/flatted-3.2.1.tgz}
+  /flatted/3.2.2:
+    resolution: {integrity: sha1-ZL/tXLaP48p4s+shStl7Y77c5WE=, tarball: https://r.cnpmjs.org/flatted/download/flatted-3.2.2.tgz}
     dev: true
 
   /fs.realpath/1.0.0:
@@ -608,8 +598,8 @@ packages:
       path-is-absolute: 1.0.1
     dev: true
 
-  /globals/13.10.0:
-    resolution: {integrity: sha1-YLpWw6wsqEXPv0+uynJ62d0gRnY=, tarball: https://r.cnpmjs.org/globals/download/globals-13.10.0.tgz}
+  /globals/13.11.0:
+    resolution: {integrity: sha1-QO9njaEX/nvS4o8fqySVG9AlW+c=, tarball: https://r.cnpmjs.org/globals/download/globals-13.11.0.tgz}
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.20.2
@@ -622,7 +612,7 @@ packages:
       graphql: ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
     dependencies:
       graphql: 15.5.1
-      tslib: 2.3.0
+      tslib: 2.3.1
     dev: true
 
   /graphql/15.5.1:
@@ -817,8 +807,8 @@ packages:
   /optimism/0.16.1:
     resolution: {integrity: sha1-fI78HzF58YMHuIfhjBXFtxM/bn0=, tarball: https://r.cnpmjs.org/optimism/download/optimism-0.16.1.tgz}
     dependencies:
-      '@wry/context': 0.6.0
-      '@wry/trie': 0.3.0
+      '@wry/context': 0.6.1
+      '@wry/trie': 0.3.1
     dev: true
 
   /optionator/0.9.1:
@@ -873,14 +863,14 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-svelte/2.3.1_prettier@2.3.2+svelte@3.40.2:
-    resolution: {integrity: sha1-kmGEpJBUlojb6gqNYcGxriAhg2g=, tarball: https://r.cnpmjs.org/prettier-plugin-svelte/download/prettier-plugin-svelte-2.3.1.tgz}
+  /prettier-plugin-svelte/2.4.0_prettier@2.3.2+svelte@3.42.4:
+    resolution: {integrity: sha1-SCu2ADvx1b1/8AImGkKjK4fULQA=, tarball: https://r.cnpmjs.org/prettier-plugin-svelte/download/prettier-plugin-svelte-2.4.0.tgz}
     peerDependencies:
       prettier: ^1.16.4 || ^2.0.0
       svelte: ^3.2.0
     dependencies:
       prettier: 2.3.2
-      svelte: 3.40.2
+      svelte: 3.42.4
     dev: true
 
   /prettier/2.3.2:
@@ -944,8 +934,8 @@ packages:
       glob: 7.1.7
     dev: true
 
-  /rollup/2.56.2:
-    resolution: {integrity: sha1-oEX/P2r1PuAJtfUBbKPaAynlRw8=, tarball: https://r.cnpmjs.org/rollup/download/rollup-2.56.2.tgz}
+  /rollup/2.56.3:
+    resolution: {integrity: sha1-tj7a3ZhRsNYYptDmr4IBlVp3rv8=, tarball: https://r.cnpmjs.org/rollup/download/rollup-2.56.3.tgz}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
@@ -1040,16 +1030,16 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /svelte-hmr/0.14.7_svelte@3.40.2:
+  /svelte-hmr/0.14.7_svelte@3.42.4:
     resolution: {integrity: sha1-f6gmHHsiXZQJ8KhvO56lw8pvZgc=, tarball: https://r.cnpmjs.org/svelte-hmr/download/svelte-hmr-0.14.7.tgz}
     peerDependencies:
       svelte: '>=3.19.0'
     dependencies:
-      svelte: 3.40.2
+      svelte: 3.42.4
     dev: true
 
-  /svelte/3.40.2:
-    resolution: {integrity: sha1-k6tW6bpF7YZHoZ69wkKjGTmuATQ=, tarball: https://r.cnpmjs.org/svelte/download/svelte-3.40.2.tgz}
+  /svelte/3.42.4:
+    resolution: {integrity: sha1-g47Zj6eyb8X//k3w17o0XxxUz08=, tarball: https://r.cnpmjs.org/svelte/download/svelte-3.42.4.tgz}
     engines: {node: '>= 8'}
     dev: true
 
@@ -1074,19 +1064,15 @@ packages:
     resolution: {integrity: sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=, tarball: https://r.cnpmjs.org/text-table/download/text-table-0.2.0.tgz}
     dev: true
 
-  /ts-invariant/0.8.2:
-    resolution: {integrity: sha1-Yq9lTr+4se61W8mtwvQMa5Ow/34=, tarball: https://r.cnpmjs.org/ts-invariant/download/ts-invariant-0.8.2.tgz}
+  /ts-invariant/0.9.1:
+    resolution: {integrity: sha1-h9/emJSkzjx3EbArG0Sef9c4SxM=, tarball: https://r.cnpmjs.org/ts-invariant/download/ts-invariant-0.9.1.tgz}
     engines: {node: '>=8'}
     dependencies:
-      tslib: 2.3.0
+      tslib: 2.3.1
     dev: true
 
-  /tslib/1.14.1:
-    resolution: {integrity: sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=, tarball: https://r.cnpmjs.org/tslib/download/tslib-1.14.1.tgz}
-    dev: true
-
-  /tslib/2.3.0:
-    resolution: {integrity: sha1-gDuM2rPhK6WBpMpByIObuw2ssJ4=, tarball: https://r.cnpmjs.org/tslib/download/tslib-2.3.0.tgz}
+  /tslib/2.3.1:
+    resolution: {integrity: sha1-6KM1rdXOrlGqJh0ypJAVjvBC7wE=, tarball: https://r.cnpmjs.org/tslib/download/tslib-2.3.1.tgz}
     dev: true
 
   /type-check/0.4.0:
@@ -1111,15 +1097,15 @@ packages:
     resolution: {integrity: sha1-LeGWGMZtwkfc+2+ZM4A12CRaLO4=, tarball: https://r.cnpmjs.org/v8-compile-cache/download/v8-compile-cache-2.3.0.tgz}
     dev: true
 
-  /vite/2.5.0:
-    resolution: {integrity: sha1-ERujZ5Qy1CbkRWas9IAAWnkUy9Y=, tarball: https://r.cnpmjs.org/vite/download/vite-2.5.0.tgz}
+  /vite/2.5.1:
+    resolution: {integrity: sha1-lTxxoDTAezrgRI1XZk7JxoYvI6g=, tarball: https://r.cnpmjs.org/vite/download/vite-2.5.1.tgz}
     engines: {node: '>=12.2.0'}
     hasBin: true
     dependencies:
-      esbuild: 0.12.22
+      esbuild: 0.12.24
       postcss: 8.3.6
       resolve: 1.20.0
-      rollup: 2.56.2
+      rollup: 2.56.3
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -1143,6 +1129,12 @@ packages:
 
   /yallist/4.0.0:
     resolution: {integrity: sha1-m7knkNnA7/7GO+c1GeEaNQGaOnI=, tarball: https://r.cnpmjs.org/yallist/download/yallist-4.0.0.tgz}
+    dev: true
+
+  /zen-observable-ts/1.2.0:
+    resolution: {integrity: sha1-aSX2Dppejzr3IVG5035Xicz3ATk=, tarball: https://r.cnpmjs.org/zen-observable-ts/download/zen-observable-ts-1.2.0.tgz}
+    dependencies:
+      zen-observable: 0.8.15
     dev: true
 
   /zen-observable/0.8.15:
